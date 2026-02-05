@@ -11,6 +11,12 @@
 		<description>
 			<p>Worlds Collide Homebrew</p>
 		</description>
+		<setters>
+			<set name="abbreviation">WC</set>
+			<set name="url">https://github.com/3axAttack207/worldscollide</set>
+			<set name="author" url="https://github.com/3axAttack207">/3axAttack207</set>
+			<set name="homebrew">true</set>
+</setters>
 	</element>
 
 	<!-- grant this in the class, for use in requirements for rules -->
