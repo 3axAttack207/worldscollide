@@ -22,7 +22,6 @@
 	<!-- grant this in the class, for use in requirements for rules -->
 
 	<element name="Worlds Collide Requirement" type="Grants" source="Worlds Collide" id="ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT"/>
-	</element>
 	
 	<!-- weapon properties -->
 
@@ -50,7 +49,7 @@
 		</description>
 	</element>
 	
-	<element name="Sidearms" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_SIDEARMS"/>
+	<element name="Sidearms" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_SIDEARMS">
 		<description>
 			<p>Sidearm: When you have a free hand and a bonus action, you can draw your sidearm and fire it as a bonus action, but unable to add any bonuses to the attack roll.</p>
 		</description>
