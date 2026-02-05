@@ -5,7 +5,7 @@
 		<update version="0.0.1">
 			<file name="infrastructure.xml" url="https://raw.githubusercontent.com/3axattack207/worldscollide/master/homebrew/infrastructure.xml" />
 		</update>
-	</info>
+	</info>,
 	
 	<element name="Worlds Collide" type="Source" source="Worlds Collide" id="ID_WC_SOURCE_WORLDSCOLLIDE">
 		<description>
