@@ -55,14 +55,21 @@
 		</description>
 	</element>
 
+	<!--  weapon groups  -->
+
+		<element name="Weapon Group (Firearms)" type="Weapon Group" source="Arcane Artillery" id="ID_WC_WEAPON_GROUP_FIREARMS"/>
+		<element name="Weapon Group (Light Machine Guns)" type="Weapon Group" source="Arcane Artillery" id="ID_WC_WEAPON_GROUP_LIGHTMACHINEGUNS"/>
+
 	<!-- proficiencies -->
+	
 	<element name="Weapon Proficiency (Light Machine Guns)" type="Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTMACHINEGUNS">
-		<supports>Weapon, Ranged, Heavy</supports>
+		<supports>Firearm, Ranged, ID_WC_WEAPON_GROUP_LIGHTMACHINEGUNS</supports>
 		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
 		<rules>
 			<grant type="Proficiency" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_KALASHNIKOVPKP"/>
 		</rules>
 	</element>
 
-	
+	<!-- Specific Weapon Proficiency-->
+
 </elements>
