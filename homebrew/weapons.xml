@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>File 2</name>
+		<name>weapons</name>
 		<update version="0.0.1">
 			<file name="file2.xml" url="https://raw.githubusercontent.com/3axAttack207/worldscollide/master/homebrew/weapons.xml" />
 	</info>
