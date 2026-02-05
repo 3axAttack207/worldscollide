@@ -6,17 +6,6 @@
 			<file name="weapons.xml" url="https://raw.githubusercontent.com/3axAttack207/worldscollide/master/homebrew/weapons.xml" />
 		</update>
 	</info>
-
-	<element name="Worlds Collide" type="Source" source="Worlds Collide" id="ID_WC_SOURCE_WORLDSCOLLIDE">
-		<description>
-			<p>Worlds Collide Homebrew</p>
-		</description>
-		<setters>
-			<set name="abbreviation">WC</set>
-			<set name="url">https://github.com/3axAttack207/worldscollide</set>
-			<set name="homebrew">true</set>
-		</setters>
-	</element>
 	
 	<element name="Kalashnikov PKP" type="Weapon" source="Worlds Collide" id="ID\_WC\_WEAPON\_KALASHNIKOVPKP">
 		<supports>

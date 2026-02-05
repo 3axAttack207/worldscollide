@@ -11,11 +11,7 @@
 		<description>
 			<p>Worlds Collide Homebrew</p>
 		</description>
-		<setters>
-			<set name="abbreviation">WC</set>
-			<set name="url">https://github.com/3axAttack207/worldscollide</set>
-			<set name="homebrew">true</set>
-		</setters>
+		<set name="abbreviation">WC</set>
 	</element>
 
 
