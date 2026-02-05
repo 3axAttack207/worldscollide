@@ -16,13 +16,14 @@
 			<set name="url">https://github.com/3axAttack207/worldscollide</set>
 			<set name="author" url="https://github.com/3axAttack207">/3axAttack207</set>
 			<set name="homebrew">true</set>
-</setters>
+		</setters>
 	</element>
 
 	<!-- grant this in the class, for use in requirements for rules -->
 
 	<element name="Worlds Collide Requirement" type="Grants" source="Worlds Collide" id="ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT"/>
-
+	</element>
+	
 	<!-- weapon properties -->
 
 	<element name="Timely Reload" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_TIMELYRELOAD">
