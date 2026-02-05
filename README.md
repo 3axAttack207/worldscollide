@@ -1,5 +1,5 @@
 # Worlds Collide D&D Campaign
-additional content to extend [Aurora](https://aurorabuilder.com/), by yourname
+additional content to extend [Aurora](https://aurorabuilder.com/), by 3axAttack207
 
 index url: https://raw.githubusercontent.com/3axAttack207/worldscollide/master/homebrew.index
 
