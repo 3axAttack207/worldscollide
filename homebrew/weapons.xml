@@ -3,7 +3,7 @@
 	<info>
 		<name>File 2</name>
 		<update version="0.0.1">
-			<file name="file2.xml" url="https://raw.githubusercontent.com/3axattack207/worlds-collide/master/homebrew/weapons.xml" />
+			<file name="file2.xml" url="https://raw.githubusercontent.com/3axAttack207/worlds-collide/master/homebrew/weapons.xml" />
 	</info>
 	
 	<element name="Kalashnikov PKP" type="Weapon" source="Worlds Collide" id="ID\_WC\_WEAPON\_KALASHNIKOVPKP">

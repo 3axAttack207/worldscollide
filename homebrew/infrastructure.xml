@@ -3,7 +3,7 @@
 	<info>
 		<name>File 1</name>
 		<update version="0.0.1">
-			<file name="infrastructure.xml" url="https://raw.githubusercontent.com/3axattack207/worlds-collide/master/homebrew/infrastructure.xml" />
+			<file name="infrastructure.xml" url="https://raw.githubusercontent.com/3axAttack207/worlds-collide/master/homebrew/infrastructure.xml" />
 		</update>
 	</info>
 	
