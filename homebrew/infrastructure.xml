@@ -72,4 +72,12 @@
 
 	<!-- Specific Weapon Proficiency-->
 
+	<element name="Weapon Proficiency (Kalashnikov PKP)" type="Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_KALASHNIKOVPKP">
+		<supports>ID_WC_WEAPON_KALASHNIKOVPKP</supports>
+		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
+		<description>
+			<p>Proficiency with the Kalashnikov PKP light machine gun. Grants ability to use the weapon without penalties and enables related actions and rules.</p>
+		</description>
+	</element>
+
 </elements>
