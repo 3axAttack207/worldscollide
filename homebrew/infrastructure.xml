@@ -11,9 +11,7 @@
 		<description>
 			<p>Worlds Collide Homebrew</p>
 		</description>
-		<set name="abbreviation">WC</set>
 	</element>
-
 
 	<!-- grant this in the class, for use in requirements for rules -->
 
