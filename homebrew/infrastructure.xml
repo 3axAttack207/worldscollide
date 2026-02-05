@@ -48,10 +48,16 @@
 			<p>Heavy Recoil: When you fire at a target multiple times in succession. For every attack after the first, your attack roll will have a -3 penalty (recoil), and this stacks every time you fire on the same target. If you end your turn attacking and start your next turn attacking with the same weapon, you keep your previous penalty. This can be reset by switching targets, using a different action, using your bonus action, or using your reaction. This can be reduced to a -1 by mounting the weapon, if possible.</p>
 		</description>
 	</element>
+	
+	<element name="Sidearms" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_SIDEARMS"/>
+		<description>
+			<p>Sidearm: When you have a free hand and a bonus action, you can draw your sidearm and fire it as a bonus action, but unable to add any bonuses to the attack roll.</p>
+		</description>
+	</element>
 
 	<!-- proficiencies -->
 	<element name="Weapon Proficiency (Light Machine Guns)" type="Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTMACHINEGUNS">
-		<supports>Weapon, Ranged, Sidearms</supports>
+		<supports>Weapon, Ranged, Heavy</supports>
 		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
 		<rules>
 			<grant type="Proficiency" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_KALASHNIKOVPKP"/>
