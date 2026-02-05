@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>File 1</name>
+		<update version="0.0.1">
+			<file name="infrastructure.xml" url="https://raw.githubusercontent.com/3axattack207/worldscollide/master/homebrew/infrastructure.xml" />
+		</update>
+	</info>
+	
+	<element name="Worlds Collide" type="Source" source="Worlds Collide" id="ID_WC_SOURCE_WORLDSCOLLIDE">
+		<description>
+			<p>Worlds Collide Homebrew</p>
+		</description>
+		<setters>
+			<set name="abbreviation">WC</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+
+
+	<!-- grant this in the class, for use in requirements for rules -->
+
+	<element name="Worlds Collide Requirement" type="Grants" source="Worlds Collide" id="ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT"/>
+
+	<!-- weapon properties -->
+
+	<element name="Timely Reload" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_TIMELYRELOAD">
+		<description>
+			<p>Timely Reload: You must use your entire turn (all movement, actions, and bonus actions) to reload, and during the reload, you will be unable to use reactions.</p>
+		</description>
+	</element>
+
+	<element name="Recoil" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_RECOIL">
+		<description>
+			<p>Recoil: When attacking, not all of your attacks will hit due to recoil. When you land a hit, at least one round will hit (can be different per weapon), then roll a dice, depending on the number of attacks used (weapons will have different dice), the number rolled on the dice will add damage die. This can be canceled out by mounting the weapon, if possible.</p>
+		</description>
+	</element>
+
+	<element name="Extremely Heavy" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_EXTREMELYHEAVY">
+		<description>
+			<p>Extremely Heavy: Having this item in your inventory or on your person reduces your speed by 10ft.</p>
+		</description>
+	</element>
+
+	<element name="Heavy Recoil" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_HEAVYRECOIL">
+		<description>
+			<p>Heavy Recoil: When you fire at a target multiple times in succession. For every attack after the first, your attack roll will have a -3 penalty (recoil), and this stacks every time you fire on the same target. If you end your turn attacking and start your next turn attacking with the same weapon, you keep your previous penalty. This can be reset by switching targets, using a different action, using your bonus action, or using your reaction. This can be reduced to a -1 by mounting the weapon, if possible.</p>
+		</description>
+	</element>
+
+	<!-- proficiencies -->
+	<element name="Weapon Proficiency (Light Machine Guns)" type="Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTMACHINEGUNS">
+		<supports>Weapon, Ranged, Sidearms</supports>
+		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
+		<rules>
+			<grant type="Proficiency" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_KALASHNIKOVPKP"/>
+		</rules>
+	</element>
+
+	
+</elements>

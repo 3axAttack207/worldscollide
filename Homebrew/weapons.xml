@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>File 2</name>
+		<update version="0.0.1">
+			<file name="file2.xml" url="https://raw.githubusercontent.com/3axattack207/worldscollide/master/homebrew/weapons.xml" />
+	</info>
+	
+	<element name="Kalashnikov PKP" type="Weapon" source="Worlds Collide" id="ID\_WC\_WEAPON\_KALASHNIKOVPKP">
+
+<supports>ID\_INTERNAL\_WEAPON\_CATEGORY\_FIREARM,ID\_INTERNAL\_WEAPON\_CATEGORY\_MARTIAL\_RANGED,ID\_INTERNAL\_WEAPON\_PROPERTY\_RANGED,ID\_INTERNAL\_DAMAGETYPE\_PIERCING,ID\_INTERNAL\_WEAPON\_PROPERTY\_AMMUNITION,ID\_WC\_WEAPON\_PROPERTY\_TIMELYRELOAD,ID\_INTERNAL\_WEAPON\_PROPERTY\_TWOHANDED,ID\_INTERNAL\_WEAPON\_PROPERTY\_HEAVY,ID\_INTERNAL\_WEAPON\_PROPERTY\_LOADING,ID\_WC\_WEAPON\_GROUP\_FIREARMS,ID\_WC\_WEAPON\_PROPERTY\ID_WC_WEAPON_PROPERTY_HEAVYRECOIL,ID\_WC\_WEAPON\_PROPERTY\ID
+_WC_WEAPON_PROPERTY_EXTREMELYHEAVY,ID\_WC\_WEAPON\_PROPERTY\ID_WC_WEAPON_PROPERTY_RECOIL</supports>
+<description>
+
+<p>Ammunition (range 500/1500), Two-Handed, Automatic, Bulky, Extremely Heavy, Timely Load, Recoil, Heavy Recoil, Special</p>
+
+<h5>Kalashnikov PKP Special Rules and Details</h5>
+
+<p> **Description:** The Kalashnikov PKP is an infantry machine gun capable of firing 650 rounds per minute, that is 65 rounds in a single turn. The PKP has box magazines that hold 100 rounds of 7.62x54R.</p>
+
+
+
+<p>**Rules:**</p>
+
+<p>*Timely Reload:* You must use your entire turn (all movement, actions, and bonus actions) to reload, and during the reload, you will be unable to use reactions.</p>
+
+<p>*Extremely Heavy:* Having this item in your inventory or on your person reduces your speed by 10ft. </p>
+
+<p>*Recoil:* When attacking, not all of your attacks will hit due to recoil. When you land a hit, at least one round will hit (can be different per weapon), then roll a dice, depending on the number of attacks used (weapons will have different dice), the number rolled on the dice will add damage die. This can be canceled out by mounting the weapon, if possible.</p>
+
+<p>*Heavy Recoil:* When you fire at a target multiple times in succession. For every attack after the first, your attack roll will have a -3 penalty (recoil), and this stacks every time you fire on the same target. If you end your turn attacking and start your next turn attacking with the same weapon, you keep your previous penalty. This can be reset by switching targets, using a different action, using your bonus action, or using your reaction. This can be reduced to a -1 by mounting the weapon, if possible.</p>
+
+<p>**Actions:**</p>
+
+<p>*Firing:* Firing the PKP, you have an ammo pool of 13 bursts of 5 rounds (65 rounds in total) or fewer, depending on the ammo in mag per turn. To fire and start to use your ammo pool, the first burst uses your action, so you can't swap and use a different weapon unless you have an extra action. You can not get an extra 13 bursts with any extra actions (650 rpm). When you take your bonus action during your turn, you lose 5 bursts you can use on your turn. Also, while using the PKP as your main weapon, you must have at least 5 bursts left to use your bonus action. (If you had 8 bursts (40 rounds left in mag) or less at the start of your turn because of ammo left, the bonus rule will not affect you.) When you fire the PKP at a target (Still need to make an attack roll), it uses one burst. If you then switch to a different target, switching uses 1 burst. You can also use one burst to reset the Heavy Recoil Penalty on a target. When you land a hit, one bullet automatically hits, then roll a d4, the number on that adds that many damage dice (recoil). If you are affected by Slow, your max starting bursts are reduced to 8 bursts. If you use all of your bursts during your turn, your turn ends automatically.</p>
+
+<p>*Held Fire:* Using 7 bursts, in a 15ft sphere, force 7 people (max two per person) in that area to make a dexterity saving throw (10+Proficiency+Dex). On a passed save, take half damage. On a failed save, takes 5d20 Piercing Damage, and until the end of your next turn, they have disadvantage on Attack rolls, Strength throws, Dexterity throws, and -10ft of movement.</p>
+
+</description>
+
+<setters>
+
+<set name="category">Worlds Collide</set>
+
+<set name="cost" currency="gp">Good Luck Finding One For Sale</set>
+
+<set name="weight" lb="21">21 lb.</set>
+
+<set name="slot">twohand</set>
+
+<set name="range">500/1500</set>
+
+<set name="damage" type="Piercing Per Bullet">2d20</set>
+
+<set name="proficiency">ID\_WC\_PROFICIENCY\_WEAPON\_PROFICIENCY\FIREARM</set>
+
+</setters>
+
+</element>
+	
+</elements>

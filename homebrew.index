@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Worlds Collide</name>
+		<update version="0.0.1">
+			<file name="homebrew.index" url="https://raw.githubusercontent.com/3axattack207/worldscollide/master/homebrew.index" />
+		</update>
+	</info>
+	<files>
+		<file name="infrastructure.xml" url="https://raw.githubusercontent.com/3axattack207/worldscollide/master/homebrew/infrastructure.xml" />
+		<file name="weapons.xml" url="https://raw.githubusercontent.com/3axattack207/worldscollide/master/homebrew/weapons.xml" />
+	</files>
+</index>

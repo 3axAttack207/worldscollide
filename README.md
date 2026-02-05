@@ -1,7 +1,7 @@
-# repositoryname
+# Worlds Collide
 additional content to extend [Aurora](https://aurorabuilder.com/), by yourname
 
-index url: https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/user-yourname.index
+index url: https://raw.githubusercontent.com/3axattack207/worldscollide/master/homebrew.index
 
 ---
 
