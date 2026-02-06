@@ -96,7 +96,7 @@
 		</rules>
 	</element>
 
-	<element name="Weapon Proficiency (Sniper Rifles)" type="Weapon Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_SNIPERRIFLES">
+	<element name="Weapon Proficiency (Sniper Rifles)" type="Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_SNIPERRIFLES">
 		<supports>ID_WC_WEAPON_GROUP_SNIPERRIFLES</supports>
 		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
 		<rules>
@@ -104,7 +104,7 @@
 		</rules>
 	</element>
 
-	<element name="Weapons Proficiency (Launchers)" type="Weapon Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_LAUNCHERS">
+	<element name="Weapons Proficiency (Launchers)" type="Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_LAUNCHERS">
 		<supports>ID_WC_WEAPON_GROUP_LAUNCHERS</supports>
 		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
 		<rules>
@@ -122,7 +122,7 @@
 		</description>
 	</element>
 
-	<element name="Weapon Proficiency (M110 SASS)" type="Weapon Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_M110SASS">
+	<element name="Weapon Proficiency (M110 SASS)" type="Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_M110SASS">
 		<supports>ID_WC_WEAPON_M110SASS</supports>
 		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
 		<description>
@@ -130,7 +130,7 @@
 		</description>
 	</element>
 
-	<element name="Weapon Proficiency (Grenade Launcher)" type="Weapon Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_GRENADELAUNCHER">
+	<element name="Weapon Proficiency (Grenade Launcher)" type="Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_GRENADELAUNCHER">
 		<supports>ID_WC_WEAPON_GRENADELAUNCHER</supports>
 		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
 		<description>
