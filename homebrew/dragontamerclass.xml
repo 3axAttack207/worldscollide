@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>dragontamerclass</name>
+		<update version="0.0.11">
+			<file name="dragontamerclass.xml" url="https://raw.githubusercontent.com/3axAttack207/worldscollide/master/homebrew/dragontamerclass.xml" />
+		</update>
+	</info>
+
+    <!--  Dragon Tamer Class  -->
+    <element name="Dragon Tamer" type="Class" source="Worlds Collide" id="ID_WC_CLASS_DRAGON_TAMER">
+        <description>
+            <p>A Human finds a dragon egg in the wild, abandoned and left to its own devices. The egg is warm to the touch and seems to pulse with a faint inner light. It hatches and looks at the human. The human leaves it alone, but it follows him around. Eventually the human picks up the baby dragon and takes it with him on his adventures. The dragon grows with the human and they become partners, taking on everything together.</p>
+            <h3>CLASS FEATURES</h3>
+            <p>As a Dragon Tamer, you get the following class features.</p>
+            <h5>HIT POINTS</h5>
+            <p>
+                <span class="emphasis">Hit Dice:</span>
+                    1d10 per dragon tamer level
+                <br/>
+                <span class="emphasis">Hit Points at 1st Level:</span>
+                    10 + your Constitution modifier
+                <br/>
+                <span class="emphasis">Hit Points at Higher Levels:</span>
+                    1d10 (or 6) + your Constitution modifier per dragon tamer level after 1st
+                <br/>
+            </p>
+            <h5>PROFICIENCIES</h5>
+            <p>
+                <span class="emphasis">Armor:</span>
+                    none
+                <br/>
+                <span class="emphasis">Weapons:</span>
+                    simple weapons
+                <br/>
+                <span class="emphasis">Tools:</span>
+                    none
+                <br/>
+            </p>
+            <p>
+                <span class="emphasis">Saving Throws:</span>
+                    Strength, Dexterity
+                <br/>
+                <span class="emphasis">Skills:</span>
+                    Choose three from Athletics, Survival, Stealth, Investigation, Nature, Animal Handling, Insight, or Perception
+            </p>
+            <h5>EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>
+                    <i>(a)</i>
+                    one shortbow and 20 arrows,
+                </li>
+                <li>
+                    <i>(a)</i>
+                    one dagger
+                </li>
+                <li>
+                    <i>(a)</i>
+                    a dungeoneer's pack,
+                    <i>(b)</i>
+                    an explorer's pack, or
+                </li>
+            </ul>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUMMON_DRAGON"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_"/>
+        </description>
+        <sheet display="false">
+            <description>A dragon tamer adventuring with their unlikely companion.</description>
+        </sheet>
+        <setters>
+            <set name="short">A dragon tamer adventuring with their unlikely companion.</set>
+            <set name="hd">d10</set>
+        </setters>
