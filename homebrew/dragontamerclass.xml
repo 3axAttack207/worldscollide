@@ -222,6 +222,7 @@
                     </td>
                     <td class="left">Stroke of Luck</td>
                 </tr>
+            </table>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUMMON_DRAGON"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_PROFICIENCY_GAIN"/>
