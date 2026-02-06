@@ -182,7 +182,7 @@
                     <td>
                         Attacks
                     </td>
-                    <td class="left">Icy Cold, Flame Explosion, or Lightning Jump (Dragon Dependent), Elemental Bond Upgrade</td> 
+                    <td class="left">Icy ice, Flame Explosion, or Lightning Jump (Dragon Dependent), Elemental Bond Upgrade</td> 
                 </tr>
                 <tr>
                     <td>16th</td>
@@ -197,7 +197,7 @@
                     <td>
                         Attack
                     </td>
-                    <td class="left">Superiority Dice Upgrade, Indomitable Upgrade, Elemental Charge Upgrade, Icy Cold, Flame Explosion, or Lightning Jump Upgrade</td>
+                    <td class="left">Superiority Dice Upgrade, Indomitable Upgrade, Elemental Charge Upgrade, Icy ice, Flame Explosion, or Lightning Jump Upgrade</td>
                 </tr>
                 <tr>
                     <td>18th</td>
@@ -234,7 +234,6 @@
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_THROW_DRAGON"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_CHARGE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_REMOVE_ELEMENTAL_CHARGES"/>
-            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_ARMOR"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_LIFE_EXCHANGE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMITABLE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_ATTACK"/>
@@ -252,7 +251,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
-            <select type="Proficiency" name="Skill Proficiency (Dragon Tamer)" supports="Skill,Dragon Tamer" number="3" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
+            <select type="Proficiency" name="Skill Proficiency (Dragon Tamer)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE" number="3" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE" level="1"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUMMON_DRAGON" level="1"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_PROFICIENCY_GAIN" level="2"/>
@@ -264,7 +263,6 @@
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_THROW_DRAGON" level="5"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_CHARGE" level="6"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_REMOVE_ELEMENTAL_CHARGES" level="6"/>
-            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_ARMOR" level="8"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_LIFE_EXCHANGE" level="11"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMITABLE" level="14"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_ATTACK" level="15"/>
@@ -283,4 +281,67 @@
             </rules>
         </multiclass>
     </element>
+
+    <!-- Leveling information for Dragon Tamer class -->
+
+    <element name="Choose Dragon Type" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE">
+        <description>
+            <p>At 1st level, you choose your dragon's type between a red dragon(fire), a blue dragon(lightning),or a white dragon(ice). This dragon will then grow with you as you gain levels.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Dragon Type" supports="Dragon Tamer Archetype" level="1"/>
+        </rules>
+    </element>
+
+    <!-- Dragon Types -->
+
+    <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
+        <supports>Dragon Type Archetype</supports>
+            <description>
+                <p>The red dragon represents the element of fire. This dragon type is able to heavily burn people causing disadvantage on attack rolls and cause 1 fire damage every turn.</p>
+                <div element="ID_WC_ARCHETYPE_FEATURE_FIRE_ARMOR"/>
+                <div element="ID_WC_ARCHETYPE_FEATURE_FIRE_DRAGON_TYPE_ATTACK"/>
+            </description>
+            <sheet display="false">
+                <description>You focus your training on the element of fire.</description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_FIRE_ARMOR" level="8"/>
+                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_FIRE_DRAGON_TYPE_ATTACK" level="15"/>
+            </rules>
+    </element>
+    <element name="Blue Dragon(lightning)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_BLUE_DRAGON">
+        <supports>Dragon Type Archetype</supports>
+            <description>
+                <p>The blue dragon represents the element of lightning. This dragon type is able to heavily shock people causing disadvantage on dexterity saving throws and cause 1 lightning damage every turn.</p>
+                <div element="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_ARMOR"/>
+                <div element="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_DRAGON_TYPE_ATTACK"/>
+            </description>
+            <sheet display="false">
+                <description>You focus your training on the element of lightning.</description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_ARMOR" level="8"/>
+                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_DRAGON_TYPE_ATTACK" level="15"/>
+            </rules>
+    </element>
+    <element name="White Dragon(ice)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_WHITE_DRAGON">
+        <supports>Dragon Type Archetype</supports>
+            <description>
+                <p>The white dragon represents the element of ice. This dragon type is able to heavily freeze people causing them to lose 10ft of movement and cause 1 ice damage every turn.</p>
+                <div element="ID_WC_ARCHETYPE_FEATURE_ICE_ARMOR"/>
+                <div element="ID_WC_ARCHETYPE_FEATURE_ICE_DRAGON_TYPE_ATTACK"/>
+            </description>
+            <sheet display="false">
+                <description>You focus your training on the element of ice.</description>
+            </sheet>
+            <rules>
+                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ICE_ARMOR" level="8"/>
+                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ICE_DRAGON_TYPE_ATTACK" level="15"/>
+            </rules>
+    </element>
+
+    <!-- Elemental Figthing Styles -->
+
 </elements>
