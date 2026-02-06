@@ -2,22 +2,24 @@
 <elements>
 	<info>
 		<name>weapons</name>
-		<update version="0.0.1">
+		<update version="0.0.11">
 			<file name="weapons.xml" url="https://raw.githubusercontent.com/3axAttack207/worldscollide/master/homebrew/weapons.xml" />
 		</update>
 	</info>
 	
 	<element name="Kalashnikov PKP" type="Weapon" source="Worlds Collide" id="ID_WC_WEAPON_KALASHNIKOVPKP">
 		<supports>
-			ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_WC_WEAPON_GROUP_FIREARMS, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_WC_WEAPON_PROPERTY_TIMELYRELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WC_WEAPON_PROPERTY_HEAVYRECOIL, ID_WC_WEAPON_PROPERTY_EXTREMELYHEAVY, ID_WC_WEAPON_PROPERTY_RECOIL, ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTMACHINEGUNS, ID_WC_WEAPON_GROUP_FIREARMS, ID_WC_WEAPON_GROUP_LIGHTMACHINEGUNS
+			ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_WC_WEAPON_GROUP_FIREARMS, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_WC_WEAPON_PROPERTY_TIMELYRELOAD, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_WC_WEAPON_PROPERTY_HEAVYRECOIL, ID_WC_WEAPON_PROPERTY_EXTREMELYHEAVY, ID_WC_WEAPON_PROPERTY_RECOIL, ID_WC_WEAPON_PROPERTY_MAGAZINE, ID_WC_WEAPON_PROPERTY_AUTOMATIC, ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTMACHINEGUNS, ID_WC_WEAPON_GROUP_LIGHTMACHINEGUNS
 		</supports>
 		<description>
-			<p>Ammunition (range 500/1500), Two-Handed, Automatic, Bulky, Extremely Heavy, Timely Load, Recoil, Heavy Recoil, Special</p>
+			<p>Ammunition (range 350/1500), Two-Handed, Automatic, Magazine, Extremely Heavy, Timely Load, Recoil, Heavy Recoil, Special</p>
 			<h5>Kalashnikov PKP Special Rules and Details</h5>
 			<p> </p>
 			<p>Description: The Kalashnikov PKP is an infantry machine gun capable of firing 650 rounds per minute, that is 65 rounds in a single turn. The PKP has box magazines that hold 100 rounds of 7.62x54R.</p>
 			<p> </p>
 			<p>Rules:</p>
+			<p> </p>
+			<p>Magazine: This weapon uses a magazine that holds 100 Bullets. When the magazine is empty, it must be replaced with a new one. Reloading will use a bonus action, unless stated otherwise.</p>
 			<p> </p>
 			<p>Timely Reload: You must use your entire turn (all movement, actions, and bonus actions) to reload, and during the reload, you will be unable to use reactions.</p>
 			<p> </p>
@@ -34,15 +36,72 @@
 			<p>Held Fire: Using 7 bursts, in a 15ft sphere, force 7 people (max two per person) in that area to make a dexterity saving throw (10+Proficiency+Dex). On a passed save, take half damage. On a failed save, takes 5d20 Piercing Damage, and until the end of your next turn, they have disadvantage on Attack rolls, Strength throws, Dexterity throws, and -10ft of movement.</p>
 		</description>
 		<setters>
-		<set name="category">Worlds Collide</set>
-		<set name="cost" currency="gp">Good Luck Finding One For Sale</set>
-		<set name="weight" lb="21">21 lb.</set>
-		<set name="slot">twohand</set>
-		<set name="range">500/1500</set>
-		<set name="damage" type="Piercing Per Bullet">2d20</set>
-		<set name="proficiency">ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_KALASHNIKOVPKP</set>
+			<set name="category">Worlds Collide</set>
+			<set name="cost" currency="gp">Good Luck Finding One For Sale</set>
+			<set name="weight" lb="21">21 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">350/1000</set>
+			<set name="damage" type="Piercing Per Bullet">2d20</set>
+			<set name="proficiency">ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_KALASHNIKOVPKP</set>
 		</setters>
 
 	</element>
-	
+
+	<element name="M110 SASS" type="Weapon" source="Worlds Collide" id="ID_WC_WEAPON_M110SASS">
+		<supports>
+			ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_WC_WEAPON_GROUP_FIREARMS, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WC_WEAPON_PROPERTY_MAGAZINE, ID_WC_WEAPON_PROPERTY_SEMIAUTOMATIC, ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_M110SASS, ID_WC_WEAPON_GROUP_SNIPERRIFLES
+		</supports>
+		<description>
+			<p>Ammunition (range 2600/4000), Two-Handed, Magazine, Semi-Automatic</p>
+			<h5>M110 SASS Special Rules and Details</h5>
+			<p> </p>
+			<p>Description: The M110 SASS is a semi-automatic sniper rifle that fires 7.62x51mm NATO rounds.</p>
+			<p> </p>
+			<p>Rules:</p>
+			<p> </p>
+			<p>Magazine: This weapon uses a magazine that holds 10 Bullets. When the magazine is empty, it must be replaced with a new one. Reloading will use a bonus action, unless stated otherwise.</p>
+			<p> </p>
+			<p>Semi-Automatic: The weapons attack action can attack three times a turn on anyone.</p>
+			<p> </p>
+		</description>
+		<setters>
+			<set name="category">Worlds Collide</set>
+			<set name="cost" currency="gp">Good Luck Finding One For Sale</set>
+			<set name="weight" lb="18">18 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">2600/4000</set>
+			<set name="damage" type="Piercing">1d100+50</set>
+			<set name="proficiency">ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_M110SASS</set>
+		</setters>
+	</element>
+
+	<element name="Grenade Launcher" type="Weapon" source="Worlds Collide" id="ID_WC_WEAPON_GRENADELAUNCHER">
+		<supports>
+			ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_WC_WEAPON_GROUP_FIREARMS, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_DAMAGETYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WC_WEAPON_PROPERTY_MAGAZINE, ID_WC_WEAPON_PROPERTY_SEMIAUTOMATIC, ID_WC_WEAPON_PROPERTY_EXPLOSIVEAMMUNITION, ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_GRENADELAUNCHER, ID_WC_WEAPON_GROUP_LAUNCHERS
+		</supports>
+		<description>
+			<p>Ammunition (range 250/500), Two-Handed, Magazine, Single-Shot</p>
+			<h5>Grenade Launcher Special Rules and Details</h5>
+			<p> </p>
+			<p>Description: The Grenade Launcher is a single-shot weapon that fires explosive rounds.</p>
+			<p> </p>
+			<p>Rules:</p>
+			<p> </p>
+			<p>Magazine: This weapon uses a magazine that holds 6 Grenade Rounds. When the magazine is empty, it must be replaced with a new one. Reloading will use a bonus action, unless stated otherwise.</p>
+			<p> </p>
+			<p>Semi-Automatic: The weapons attack action can attack three times a turn (unless stated otherwise) on anyone.</p>
+			<p> </p>
+			<p>Explosive Ammunition: On contact, the target and all creatures within 5ft of the target must make a Dexterity saving throw (DC 10+Proficiency+Dexterity). On a failed save, they take full damage, and on a successful save, they take half damage.</p>
+			<p> </p>
+		</description>
+		<setters>
+			<set name="category">Worlds Collide</set>
+			<set name="cost" currency="gp">Good Luck Finding One For Sale</set>
+			<set name="weight" lb="13">13 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">250/500</set>
+			<set name="damage" type="Fire">3d20</set>
+			<set name="proficiency">ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_GRENADELAUNCHER</set>
+		</setters>
+	</element>
 </elements>

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>infrastructure</name>
-		<update version="0.0.1">
+		<update version="0.0.11">
 			<file name="infrastructure.xml" url="https://raw.githubusercontent.com/3axAttack207/worldscollide/master/homebrew/infrastructure.xml" />
 		</update>
 	</info>
@@ -31,6 +31,12 @@
 		</description>
 	</element>
 
+	<element name="Magazine" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_MAGAZINE">
+		<description>
+			<p>Magazine: This weapon uses a magazine that holds a specific number of rounds (different per weapon). When the magazine is empty, it must be replaced with a new one. Reloading will use a bonus action, unless stated otherwise.</p>
+		</description>
+	</element>
+
 	<element name="Recoil" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_RECOIL">
 		<description>
 			<p>Recoil: When attacking, not all of your attacks will hit due to recoil. When you land a hit, at least one round will hit (can be different per weapon), then roll a dice, depending on the number of attacks used (weapons will have different dice), the number rolled on the dice will add damage die. This can be canceled out by mounting the weapon, if possible.</p>
@@ -48,10 +54,28 @@
 			<p>Heavy Recoil: When you fire at a target multiple times in succession. For every attack after the first, your attack roll will have a -3 penalty (recoil), and this stacks every time you fire on the same target. If you end your turn attacking and start your next turn attacking with the same weapon, you keep your previous penalty. This can be reset by switching targets, using a different action, using your bonus action, or using your reaction. This can be reduced to a -1 by mounting the weapon, if possible.</p>
 		</description>
 	</element>
-	
+
+	<element name="Automatic" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_AUTOMATIC">
+		<description>
+			<p>Automatic: The weapons attack action can attack multiple times a turn based on its rate of fire and how many rounds left available.</p>
+		</description>
+	</element>
+
+	<element name="Semi-Automatic" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_SEMIAUTOMATIC">
+		<description>
+			<p>Semi-Automatic: The weapons attack action can attack three times a turn (unless stated otherwise) on anyone.</p>
+		</description>
+	</element>
+
+	<element name="Explosive Ammunition" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_EXPLOSIVEAMMUNITION">
+		<description>
+			<p>Explosive Ammunition: On contact, the target and all creatures within 5ft of the target must make a Dexterity saving throw (DC 10+Proficiency+Dexterity). On a failed save, they take full damage, and on a successful save, they take half damage.</p>
+		</description>
+	</element>
+
 	<element name="Sidearms" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_SIDEARMS">
 		<description>
-			<p>Sidearm: When you have a free hand and a bonus action, you can draw your sidearm and fire it as a bonus action, but unable to add any bonuses to the attack roll.</p>
+			<p>Sidearm: If you have a free hand and a bonus action, you can draw your sidearm and fire it as a bonus action, but unable to add any bonuses to the attack roll. You also dont roll at disadvantage from being to close to your target.</p>
 		</description>
 	</element>
 
@@ -59,6 +83,8 @@
 
 		<element name="Weapon Group (Firearms)" type="Weapon Group" source="Worlds Collide" id="ID_WC_WEAPON_GROUP_FIREARMS"/>
 		<element name="Weapon Group (Light Machine Guns)" type="Weapon Group" source="Worlds Collide" id="ID_WC_WEAPON_GROUP_LIGHTMACHINEGUNS"/>
+		<element name="Weapon Group (Sniper Rifles)" type="Weapon Group" source="Worlds Collide" id="ID_WC_WEAPON_GROUP_SNIPERRIFLES"/>
+		<element name="Weapon Group (Launchers)" type="Weapon Group" source="Worlds Collide" id="ID_WC_WEAPON_GROUP_LAUNCHERS"/>
 
 	<!-- proficiencies -->
 
@@ -70,6 +96,22 @@
 		</rules>
 	</element>
 
+	<element name="Weapon Proficiency (Sniper Rifles)" type="Weapon Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_SNIPERRIFLES">
+		<supports>ID_WC_WEAPON_GROUP_SNIPERRIFLES</supports>
+		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
+		<rules>
+			<grant type="Proficiency" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_M110SASS"/>
+		</rules>
+	</element>
+
+	<element name="Weapons Proficiency (Launchers)" type="Weapon Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_LAUNCHERS">
+		<supports>ID_WC_WEAPON_GROUP_LAUNCHERS</supports>
+		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
+		<rules>
+			<grant type="Proficiency" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_GRENADELAUNCHER"/>
+		</rules>
+	</element>
+
 	<!-- Specific Weapon Proficiency-->
 
 	<element name="Weapon Proficiency (Kalashnikov PKP)" type="Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_KALASHNIKOVPKP">
@@ -77,6 +119,22 @@
 		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
 		<description>
 			<p>Proficiency with the Kalashnikov PKP light machine gun. Grants ability to use the weapon without penalties and enables related actions and rules.</p>
+		</description>
+	</element>
+
+	<element name="Weapon Proficiency (M110 SASS)" type="Weapon Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_M110SASS">
+		<supports>ID_WC_WEAPON_M110SASS</supports>
+		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
+		<description>
+			<p>Proficiency with the M110 SASS sniper rifle. Grants ability to use the weapon without penalties and enables related actions and rules.</p>
+		</description>
+	</element>
+
+	<element name="Weapon Proficiency (Grenade Launcher)" type="Weapon Proficiency" source="Worlds Collide" id="ID_WC_PROFICIENCY_WEAPON_PROFICIENCY_GRENADELAUNCHER">
+		<supports>ID_WC_WEAPON_GRENADELAUNCHER</supports>
+		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
+		<description>
+			<p>Proficiency with the Grenade Launcher. Grants ability to use the weapon without penalties and enables related actions and rules.</p>
 		</description>
 	</element>
 
