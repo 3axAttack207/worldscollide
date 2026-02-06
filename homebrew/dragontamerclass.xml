@@ -12,59 +12,225 @@
         <description>
             <p>A Human finds a dragon egg in the wild, abandoned and left to its own devices. The egg is warm to the touch and seems to pulse with a faint inner light. It hatches and looks at the human. The human leaves it alone, but it follows him around. Eventually the human picks up the baby dragon and takes it with him on his adventures. The dragon grows with the human and they become partners, taking on everything together.</p>
             <h3>CLASS FEATURES</h3>
-            <p>As a Dragon Tamer, you get the following class features.</p>
+            <p>As a Dragon Tamer, you have the following class features.</p>
             <h5>HIT POINTS</h5>
-            <p>
-                <span class="emphasis">Hit Dice:</span>
-                    1d10 per dragon tamer level
-                <br/>
-                <span class="emphasis">Hit Points at 1st Level:</span>
+            <ul class="unstyled">
+                <li>
+                    <strong>Hit Dice:</strong>
+                    1d10 per Dragon Tamer level
+                </li>
+                <li>
+                    <strong>Hit Points at 1st Level:</strong>
                     10 + your Constitution modifier
-                <br/>
-                <span class="emphasis">Hit Points at Higher Levels:</span>
-                    1d10 (or 6) + your Constitution modifier per dragon tamer level after 1st
-                <br/>
-            </p>
+                </li>
+                <li>
+                    <strong>Hit Points at Higher Levels:</strong>
+                    1d10 (or 6) + your Constitution modifier per Dragon Tamer level after 1st
+                </li>
+            </ul>
             <h5>PROFICIENCIES</h5>
-            <p>
-                <span class="emphasis">Armor:</span>
+            <ul class="unstyled mb">
+                <li>
+                    <strong>Armor:</strong>
                     none
-                <br/>
-                <span class="emphasis">Weapons:</span>
-                    simple weapons
-                <br/>
-                <span class="emphasis">Tools:</span>
-                    none
-                <br/>
-            </p>
-            <p>
-                <span class="emphasis">Saving Throws:</span>
+                </li>
+                <li>
+                    <strong>Weapons:</strong>
+                    Simple weapons
+                </li>
+                <li>
+                <strong>Tools:</strong>
+                    None
+                </li>
+            </ul>
+            <ul class="unstyled">
+                <li>
+                    <strong>Saving Throws:</strong>
                     Strength, Dexterity
-                <br/>
-                <span class="emphasis">Skills:</span>
+                </li>
+                <li>
+                    <strong>Skills:</strong>
                     Choose three from Athletics, Survival, Stealth, Investigation, Nature, Animal Handling, Insight, or Perception
-            </p>
+                </li>
+            </ul>
             <h5>EQUIPMENT</h5>
             <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
             <ul>
-                <li>
-                    <i>(a)</i>
-                    one shortbow and 20 arrows,
-                </li>
-                <li>
-                    <i>(a)</i>
-                    one dagger
-                </li>
-                <li>
-                    <i>(a)</i>
-                    a dungeoneer's pack,
-                    <i>(b)</i>
-                    an explorer's pack, or
-                </li>
+                <li>one shortbow and 20 arrows</li>
+                <li>one dagger</li>
+                <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
             </ul>
-            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON"/>
+            <h5 class="caption">THE ROGUE</h5>
+            <table class="class-features">
+                <thead>
+                    <tr>
+                        <td class="col-5">Level</td>
+                        <td class="col-10">Dragon Change</td>
+                        <td class="col-60 left">Features</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> 1st</td>
+                    <td>Gain Dragon</td>
+                    <td class="left">Choose Dragon Type, Summon Dragon</td>
+                </tr>
+                <tr>
+                    <td> 2nd</td>
+                    <td>Actions</td>
+                    <td class="left">Gain Proficiencies</td>
+                </tr>
+                <tr>
+                    <td> 3rd</td>
+                    <td>
+                        Stats
+                        Attacks
+                        Actions
+                    </td>
+                    <td class="left">Elemental Fighting Style</td>
+                </tr>
+                <tr>
+                    <td> 4th</td>
+                    <td>Attack</td>
+                    <td class="left">Ability Score Improvement</td>
+                </tr>
+                <tr>
+                    <td> 5th</td>
+                    <td>
+                        Stats
+                        Attack
+                        Actions
+                    </td>
+                    <td class="left">Uncanny Dodge</td>
+                </tr>
+                <tr>
+                    <td> 6th</td>
+                    <td>
+                        Stats
+                        Attacks
+                        Actions
+                    </td>
+                    <td class="left">Expertise</td>
+                </tr>
+                <tr>
+                    <td> 7th</td>
+                    <td>
+                        Stats
+                        Attacks
+                    </td>
+                    <td class="left">Evasion</td>
+                </tr>
+                <tr>
+                    <td> 8th</td>
+                    <td>
+                        Attacks
+                    </td>
+                    <td class="left">Ability Score Improvement</td>
+                </tr>
+                <tr>
+                    <td> 9th</td>
+                    <td>
+                        Stats
+                        Attacks
+                        Actions
+                    </td>
+                    <td class="left">Roguish Archetype feature</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                   <td>
+                        Stats
+                        Attacks
+                        Actions
+                    </td>
+                    <td class="left">Ability Score Improvement</td>
+                </tr>
+                <tr>
+                    <td>11th</td>
+                    <td>
+                        Stats
+                        Attacks
+                        Actions
+                    </td>
+                    <td class="left">Reliable Talent</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>
+                        Stats
+                        Attacks
+                        Actions
+                    </td>
+                    <td class="left">Ability Score Improvement</td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>
+                        Stats
+                    </td>
+                    <td class="left">Roguish Archetype feature</td>
+                </tr>
+                <tr>
+                    <td>14th</td>
+                    <td>
+                        Attacks
+                        Actions
+                    </td>
+                    <td class="left">Blindsense</td>
+                </tr>
+                <tr>
+                    <td>15th</td>
+                    <td>
+                        Attacks
+                    </td>
+                    <td class="left">Slippery Mind</td>
+                </tr>
+                <tr>
+                    <td>16th</td>
+                    <td>
+                        Attacks
+                        Actions
+                    </td>
+                    <td class="left">Ability Score Improvement</td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>
+                        Attack
+                    </td>
+                    <td class="left">Roguish Archetype feature</td>
+                </tr>
+                <tr>
+                    <td>18th</td>
+                    <td>
+                        Attacks
+                        Action
+                    </td>
+                    <td class="left">Elusive</td>
+                </tr>
+                <tr>
+                    <td>19th</td>
+                    <td>
+                        Attack
+                    </td>
+                    <td class="left">Ability Score Improvement</td>
+                </tr>
+                <tr>
+                    <td>20th</td>
+                    <td>
+                        Attacks
+                        Actions
+                    </td>
+                    <td class="left">Stroke of Luck</td>
+                </tr>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUMMON_DRAGON"/>
-            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_PROFICIENCY_GAIN"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_SUBCLASS"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ABILITY_SCORE_IMPROVEMENT"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUPERIORITY_DICE"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_EXTRA_ATTACK"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_WHO_WANTS_A_COOKIE"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_THROW_DRAGON"/>
         </description>
         <sheet display="false">
             <description>A dragon tamer adventuring with their unlikely companion.</description>
