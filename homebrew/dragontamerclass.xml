@@ -60,7 +60,7 @@
                 <li>one dagger</li>
                 <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
             </ul>
-            <h5 class="caption">THE ROGUE</h5>
+            <h5 class="caption">THE DRAGON TAMER</h5>
             <table class="class-features">
                 <thead>
                     <tr>
@@ -86,7 +86,7 @@
                         Attacks
                         Actions
                     </td>
-                    <td class="left">Elemental Fighting Style</td>
+                    <td class="left">Elemental Fighting Style (Subclass)</td>
                 </tr>
                 <tr>
                     <td> 4th</td>
@@ -100,7 +100,7 @@
                         Attack
                         Actions
                     </td>
-                    <td class="left">Uncanny Dodge</td>
+                    <td class="left">Extra Attack, Who Wants A Cookie, Throw Dragon</td>
                 </tr>
                 <tr>
                     <td> 6th</td>
@@ -109,7 +109,7 @@
                         Attacks
                         Actions
                     </td>
-                    <td class="left">Expertise</td>
+                    <td class="left">Elemental Bond, Elemental Charge, Remove Elemental Charges, DragonStyle MultiStrike Combo(Subclass Feature)</td>
                 </tr>
                 <tr>
                     <td> 7th</td>
@@ -117,14 +117,14 @@
                         Stats
                         Attacks
                     </td>
-                    <td class="left">Evasion</td>
+                    <td class="left">Elemental Fighting Style Feature</td>
                 </tr>
                 <tr>
                     <td> 8th</td>
                     <td>
                         Attacks
                     </td>
-                    <td class="left">Ability Score Improvement</td>
+                    <td class="left">Ability Score Improvement, Elemental Resistance, Elemental Charge Upgrade</td>
                 </tr>
                 <tr>
                     <td> 9th</td>
@@ -133,7 +133,7 @@
                         Attacks
                         Actions
                     </td>
-                    <td class="left">Roguish Archetype feature</td>
+                    <td class="left">Superiority Dice Upgrade</td>
                 </tr>
                 <tr>
                     <td>10th</td>
@@ -142,7 +142,7 @@
                         Attacks
                         Actions
                     </td>
-                    <td class="left">Ability Score Improvement</td>
+                    <td class="left">Subclass Feature Upgrade</td>
                 </tr>
                 <tr>
                     <td>11th</td>
@@ -151,7 +151,7 @@
                         Attacks
                         Actions
                     </td>
-                    <td class="left">Reliable Talent</td>
+                    <td class="left">Life exchange, Elemental Immunity, Elemental Charge Upgrade</td>
                 </tr>
                 <tr>
                     <td>12th</td>
@@ -160,14 +160,14 @@
                         Attacks
                         Actions
                     </td>
-                    <td class="left">Ability Score Improvement</td>
+                    <td class="left">Ability Score Improvement, Subclass Feature Upgrade</td>
                 </tr>
                 <tr>
                     <td>13th</td>
                     <td>
                         Stats
                     </td>
-                    <td class="left">Roguish Archetype feature</td>
+                    <td class="left">Superiority Dice Upgrade</td>
                 </tr>
                 <tr>
                     <td>14th</td>
@@ -175,14 +175,14 @@
                         Attacks
                         Actions
                     </td>
-                    <td class="left">Blindsense</td>
+                    <td class="left">Indomitable</td>
                 </tr>
                 <tr>
                     <td>15th</td>
                     <td>
                         Attacks
                     </td>
-                    <td class="left">Slippery Mind</td>
+                    <td class="left">Icy Cold, Flame Explosion, or Lightning Jump (Dragon Dependent)</td> 
                 </tr>
                 <tr>
                     <td>16th</td>
