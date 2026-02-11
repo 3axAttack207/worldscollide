@@ -12,6 +12,7 @@
     <element name="Dragon Tamer" type="Class" source="Worlds Collide" id="ID_WC_CLASS_DRAGON_TAMER">
         <description>
             <p>A Human finds a dragon egg in the wild, abandoned and left to its own devices. The egg is warm to the touch and seems to pulse with a faint inner light. It hatches and looks at the human. The human leaves it alone, but it follows him around. Eventually the human picks up the baby dragon and takes it with him on his adventures. The dragon grows with the human and they become partners, taking on everything together.</p>
+            <p> Modded Class from BG3, Made By: uilstar</p>
             <h3>CLASS FEATURES</h3>
             <p>As a Dragon Tamer, you have the following class features.</p>
             <h5>HIT POINTS</h5>
@@ -341,6 +342,13 @@
             <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternitvy, you can choose a Feat instead.</p>
         </description>
         <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Dragon Tamer 4)" supports="Improvement Option,Dragon Tamer,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Dragon Tamer 8)" supports="Improvement Option,Dragon Tamer,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Dragon Tamer 12)" supports="Improvement Option,Dragon Tamer,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Dragon Tamer 16)" supports="Improvement Option,Dragon Tamer,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Dragon Tamer 19)" supports="Improvement Option,Dragon Tamer,19" level="19"/>
+        </rules>
     </element>
 
     <!-- Elemental Swordsman -->
@@ -442,6 +450,177 @@
         </rules>
     </element>
 
+    <!-- Level 5 -->
+
+    <element name="Extra Attack" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Who Wants A Cookie?" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_WHO_WANTS_A_COOKIE">
+        <description>
+            <p>At 5th level, you can give your dragon a cookie as a bonus action once per battle. This cookie is a treat for your dragon and can be used to heal it. When you give your dragon a cookie, it regains {{cookie heal:amount}}d6 hit points</p>
+        </description>
+        <sheet usage="1/Per Battle">
+            <description>
+                <p>As a bonus action, you can give your dragon a cookie once per battle. This cookie is a treat for your dragon and can be used to heal it. When you give your dragon a cookie, it regains {{cookie heal:amount}}d6 hit points.</p>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="cookie heal:amount" value="2"/>
+            <stat name="cookie heal:amount" value="1" level="6"/>
+            <stat name="cookie heal:amount" value="1" level="11"/>
+            <stat name="cookie heal:amount" value="1" level="17"/>
+        </rules>
+    </element>
+    <!-- Elemental Swordsman -->
+    <element name="Throw Dragon" type="Class Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_MELEE">
+        <description>
+            <p>Also at 5th level, you can throw your dragon at an enemy as an bonus action. You can do this once per battle. You can throw your dragon up to 15 feet. The dragon will take 1d4 Bludgeoning damage but becomes Happy (advantage on attack rolls) for 1 turn. If dragon hits a creature, make an attack roll (add Dexterity and Proficiency), on hit deal 1d4 bludgeoning and hit target makes a Wisdom Saving Throw (8+Strength+Proficiency), on fail, target is frightened to both dragon and character for 1 turn</p>
+        </description>
+        <sheet usage="{{throw dragon:count}}/Per Battle">
+            <description>
+                <p>As an bonus action, you can throw your dragon up to 15 feet. The dragon takes 1d4 Bludgeoning damage but becomes Happy (advantage on attack rolls) for 1 turn. If dragon hits a creature, make an attack roll (add Dexterity and Proficiency), on hit deal 1d4 bludgeoning and hit target makes a Wisdom Saving Throw {{throw dragon:dc}}, on fail, target is frightened to both dragon and character for 1 turn. You will not be able to throw your dragon once you hit level 9.</p>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="throw dragon:count" value="1"/>
+            <stat name="throw dragon:count" value="-1" level="9"/>
+            <stat name="throw dragon:dc" value="8"/>
+            <stat name="throw dragon:dc" value="proficiency"/>
+            <stat name="throw dragon:dc:ability" value="strength:modifier" bonus="ability"/>
+            <stat name="throw dragon:dc" value="throw dragon:dc:ability"/>
+        </rules>
+    </element>
+    <!-- Elemental Archer -->
+    <element name="Throw Dragon" type="Class Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_RANGE">
+        <description>
+            <p>Also at 5th level, you can throw your dragon at an enemy as an bonus action. You can do this once per battle. You can throw your dragon up to 15 feet. The dragon will take 1d4 Bludgeoning damage but becomes Happy (advantage on attack rolls) for 1 turn. If dragon hits a creature, make an attack roll (add Dexterity and Proficiency), on hit deal 1d4 bludgeoning and hit target makes a Wisdom Saving Throw (8+Dexterity+Proficiency), on fail, target is frightened to both dragon and character for 1 turn</p>
+        </description>
+        <sheet usage="{{throw dragon:count}}/Per Battle">
+            <description>
+                <p>As an bonus action, you can throw your dragon up to 15 feet. The dragon takes 1d4 Bludgeoning damage but becomes Happy (advantage on attack rolls) for 1 turn. If dragon hits a creature, make an attack roll (add Dexterity and Proficiency), on hit deal 1d4 bludgeoning and hit target makes a Wisdom Saving Throw {{throw dragon:dc}}, on fail, target is frightened to both dragon and character for 1 turn. You will not be able to throw your dragon once you hit level 9.</p>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="throw dragon:count" value="1"/>
+            <stat name="throw dragon:count" value="-1" level="9"/>
+            <stat name="throw dragon:dc" value="8"/>
+            <stat name="throw dragon:dc" value="proficiency"/>
+            <stat name="throw dragon:dc:ability" value="dexterity:modifier" bonus="ability"/>
+            <stat name="throw dragon:dc" value="throw dragon:dc:ability"/>
+        </rules>
+    </element>
+
+    <!-- Level 6 -->
+
+    <element name="Elemental Charge" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_BOND">
+        <description>
+            <p>At 6th level, you can strengthen your bond to your dragon. You will immediately gain 2 stacks of dragon power. Then 3 at Level 8, 4 at Level 13, 6 at Level 16, and 8 at Level 18.</p>
+        </description>
+        <sheet usage="Once Per Battle">
+            <description>As a bonus action, immediately gain {{elemental charge:amount}} stacks of dragon power.</description>
+        </sheet>
+        <rules>
+            <stat name="elemental charge:amount" value="2"/>
+            <stat name="elemental charge:amount" value="1" level="8"/>
+            <stat name="elemental charge:amount" value="1" level="13"/>
+            <stat name="elemental charge:amount" value="2" level="16"/>
+            <stat name="elemental charge:amount" value="2" level="18"/>
+        </rules>
+    </element>
+    <element name="Remove Elemental Charges" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_REMOVE_ELEMENTAL_CHARGES">
+        <description>
+            <p>Also at 6th level, you can remove stacks of dragon power from you. As a bonus action, you can remove all stacks of dragon power.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>As a bonus action, immediately remove all stacks of dragon power.</p>
+            </description>
+        </sheet>
+    </element>
+    <!-- Elemental Swordsman -->
+    <element name="Elemental Bond" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_MELEE">
+        <description>
+            <p>At 6th level, you gain a strong bond with your dragon that you can use the element of your dragon. When you attack with your melee weapon, you gain dragon power stacks that change per level. 2 stacks at level 6, 3 at level 11, and 4 at level 15. You can have a max of 15 stacks, this limit increases by 3 every level. For every charge you have, when ever you deal damage, for every stack you have, you deal one extra element damage depending on your dragon's element.At the start of your turn, lose one stack and take one element damage (goes through immunity). (Your character gains a color aura, color is based off of element type, fire is red, Lighting is dark blue, Ice is light blue)</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You have a max stack of {{dragon power:max}} stacks of dragon power.</p>
+                <p>When you attack with your melee weapon, you gain {{dragon power:gain}} stacks of dragon power.</p>
+                <p>For every stack you have, when ever you deal damage, you deal one extra element damage depending on your dragon's element.</p>
+                <p>At the start of your turn, lose one stack and take one element damage (goes through immunity).</p>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="dragon power:gain" value="2"/>
+            <stat name="dragon power:gain" value="1" level="11"/>
+            <stat name="dragon power:gain" value="1" level="15"/>
+            <stat name="dragon power:max" value="15"/>
+            <stat name="dragon power:max" value="3" level="7"/>
+            <stat name="dragon power:max" value="3" level="8"/>
+            <stat name="dragon power:max" value="3" level="9"/>
+            <stat name="dragon power:max" value="3" level="10"/>
+            <stat name="dragon power:max" value="3" level="11"/>
+            <stat name="dragon power:max" value="3" level="12"/>
+            <stat name="dragon power:max" value="3" level="13"/>
+            <stat name="dragon power:max" value="3" level="14"/>
+            <stat name="dragon power:max" value="3" level="15"/>
+            <stat name="dragon power:max" value="3" level="16"/>
+            <stat name="dragon power:max" value="3" level="17"/>
+            <stat name="dragon power:max" value="3" level="18"/>
+            <stat name="dragon power:max" value="3" level="19"/>
+            <stat name="dragon power:max" value="3" level="20"/>
+        </rules>
+    </element>
+    <element name="DragonStyle MultiStrike Combo" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTI_STRIKE_COMBO_MELEE">
+        <description>
+            <p>At 6th level, you can use your Dragon Style Multi-Strike Combo. When you take the Attack action and attack with a melee weapon, you can make one additional attack with that weapon as a bonus action. You can only use this feature once per turn.</p>
+        </description>
+        <sheet>
+            <description>When you take the Attack action and attack with a melee weapon, you can make one additional attack with that weapon as a bonus action. You can only use this feature once per turn.</description>
+        </sheet>
+    </element>
+    <!-- Elemental Archer -->
+    <element name="Elemental Bond" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_MELEE">
+        <description>
+            <p>At 6th level, you gain a strong bond with your dragon that you can use the element of your dragon. When you attack with your melee weapon, you gain dragon power stacks that change per level. 2 stacks at level 6, 3 at level 11, and 4 at level 15. You can have a max of 15 stacks, this limit increases by 3 every level. For every charge you have, when ever you deal damage, for every stack you have, you deal one extra element damage depending on your dragon's element.At the start of your turn, lose one stack and take one element damage (goes through immunity). (Your character gains a color aura, color is based off of element type, fire is red, Lighting is dark blue, Ice is light blue)</p>
+        </description>
+        <sheet>
+            <description>
+                <p>You have a max stack of {{dragon power:max}} stacks of dragon power.</p>
+                <p>When you attack with your melee weapon, you gain {{dragon power:gain}} stacks of dragon power.</p>
+                <p>For every stack you have, when ever you deal damage, you deal one extra element damage depending on your dragon's element.</p>
+                <p>At the start of your turn, lose one stack and take one element damage (goes through immunity).</p>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="dragon power:gain" value="2"/>
+            <stat name="dragon power:gain" value="1" level="11"/>
+            <stat name="dragon power:gain" value="1" level="15"/>
+            <stat name="dragon power:max" value="15"/>
+            <stat name="dragon power:max" value="3" level="7"/>
+            <stat name="dragon power:max" value="3" level="8"/>
+            <stat name="dragon power:max" value="3" level="9"/>
+            <stat name="dragon power:max" value="3" level="10"/>
+            <stat name="dragon power:max" value="3" level="11"/>
+            <stat name="dragon power:max" value="3" level="12"/>
+            <stat name="dragon power:max" value="3" level="13"/>
+            <stat name="dragon power:max" value="3" level="14"/>
+            <stat name="dragon power:max" value="3" level="15"/>
+            <stat name="dragon power:max" value="3" level="16"/>
+            <stat name="dragon power:max" value="3" level="17"/>
+            <stat name="dragon power:max" value="3" level="18"/>
+            <stat name="dragon power:max" value="3" level="19"/>
+            <stat name="dragon power:max" value="3" level="20"/>
+        </rules>
+    </element>
     <!-- Dragon Types -->
 
     <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
@@ -497,11 +676,15 @@
         <description>
             <p>You and your dragon work together, charging right into the battle.</p>
             <div element="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_MELEE"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA"/>
         </description>
         <rules>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE" level="4"/>  
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_MELEE" level="5"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_MELEE" level="6"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE" level="6"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA" level="7"/>
         </rules>
@@ -512,11 +695,15 @@
         <description>
             <p>You and your dragon work together, using ranged attacks to keep enemies at bay.</p>
             <div element="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_RANGE"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_RANGE"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_RANGE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_RANGE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_ARROW"/>
         </description>
         <rules>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_RANGE" level="4"/>  
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_RANGE" level="5"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_RANGE" level="6"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_RANGE" level="6"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_ARROW" level="7"/>
         </rules>
