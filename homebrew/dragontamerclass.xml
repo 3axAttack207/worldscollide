@@ -32,7 +32,7 @@
             <ul class="unstyled mb">
                 <li>
                     <strong>Armor:</strong>
-                    none
+                    Light armor, Shields
                 </li>
                 <li>
                     <strong>Weapons:</strong>
@@ -77,7 +77,7 @@
                 <tr>
                     <td> 2nd</td>
                     <td>Actions</td>
-                    <td class="left">Gain Proficiencies</td>
+                    <td class="left">Dragon Anger</td>
                 </tr>
                 <tr>
                     <td> 3rd</td>
@@ -249,6 +249,8 @@
         </setters>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHIELDS" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <select type="Proficiency" name="Skill Proficiency (Dragon Tamer)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE" number="3" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
@@ -273,16 +275,20 @@
             <prerequisite>Strength 13 or Dexterity 13</prerequisite>
             <requirements>([str:13]||[dex:13])</requirements>
             <setters>
-                <set name="multiclass proficiencies">simple weapons</set>
+                <set name="multiclass proficiencies">simple weapons, light armor, shields</set>
             </setters>
             <rules>
                 <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
                 <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_ARMOR"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHIELDS"/>
             </rules>
         </multiclass>
     </element>
 
     <!-- Leveling information for Dragon Tamer class -->
+
+    <!-- Level 1 -->
 
     <element name="Choose Dragon Type" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE">
         <description>
@@ -292,6 +298,15 @@
         <rules>
             <select type="Archetype" name="Dragon Type" supports="Dragon Type" level="1"/>
         </rules>
+   <element name="Summon Dragon" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUMMON_DRAGON">
+        <description>
+            <p>Also at 1st level, you summon a dragon to be alongside you. This dragon is a companion that gains levels with you and can be commanded to attack enemies or defend you.</p>
+        </description>
+        <sheet usage="1/Short Rest or -5HP">
+            <description>
+                <p>As a bonus action, you can summon your dragon companion up to 15ft from you. This is free once per short rest for full HP (any time) or -5 of your HP and brings dragon at Your Level*5 for health (out of combat only).</p>
+            </description>
+        </sheet>
     </element>
 
     <!-- Dragon Types -->
@@ -299,7 +314,7 @@
     <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
         <supports>Dragon Type</supports>
         <description>
-            <p>The red dragon represents the element of fire. This dragon type is able to heavily burn people causing disadvantage on attack rolls and cause 1 fire damage every turn.</p>
+            <p>The red dragon represents the element of fire. This dragon type is able to heavily burn people causing disadvantage on attack rolls and cause 1 fire damage every turn they are heavily burned.</p>
             <div element="ID_WC_ARCHETYPE_FEATURE_FIRE_ARMOR"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_FIRE_DRAGON_TYPE_ATTACK"/>
         </description>
@@ -314,7 +329,7 @@
     <element name="Blue Dragon(lightning)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_BLUE_DRAGON">
         <supports>Dragon Type</supports>
         <description>
-            <p>The blue dragon represents the element of lightning. This dragon type is able to heavily shock people causing disadvantage on dexterity saving throws and cause 1 lightning damage every turn.</p>
+            <p>The blue dragon represents the element of lightning. This dragon type is able to heavily shock people causing disadvantage on dexterity saving throws and cause 1 lightning damage every turn they are heavily shocked.</p>
             <div element="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_ARMOR"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_DRAGON_TYPE_ATTACK"/>
         </description>
@@ -329,7 +344,7 @@
     <element name="White Dragon(ice)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_WHITE_DRAGON">
         <supports>Dragon Type</supports>
         <description>
-            <p>The white dragon represents the element of ice. This dragon type is able to heavily freeze people causing them to lose 10ft of movement and cause 1 ice damage every turn.</p>
+            <p>The white dragon represents the element of ice. This dragon type is able to heavily freeze people causing them to lose 10ft of movement and cause 1 ice damage every turn they are heavily frozen.</p>
             <div element="ID_WC_ARCHETYPE_FEATURE_ICE_ARMOR"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_ICE_DRAGON_TYPE_ATTACK"/>
         </description>
@@ -343,5 +358,31 @@
     </element>
 
     <!-- Elemental Figthing Styles -->
+
+    <element name="Elemental Swordsman" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_ELEMENTAL_SWORDSMAN">
+        <supports>Elemental Fighting Style</supports>
+        <description>
+            <p>You and your dragon work together, charging right into the battle.</p>
+            <div element="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA"/>
+        </description>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE" level="6"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA" level="7"/>
+        </rules>
+    </element>
+
+    <element name="Elemental Ranger" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_ELEMENTAL_RANGER">
+        <supports>Elemental Fighting Style</supports>
+        <description>
+            <p>You and your dragon work together, using ranged attacks to keep enemies at bay.</p>
+            <div element="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_RANGE"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_ARROW"/>
+        </description>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_RANGE" level="6"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_ARROW" level="7"/>
+        </rules>
+    </element>
 
 </elements>
