@@ -290,56 +290,56 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Dragon Type" supports="Dragon Tamer Archetype" level="1"/>
+            <select type="Archetype" name="Dragon Type" supports="Dragon Type" level="1"/>
         </rules>
     </element>
 
     <!-- Dragon Types -->
 
     <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
-        <supports>Dragon Type Archetype</supports>
-            <description>
-                <p>The red dragon represents the element of fire. This dragon type is able to heavily burn people causing disadvantage on attack rolls and cause 1 fire damage every turn.</p>
-                <div element="ID_WC_ARCHETYPE_FEATURE_FIRE_ARMOR"/>
-                <div element="ID_WC_ARCHETYPE_FEATURE_FIRE_DRAGON_TYPE_ATTACK"/>
-            </description>
-            <sheet display="false">
-                <description>You focus your training on the element of fire.</description>
-            </sheet>
-            <rules>
-                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_FIRE_ARMOR" level="8"/>
-                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_FIRE_DRAGON_TYPE_ATTACK" level="15"/>
-            </rules>
+        <supports>Dragon Type</supports>
+        <description>
+            <p>The red dragon represents the element of fire. This dragon type is able to heavily burn people causing disadvantage on attack rolls and cause 1 fire damage every turn.</p>
+            <div element="ID_WC_ARCHETYPE_FEATURE_FIRE_ARMOR"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_FIRE_DRAGON_TYPE_ATTACK"/>
+        </description>
+        <sheet display="false">
+            <description>You focus your training on the element of fire.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_FIRE_ARMOR" level="8"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_FIRE_DRAGON_TYPE_ATTACK" level="15"/>
+        </rules>
     </element>
     <element name="Blue Dragon(lightning)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_BLUE_DRAGON">
-        <supports>Dragon Type Archetype</supports>
-            <description>
-                <p>The blue dragon represents the element of lightning. This dragon type is able to heavily shock people causing disadvantage on dexterity saving throws and cause 1 lightning damage every turn.</p>
-                <div element="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_ARMOR"/>
-                <div element="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_DRAGON_TYPE_ATTACK"/>
-            </description>
-            <sheet display="false">
-                <description>You focus your training on the element of lightning.</description>
-            </sheet>
-            <rules>
-                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_ARMOR" level="8"/>
-                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_DRAGON_TYPE_ATTACK" level="15"/>
-            </rules>
+        <supports>Dragon Type</supports>
+        <description>
+            <p>The blue dragon represents the element of lightning. This dragon type is able to heavily shock people causing disadvantage on dexterity saving throws and cause 1 lightning damage every turn.</p>
+            <div element="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_ARMOR"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_DRAGON_TYPE_ATTACK"/>
+        </description>
+        <sheet display="false">
+            <description>You focus your training on the element of lightning.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_ARMOR" level="8"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_DRAGON_TYPE_ATTACK" level="15"/>
+        </rules>
     </element>
     <element name="White Dragon(ice)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_WHITE_DRAGON">
-        <supports>Dragon Type Archetype</supports>
-            <description>
-                <p>The white dragon represents the element of ice. This dragon type is able to heavily freeze people causing them to lose 10ft of movement and cause 1 ice damage every turn.</p>
-                <div element="ID_WC_ARCHETYPE_FEATURE_ICE_ARMOR"/>
-                <div element="ID_WC_ARCHETYPE_FEATURE_ICE_DRAGON_TYPE_ATTACK"/>
-            </description>
-            <sheet display="false">
-                <description>You focus your training on the element of ice.</description>
-            </sheet>
-            <rules>
-                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ICE_ARMOR" level="8"/>
-                <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ICE_DRAGON_TYPE_ATTACK" level="15"/>
-            </rules>
+        <supports>Dragon Type</supports>
+        <description>
+            <p>The white dragon represents the element of ice. This dragon type is able to heavily freeze people causing them to lose 10ft of movement and cause 1 ice damage every turn.</p>
+            <div element="ID_WC_ARCHETYPE_FEATURE_ICE_ARMOR"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_ICE_DRAGON_TYPE_ATTACK"/>
+        </description>
+        <sheet display="false">
+            <description>You focus your training on the element of ice.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ICE_ARMOR" level="8"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ICE_DRAGON_TYPE_ATTACK" level="15"/>
+        </rules>
     </element>
 
     <!-- Elemental Figthing Styles -->
