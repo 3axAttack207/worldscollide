@@ -342,8 +342,9 @@
         </description>
         <sheet display="false"/>
     </element>
+
     <!-- Elemental Swordsman -->
-    <element name="Superiority Dice" type="Archetype Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUPERIORITY_DICE_MELEE">
+    <element name="Superiority Dice" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE">
         <description>
             <p>At level 4 you learn maneuvers that are fueled by special dice called superiority dice.</p>
             <p class="indent">
@@ -393,7 +394,7 @@
 
     <!-- Elemental Archer -->
 
-<element name="Superiority Dice" type="Archetype Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUPERIORITY_DICE_RANGE">
+    <element name="Superiority Dice" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_RANGE">
         <description>
             <p>At level 4 you learn maneuvers that are fueled by special dice called superiority dice.</p>
             <p class="indent">
@@ -495,12 +496,12 @@
         <supports>Elemental Fighting Style</supports>
         <description>
             <p>You and your dragon work together, charging right into the battle.</p>
-            <div element="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_IMPROVEMENT_MELEE"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA"/>
         </description>
         <rules>
-            <grant type="Archetype Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUPERIORITY_DICE_MELEE" level="4"/>  
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE" level="4"/>  
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE" level="6"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA" level="7"/>
         </rules>
@@ -515,7 +516,7 @@
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_ARROW"/>
         </description>
         <rules>
-            <grant type="Archetype Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUPERIORITY_DICE_RANGE" level="4"/>  
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_RANGE" level="4"/>  
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_RANGE" level="6"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_ARROW" level="7"/>
         </rules>
@@ -544,10 +545,10 @@
     <element name="Evasive Footwork" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_MANEUVER_EVASIVE_FOOTWORK">
         <supports>Dragon Tamer Maneuvers</supports>
         <description>
-            <p>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</p>
+            <p>During your turn, as a bonus action, you can expend one superiority die, causing any attack against you to have disadvantage until the start of your next turn.</p>
         </description>
         <sheet>
-            <description>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</description>
+            <description>During your turn, as a bonus action, you can expend one superiority die, causing any attack against you to have disadvantage until the start of your next turn.</description>
         </sheet>
     </element>
     <element name="Trip Attack" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_MANEUVER_TRIP_ATTACK">
