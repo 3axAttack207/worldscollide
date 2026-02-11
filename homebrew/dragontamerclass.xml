@@ -226,10 +226,9 @@
             </table>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUMMON_DRAGON"/>
-            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_PROFICIENCY_GAIN"/>
-            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_SUBCLASS"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_ANGER"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_ELEMENTAL_FIGHTING_STYLE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ABILITY_SCORE_IMPROVEMENT"/>
-            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUPERIORITY_DICE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_EXTRA_ATTACK"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_WHO_WANTS_A_COOKIE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_THROW_DRAGON"/>
@@ -249,8 +248,8 @@
             <set name="hd">d10</set>
         </setters>
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHIELDS" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
@@ -279,8 +278,8 @@
             </setters>
             <rules>
                 <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
-                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_ARMOR"/>
-                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHIELDS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
                 <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
             </rules>
         </multiclass>
@@ -385,10 +384,10 @@
             <!--  create selection option  -->
             <stat name="superiority dice:dc:ability" value="strength:modifier" bonus="ability"/>
             <stat name="superiority dice:dc" value="superiority dice:dc:ability"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 3)" supports="Maneuver" number="1"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 9)" supports="Maneuver" number="1" level="9"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 13)" supports="Maneuver" number="1" level="13"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 17)" supports="Maneuver" number="1" level="17"/>
+            <select type="Archetype Feature" name="Combat Superiority (Level 3)" supports="Dragon Tamer Maneuvers" number="1"/>
+            <select type="Archetype Feature" name="Combat Superiority (Level 9)" supports="Dragon Tamer Maneuvers" number="1" level="9"/>
+            <select type="Archetype Feature" name="Combat Superiority (Level 13)" supports="Dragon Tamer Maneuvers" number="1" level="13"/>
+            <select type="Archetype Feature" name="Combat Superiority (Level 17)" supports="Dragon Tamer Maneuvers" number="1" level="17"/>
         </rules>
     </element>
 
@@ -435,10 +434,10 @@
             <!--  create selection option  -->
             <stat name="superiority dice:dc:ability" value="dexterity:modifier" bonus="ability"/>
             <stat name="superiority dice:dc" value="superiority dice:dc:ability"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 3)" supports="Maneuver" number="1"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 9)" supports="Maneuver" number="1" level="9"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 13)" supports="Maneuver" number="1" level="13"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 17)" supports="Maneuver" number="1" level="17"/>
+            <select type="Archetype Feature" name="Combat Superiority (Level 3)" supports="Dragon Tamer Maneuvers" number="1"/>
+            <select type="Archetype Feature" name="Combat Superiority (Level 9)" supports="Dragon Tamer Maneuvers" number="1" level="9"/>
+            <select type="Archetype Feature" name="Combat Superiority (Level 13)" supports="Dragon Tamer Maneuvers" number="1" level="13"/>
+            <select type="Archetype Feature" name="Combat Superiority (Level 17)" supports="Dragon Tamer Maneuvers" number="1" level="17"/>
         </rules>
     </element>
 
@@ -525,7 +524,7 @@
     <!-- Superiority Dice Features -->
 
     <element name="Disarming Attack" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_MANEUVER_DISARMING_ATTACK">
-        <supports>Maneuver</supports>
+        <supports>Dragon Tamer Maneuvers</supports>
         <description>
             <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it’s holding. You add the superiority die to the attack’s damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</p>
         </description>
@@ -534,7 +533,7 @@
         </sheet>
     </element>
     <element name="Distracting Strike" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_MANEUVER_DISTRACTING_STRIKE">
-        <supports>Maneuver</supports>
+        <supports>Dragon Tamer Maneuvers</supports>
         <description>
             <p>When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack’s damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</p>
         </description>
@@ -543,7 +542,7 @@
         </sheet>
     </element>
     <element name="Evasive Footwork" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_MANEUVER_EVASIVE_FOOTWORK">
-        <supports>Maneuver</supports>
+        <supports>Dragon Tamer Maneuvers</supports>
         <description>
             <p>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</p>
         </description>
@@ -552,7 +551,7 @@
         </sheet>
     </element>
     <element name="Trip Attack" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_MANEUVER_TRIP_ATTACK">
-        <supports>Maneuver</supports>
+        <supports>Dragon Tamer Maneuvers</supports>
         <description>
             <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</p>
         </description>
