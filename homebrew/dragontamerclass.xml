@@ -232,12 +232,10 @@
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ABILITY_SCORE_IMPROVEMENT"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_EXTRA_ATTACK"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_WHO_WANTS_A_COOKIE"/>
-            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_THROW_DRAGON"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_CHARGE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_REMOVE_ELEMENTAL_CHARGES"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_LIFE_EXCHANGE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMITABLE"/>
-            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_ATTACK"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_IMPROVED_CRITICAL_HIT"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_UNCHAIN_THE_BOND"/>
         </description>
@@ -262,12 +260,10 @@
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ABILITY_SCORE_IMPROVEMENT" level="4"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_EXTRA_ATTACK" level="5"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_WHO_WANTS_A_COOKIE" level="5"/>
-            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_THROW_DRAGON" level="5"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_CHARGE" level="6"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_REMOVE_ELEMENTAL_CHARGES" level="6"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_LIFE_EXCHANGE" level="11"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMITABLE" level="14"/>
-            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_ATTACK" level="15"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_IMPROVED_CRITICAL_HIT" level="20"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_UNCHAIN_THE_BOND" level="20"/>
         </rules>
@@ -520,7 +516,7 @@
 
     <!-- Level 6 -->
 
-    <element name="Elemental Charge" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_BOND">
+    <element name="Elemental Charge" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_CHARGE">
         <description>
             <p>At 6th level, you can strengthen your bond to your dragon. You will immediately gain 2 stacks of dragon power. Then 3 at Level 8, 4 at Level 13, 6 at Level 16, and 8 at Level 18.</p>
         </description>
@@ -548,35 +544,35 @@
     <!-- Elemental Swordsman -->
     <element name="Elemental Bond" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_MELEE">
         <description>
-            <p>At 6th level, you gain a strong bond with your dragon that you can use the element of your dragon. When you attack with your melee weapon, you gain dragon power stacks that change per level. 2 stacks at level 6, 3 at level 11, and 4 at level 15. You can have a max of 18 stacks, this limit increases by 3 every level. For every charge you have, when ever you deal damage, for every stack you have, you deal one extra element damage depending on your dragon's element.At the start of your turn, lose one stack and take one element damage (goes through immunity). (Your character gains a color aura, color is based off of element type, fire is red, Lighting is dark blue, Ice is light blue)</p>
+            <p>At 6th level, you gain a strong bond with your dragon that you can use the element of your dragon. When you land a hit with your melee weapon, you gain dragon power stacks that change per level. 2 stacks at level 6, 3 at level 11, and 4 at level 15. You can have a max of 18 stacks, this limit increases by 3 every level. For every charge you have, when ever you deal damage, for every stack you have, you deal one extra element damage depending on your dragon's element.At the start of your turn, lose one stack and take one element damage (goes through immunity). (Your character gains a color aura, color is based off of element type, fire is red, Lighting is dark blue, Ice is light blue)</p>
         </description>
         <sheet>
             <description>
-                <p>You have a max stack of {{dragon power:max}} stacks of dragon power.</p>
-                <p>When you attack with your melee weapon, you gain {{dragon power:gain}} stacks of dragon power.</p>
+                <p>You have a max stack of {{dragon power max:amount}} stacks of dragon power.</p>
+                <p>When you land a hit with your melee weapon, you gain {{dragon power gain:amount}} stacks of dragon power.</p>
                 <p>For every stack you have, when ever you deal damage, you deal one extra element damage depending on your dragon's element.</p>
                 <p>At the start of your turn, lose one stack and take one element damage (goes through immunity).</p>
             </description>
         </sheet>
         <rules>
-            <stat name="dragon power:gain" value="2"/>
-            <stat name="dragon power:gain" value="1" level="11"/>
-            <stat name="dragon power:gain" value="1" level="15"/>
-            <stat name="dragon power:max" value="18"/>
-            <stat name="dragon power:max" value="3" level="7"/>
-            <stat name="dragon power:max" value="3" level="8"/>
-            <stat name="dragon power:max" value="3" level="9"/>
-            <stat name="dragon power:max" value="3" level="10"/>
-            <stat name="dragon power:max" value="3" level="11"/>
-            <stat name="dragon power:max" value="3" level="12"/>
-            <stat name="dragon power:max" value="3" level="13"/>
-            <stat name="dragon power:max" value="3" level="14"/>
-            <stat name="dragon power:max" value="3" level="15"/>
-            <stat name="dragon power:max" value="3" level="16"/>
-            <stat name="dragon power:max" value="3" level="17"/>
-            <stat name="dragon power:max" value="3" level="18"/>
-            <stat name="dragon power:max" value="3" level="19"/>
-            <stat name="dragon power:max" value="3" level="20"/>
+            <stat name="dragon power gain:amount" value="2"/>
+            <stat name="dragon power gain:amount" value="1" level="11"/>
+            <stat name="dragon power gain:amount" value="1" level="15"/>
+            <stat name="dragon power max:amount" value="18"/>
+            <stat name="dragon power max:amount" value="3" level="7"/>
+            <stat name="dragon power max:amount" value="3" level="8"/>
+            <stat name="dragon power max:amount" value="3" level="9"/>
+            <stat name="dragon power max:amount" value="3" level="10"/>
+            <stat name="dragon power max:amount" value="3" level="11"/>
+            <stat name="dragon power max:amount" value="3" level="12"/>
+            <stat name="dragon power max:amount" value="3" level="13"/>
+            <stat name="dragon power max:amount" value="3" level="14"/>
+            <stat name="dragon power max:amount" value="3" level="15"/>
+            <stat name="dragon power max:amount" value="3" level="16"/>
+            <stat name="dragon power max:amount" value="3" level="17"/>
+            <stat name="dragon power max:amount" value="3" level="18"/>
+            <stat name="dragon power max:amount" value="3" level="19"/>
+            <stat name="dragon power max:amount" value="3" level="20"/>
         </rules>
     </element>
     <element name="DragonStyle MultiStrike Combo" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTI_STRIKE_COMBO_MELEE">
@@ -594,35 +590,35 @@
     <!-- Elemental Archer -->
     <element name="Elemental Bond" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_RANGE">
         <description>
-            <p>At 6th level, you gain a strong bond with your dragon that you can use the element of your dragon. When you attack with your ranged weapon, you gain dragon power stacks that change per level. 2 stacks at level 6, 3 at level 11, and 4 at level 15. You can have a max of 18 stacks, this limit increases by 3 every level. For every charge you have, when ever you deal damage, for every stack you have, you deal one extra element damage depending on your dragon's element.At the start of your turn, lose one stack and take one element damage (goes through immunity). (Your character gains a color aura, color is based off of element type, fire is red, Lighting is dark blue, Ice is light blue)</p>
+            <p>At 6th level, you gain a strong bond with your dragon that you can use the element of your dragon. When you land a hit with your ranged weapon, you gain dragon power stacks that change per level. 2 stacks at level 6, 3 at level 11, and 4 at level 15. You can have a max of 18 stacks, this limit increases by 3 every level. For every charge you have, when ever you deal damage, for every stack you have, you deal one extra element damage depending on your dragon's element.At the start of your turn, lose one stack and take one element damage (goes through immunity). (Your character gains a color aura, color is based off of element type, fire is red, Lighting is dark blue, Ice is light blue)</p>
         </description>
         <sheet>
             <description>
-                <p>You have a max stack of {{dragon power:max}} stacks of dragon power.</p>
-                <p>When you attack with your ranged weapon, you gain {{dragon power:gain}} stacks of dragon power.</p>
+                <p>You have a max stack of {{dragon power max:amount}} stacks of dragon power.</p>
+                <p>When you land a hit with your ranged weapon, you gain {{dragon power gain:amount}} stacks of dragon power.</p>
                 <p>For every stack you have, when ever you deal damage, you deal one extra element damage depending on your dragon's element.</p>
                 <p>At the start of your turn, lose one stack and take one element damage (goes through immunity).</p>
             </description>
         </sheet>
         <rules>
-            <stat name="dragon power:gain" value="2"/>
-            <stat name="dragon power:gain" value="1" level="11"/>
-            <stat name="dragon power:gain" value="1" level="15"/>
-            <stat name="dragon power:max" value="18"/>
-            <stat name="dragon power:max" value="3" level="7"/>
-            <stat name="dragon power:max" value="3" level="8"/>
-            <stat name="dragon power:max" value="3" level="9"/>
-            <stat name="dragon power:max" value="3" level="10"/>
-            <stat name="dragon power:max" value="3" level="11"/>
-            <stat name="dragon power:max" value="3" level="12"/>
-            <stat name="dragon power:max" value="3" level="13"/>
-            <stat name="dragon power:max" value="3" level="14"/>
-            <stat name="dragon power:max" value="3" level="15"/>
-            <stat name="dragon power:max" value="3" level="16"/>
-            <stat name="dragon power:max" value="3" level="17"/>
-            <stat name="dragon power:max" value="3" level="18"/>
-            <stat name="dragon power:max" value="3" level="19"/>
-            <stat name="dragon power:max" value="3" level="20"/>
+            <stat name="dragon power gain:amount" value="2"/>
+            <stat name="dragon power gain:amount" value="1" level="11"/>
+            <stat name="dragon power gain:amount" value="1" level="15"/>
+            <stat name="dragon power max:amount" value="18"/>
+            <stat name="dragon power max:amount" value="3" level="7"/>
+            <stat name="dragon power max:amount" value="3" level="8"/>
+            <stat name="dragon power max:amount" value="3" level="9"/>
+            <stat name="dragon power max:amount" value="3" level="10"/>
+            <stat name="dragon power max:amount" value="3" level="11"/>
+            <stat name="dragon power max:amount" value="3" level="12"/>
+            <stat name="dragon power max:amount" value="3" level="13"/>
+            <stat name="dragon power max:amount" value="3" level="14"/>
+            <stat name="dragon power max:amount" value="3" level="15"/>
+            <stat name="dragon power max:amount" value="3" level="16"/>
+            <stat name="dragon power max:amount" value="3" level="17"/>
+            <stat name="dragon power max:amount" value="3" level="18"/>
+            <stat name="dragon power max:amount" value="3" level="19"/>
+            <stat name="dragon power max:amount" value="3" level="20"/>
         </rules>
     </element>
     <element name="DragonStyle MultiStrike Combo" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTI_STRIKE_COMBO_RANGE">
@@ -645,7 +641,7 @@
         <description>
             <p>At 7th level, you can use your action, bonus action, and six stacks of dragon power, and create a powerful aura 5 feet in a radius around you. On use, causes you to gain the dash effect. This aura lasts for 2 turns. Anyone you consider an enemy inside this radius at any point (you move near them or they move near you) must make a Strength Saving Throw (8 + Strength + Proficiency), on pass, they take half damage, on fail, they take 4d6 dragon element damage for every turn your aura is up. If a enemy is affected by your aura, at the start of your next turn while your aura is still up, they will take antoher 4d6 dragon element damage. This ability upgrades in damage, cost, turns, and usage as you level up. When your aura goes down, you become lethargic for a turn.</p>
         </description>
-        <sheet usage="{{dragon aura uses:amount}} and {{dragon aura cost:amount}} Stacks of Dragon Power">
+        <sheet usage="Once per Battle and costs {{dragon aura cost:amount}} Stacks of Dragon Power">
             <description>Using your action, bonus action, and {{dragon aura cost:amount}} stacks of Dragon Power, you can create a powerful aura 5 feet in a radius around you. On use, causes you to gain the dash effect. This aura lasts for {{dragon aura turns:amount}} turns. Anyone you consider an enemy inside this radius at any point (you move near them or they move near you) must make a Strength Saving Throw DC:{{dragon aura:dc}}, on pass, they take half damage, on fail, they take {{dragon aura damage:amount}}d6 dragon element damage for every turn your aura is up. If a enemy is affected by your aura, at the start of your next turn while your aura is still up, they will take antoher {{dragon aura damage:amount}}d6 dragon element damage. When your aura goes down, you become lethargic for a turn.</description>
         </sheet>
         <rules>
@@ -659,8 +655,6 @@
             <stat name="dragon aura:dc" value="proficiency"/>
             <stat name="dragon aura:dc:ability" value="strength:modifier" bonus="ability"/>
             <stat name="dragon aura:dc" value="dragon aura:dc:ability"/>
-            <stat name="dragon aura uses:amount" set="Once per short rest"/>
-            <stat name="dragon aura uses:amount" set="Once per battle" level="10"/>
         </rules>
     </element>
     <!-- Elemental Archer -->
@@ -668,7 +662,7 @@
         <description>
             <p>At 7th level, you can use your action, bonus action, and six stacks of dragon power, and create a powerful arrow. Using your ranged weapon range, fire a arrow that explodes in a 10 foot radius. This explosion causes anyone in the radius to take 2d8 dragon element damage and gain your dragon's element effect for two turns. This ability upgrades in damage, cost, turns, and usage as you level up. Then on your next turn, you are lethargic for that turn.</p>
         </description>
-        <sheet usage="{{dragon arrow uses:amount}} and {{dragon arrow cost:amount}} Stacks of Dragon Power">
+        <sheet usage="Once per Battle and costs {{dragon arrow cost:amount}} Stacks of Dragon Power">
             <description>Using your action, bonus action, and {{dragon arrow cost:amount}} stacks of Dragon Power, This arrow deals {{dragon arrow damage:amount}}d8 dragon element damage in a 10 foot radius and inflicts your dragon's element effect for two turns. When your arrow goes down, you become lethargic for a turn.</description>
         </sheet>
         <rules>
@@ -681,10 +675,19 @@
             <stat name="dragon arrow:dc" value="proficiency"/>
             <stat name="dragon arrow:dc:ability" value="dexterity:modifier" bonus="ability"/>
             <stat name="dragon arrow:dc" value="dragon arrow:dc:ability"/>
-            <stat name="dragon arrow uses:amount" set="Once per short rest"/>
-            <stat name="dragon arrow uses:amount" set="Once per battle" level="10"/>
         </rules>
     </element>
+
+    <!-- Level 8 -->
+
+    <!-- Red Dragon-->
+    <element name="Fire Armor" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_FIRE_ARMOR">
+        <description>
+            <p>At 8th level, you and your dragon has such a strong bond that you gain a resistance to fire damage.</p>
+        </description>
+    <!-- Blue Dragon-->
+    <!-- White Dragon-->
+
     <!-- Dragon Types -->
 
     <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
