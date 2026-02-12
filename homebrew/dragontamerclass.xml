@@ -589,6 +589,7 @@
         <rules>
             <stat name="combo uses:amount" value="1"/>
             <stat name="combo uses:amount" value="1" level="13"/>
+        </rules> 
     </element>
     <!-- Elemental Archer -->
     <element name="Elemental Bond" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_RANGE">
@@ -634,6 +635,7 @@
         <rules>
             <stat name="combo uses:amount" value="1"/>
             <stat name="combo uses:amount" value="1" level="13"/>
+        </rules>
     </element>
 
     <!-- Level 7 -->
