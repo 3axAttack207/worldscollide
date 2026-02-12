@@ -724,6 +724,8 @@
         </sheet>
     </element>
 
+    <!-- Levels 12 and 13 are upgrades -->
+    
     <!-- Dragon Types -->
 
     <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
