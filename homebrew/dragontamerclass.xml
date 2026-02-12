@@ -686,10 +686,9 @@
             <p>At 8th level, you and your dragon has such a strong bond that you gain a resistance, and later immunity to fire damage.</p>
         </description>
         <rules>
-            <rules>
-                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/>
-                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" level="11"/>
-            </rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" level="11"/>
+        </rules>
     </element>
     <!-- Blue Dragon-->
     <element name="Lightning Armor" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_ARMOR">
@@ -697,10 +696,9 @@
             <p>At 8th level, you and your dragon has such a strong bond that you gain a resistance, and later immunity to lightning damage.</p>
         </description>
         <rules>
-            <rules>
-                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING"/>
-                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" level="11"/>
-            </rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" level="11"/>
+        </rules>
     </element>
     <!-- White Dragon-->
     <element name="Ice Armor" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_ICE_ARMOR">
@@ -708,10 +706,9 @@
             <p>At 8th level, you and your dragon has such a strong bond that you gain a resistance and later, immunity to cold damage.</p>
         </description>
         <rules>
-            <rules>
-                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"/>
-                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" level="11"/>
-            </rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" level="11"/>
+        </rules>
     </element>
     <!-- Dragon Types -->
 
