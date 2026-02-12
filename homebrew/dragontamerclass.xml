@@ -562,7 +562,7 @@
             <stat name="dragon power:gain" value="2"/>
             <stat name="dragon power:gain" value="1" level="11"/>
             <stat name="dragon power:gain" value="1" level="15"/>
-            <stat name="dragon power:max" value="15"/>
+            <stat name="dragon power:max" value="18"/>
             <stat name="dragon power:max" value="3" level="7"/>
             <stat name="dragon power:max" value="3" level="8"/>
             <stat name="dragon power:max" value="3" level="9"/>
