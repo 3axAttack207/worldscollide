@@ -681,7 +681,8 @@
             <stat name="dragon arrow:dc" value="dragon arrow:dc:ability"/>
             <stat name="dragon arrow uses:amount" set="Once per short rest"/>
             <stat name="dragon arrow uses:amount" set="Once per battle" level="10"/>
-            
+        </rules>
+    </element>
     <!-- Dragon Types -->
 
     <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
