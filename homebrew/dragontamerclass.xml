@@ -648,9 +648,9 @@
         </sheet>
         <rules>
             <stat name="dragon aura:cost" value="6"/>
-            <stat name="dragon aura:cost" value="4" level="12"/>
+            <stat name="dragon aura:cost" value="8" level="10"/>
             <stat name="dragon aura:damage" value="4"/>
-            <stat name="dragon aura:damage" value="5" level="12"/>
+            <stat name="dragon aura:damage" value="2" level="12"/>
             <stat name="dragon aura:turns" value="2"/>
             <stat name="dragon aura:turns" value="1" level="12"/>
             <stat name="dragon aura:dc" value="8"/>
@@ -664,24 +664,24 @@
     <!-- Elemental Archer -->
     <element name="Dragon Arrow" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_ARROW">
         <description>
-            <p>At 7th level, you can use your action, bonus action, and six stacks of dragon power, and create a powerful arrow. Using your ranged weapon range, fire a arrow that explodes in a 10 foot radius. This explosion causes anyone in the radius to take 2d8 dragon element damage and gain your dragon's element effect for two turns. Then on your next turn, you are lethargic for that turn.</p>
+            <p>At 7th level, you can use your action, bonus action, and six stacks of dragon power, and create a powerful arrow. Using your ranged weapon range, fire a arrow that explodes in a 10 foot radius. This explosion causes anyone in the radius to take 2d8 dragon element damage and gain your dragon's element effect for two turns. This ability upgrades in damage, cost, turns, and usage as you level up. Then on your next turn, you are lethargic for that turn.</p>
         </description>
         <sheet usage="{{dragon arrow uses:amount}} and {{dragon arrow cost:amount}} Stacks of Dragon Power">
-            <description>Using your action, bonus action, and {{dragon arrow cost:amount}} stacks of Dragon Power, This arrow deals {{dragon arrow damage:amount}}d6 dragon element damage on hit. When your arrow goes down, you become lethargic for a turn.</description>
+            <description>Using your action, bonus action, and {{dragon arrow cost:amount}} stacks of Dragon Power, This arrow deals {{dragon arrow damage:amount}}d8 dragon element damage in a 10 foot radius and inflicts your dragon's element effect for two turns. When your arrow goes down, you become lethargic for a turn.</description>
         </sheet>
         <rules>
             <stat name="dragon arrow:cost" value="6"/>
-            <stat name="dragon arrow:cost" value="4" level="12"/>
-            <stat name="dragon arrow:damage" value="4"/>
-            <stat name="dragon arrow:damage" value="5" level="12"/>
-            <stat name="dragon arrow:turns" value="2"/>
-            <stat name="dragon arrow:turns" value="1" level="12"/>
+            <stat name="dragon arrow:cost" value="8" level="10"/>
+            <stat name="dragon arrow:damage" value="2"/>
+            <stat name="dragon arrow:damage" value="2" level="10"/>
+            <stat name="dragon arrow:damage" value="1" level="12"/>
             <stat name="dragon arrow:dc" value="8"/>
             <stat name="dragon arrow:dc" value="proficiency"/>
             <stat name="dragon arrow:dc:ability" value="dexterity:modifier" bonus="ability"/>
             <stat name="dragon arrow:dc" value="dragon arrow:dc:ability"/>
             <stat name="dragon arrow uses:amount" set="Once per short rest"/>
             <stat name="dragon arrow uses:amount" set="Once per battle" level="10"/>
+            
     <!-- Dragon Types -->
 
     <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
