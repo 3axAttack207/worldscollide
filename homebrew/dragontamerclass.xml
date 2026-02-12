@@ -461,7 +461,7 @@
     </element>
     <element name="Who Wants A Cookie?" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_WHO_WANTS_A_COOKIE">
         <description>
-            <p>At 5th level, you can give your dragon a cookie as a bonus action once per battle. This cookie is a treat for your dragon and can be used to heal it. When you give your dragon a cookie, it regains {{cookie heal:amount}}d6 hit points</p>
+            <p>At 5th level, you can give your dragon a cookie as a bonus action once per battle. This cookie is a treat for your dragon and can be used to heal it. When you give your dragon a cookie, it regains 2d6 hit points (this increases on certin levels).</p>
         </description>
         <sheet usage="1/Per Battle">
             <description>
@@ -621,7 +621,7 @@
             <stat name="dragon power max:amount" value="3" level="20"/>
         </rules>
     </element>
-    <element name="DragonStyle MultiStrike Combo" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTI_STRIKE_COMBO_RANGE">
+    <element name="DragonStyle MultiStrike Combo" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_RANGE">
         <description>
             <p>At 6th level, you can use your style on your enemies with a triple strike. Once per battle, using your Action and a Bonus action and a cost of 3 stacks of dragon power, you attack three times with your ranged weapon (ignores loading). On your 1st and 2nd attack, if you hit, your damage will be halfed. If you land a attack, your next strike in the combo will be at advantage. At level 10, if you land all three attacks, your third attack will be a critical hit. At level 13, you can use this attack twice per battle. At level 18, your 1st and 2nd attacks will no longer be halved.</p>
         </description>
@@ -710,6 +710,20 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" level="11"/>
         </rules>
     </element>
+
+    <!-- Levels 9 and 10 are upgrades -->
+
+    <!-- Level 11 -->
+
+    <element name="Life Exchange" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_LIFE_EXCHANGE">
+        <description>
+            <p>At 11th level, you can exchange your life force with your dragon. As an action, you can choose to heal your dragon for an amount you choose, but those hit points are taken from your current hit points. And your dragon can do the same for you. Both of you can only use this once per long rest.</p>
+        </description>
+        <sheet usage="1/Per Long Rest">
+            <description>As an action, you can choose to heal your dragon for an amount you choose, but those hit points are taken from your current hit points. And your dragon can do the same for you.</description>
+        </sheet>
+    </element>
+
     <!-- Dragon Types -->
 
     <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
