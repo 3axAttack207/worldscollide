@@ -184,7 +184,7 @@
                     <td>
                         Attacks
                     </td>
-                    <td class="left">Icy ice, Flame Explosion, or Lightning Jump (Dragon Dependent), Elemental Bond Upgrade</td> 
+                    <td class="left">Elemental Fighting Style and Dragon Dependent move, Elemental Bond Upgrade</td> 
                 </tr>
                 <tr>
                     <td>16th</td>
@@ -725,7 +725,54 @@
     </element>
 
     <!-- Levels 12 and 13 are upgrades -->
-    
+
+    <!-- Level 14 -->
+
+    <element name="Indomable" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMABLE">
+        <description>
+            <p>At 14th level, you can use your indomitable will to reroll a saving throw that you fail. You can use this feature twice per long rest starting at 17th level.</p>
+        </description>
+        <sheet usage="{{indomable uses:amount}}/Per Long Rest">
+            <description>On a failed saving throw, you can use your reaction to reroll it. If you pass with the new roll, it uses a point of Indomable.</description>
+        </sheet>
+        <rules>
+            <stat name="indomable uses:amount" value="1"/>
+            <stat name="indomable uses:amount" value="1" level="17"/>
+        </rules>
+    </element>
+
+    <!-- Level 15 -->
+
+    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_FIRE">
+        <description>
+            <p>At 15th level, you try a new move with you dragon and your bond. This move is dependent on the type of dragon you have and what Elemental Fighting Style you use. Select the appropriate move for your Elemental Fighting Style.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon Type Move Fire" level="1"/>
+        </rules>
+    </element>
+
+    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_LIGHTNING">
+        <description>
+            <p>At 15th level, you try a new move with you dragon and your bond. This move is dependent on the type of dragon you have and what Elemental Fighting Style you use. Select the appropriate move for your Elemental Fighting Style.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon Type Move Lightning" level="1"/>
+        </rules>
+    </element>
+
+    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_ICE">
+        <description>
+            <p>At 15th level, you try a new move with you dragon and your bond. This move is dependent on the type of dragon you have and what Elemental Fighting Style you use. Select the appropriate move for your Elemental Fighting Style.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon Type Move Ice" level="1"/>
+        </rules>
+    </element>
+
     <!-- Dragon Types -->
 
     <element name="Red Dragon(fire)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_RED_DRAGON">
@@ -740,7 +787,7 @@
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_FIRE_ARMOR" level="8"/>
-            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_FIRE_DRAGON_TYPE_ATTACK" level="15"/>
+            <grant type="Archetype Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_FIRE" level="15"/>
         </rules>
     </element>
     <element name="Blue Dragon(lightning)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_BLUE_DRAGON">
@@ -755,7 +802,7 @@
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_ARMOR" level="8"/>
-            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_LIGHTNING_DRAGON_TYPE_ATTACK" level="15"/>
+            <grant type="Archetype Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_LIGHTNING" level="15"/>
         </rules>
     </element>
     <element name="White Dragon(ice)" type="Archetype" source="Worlds Collide" id="ID_WC_ARCHETYPE_DRAGON_TAMER_WHITE_DRAGON">
@@ -770,7 +817,7 @@
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ICE_ARMOR" level="8"/>
-            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ICE_DRAGON_TYPE_ATTACK" level="15"/>
+            <grant type="Archetype Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_ICE" level="15"/>
         </rules>
     </element>
 
@@ -852,4 +899,24 @@
             <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</description>
         </sheet>
     </element>
+
+    <!-- Level 15 Elemental Fighting Style and Dragon Dependent moves -->
+
+    <!-- Fire Dragon -->
+    <element name="Flame Explosion" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_FLAME_EXPLOSION">
+        <description>
+            <p>At 15th level, You try and come up with a new move using your dragon and your bond.</p>
+        </description>
+        <sheet usage="Once/Per Battle">
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="flame explosion:amount" value="1"/>
+            <stat name="indomable uses:amount" value="1" level="17"/>
+        </rules>
+    </element>
+    <!-- Lightning Dragon -->
+
+    <!-- Ice Dragon -->
+
 </elements>
