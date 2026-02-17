@@ -575,7 +575,7 @@
             <stat name="dragon power max:amount" value="3" level="20"/>
         </rules>
     </element>
-    <element name="DragonStyle MultiStrike Combo" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTI_STRIKE_COMBO_MELEE">
+    <element name="DragonStyle MultiStrike Combo" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE">
         <description>
             <p>At 6th level, you can use your style on your enemies with a triple strike. Once per battle, using your Action and a Bonus action and a cost of 3 stacks of dragon power, you attack three times with your melee weapon. On your 1st and 2nd attack, if you hit, your damage will be halfed. If you land a attack, your next strike in the combo will be at advantage. At level 10, if you land all three attacks, your third attack will be a critical hit. At level 13, you can use this attack twice per battle. At level 18, your 1st and 2nd attacks will no longer be halved.</p>
         </description>
@@ -749,7 +749,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Dragon Type Move" supports="Dragon Type Move Fire" level="1"/>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Fire" level="1"/>
         </rules>
     </element>
 
@@ -759,7 +759,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Dragon Type Move" supports="Dragon Type Move Lightning" level="1"/>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Lightning" level="1"/>
         </rules>
     </element>
 
@@ -769,7 +769,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Dragon Type Move" supports="Dragon Type Move Ice" level="1"/>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Ice" level="1"/>
         </rules>
     </element>
 
@@ -922,7 +922,7 @@
 
     <!-- Fire Dragon -->
     <element name="Flame Explosion" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_FLAME_EXPLOSION">
-       <supports>Dragon Type Move Fire</supports>
+       <supports>Dragon_Type_Move_Fire</supports>
         <description>
             <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move is a firey explosion 5 feet around you. Anyone caught in the blast must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, get knocked out of the radius and knocked prone, and are heavily burned for 2 turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
         </description>
@@ -943,7 +943,7 @@
         </rules>
     </element>
     <element name="Flaming Beam Shot" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_FLAMING_BEAM_SHOT">
-       <supports>Dragon Type Move Fire</supports>
+       <supports>Dragon_Type_Move_Fire</supports>
         <description>
             <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move fires a flaming beam in a line of 30ft. This bolt passes through anything. Anyone that is hit by that bolt must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, are blinded for {{flaming beam shot:duration}} turns, and are heavily burned for {{flaming beam shot:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
         </description>
@@ -966,7 +966,7 @@
 
     <!-- Lightning Dragon -->
     <element name="Lightning Jump" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_LIGHTNING_JUMP">
-       <supports>Dragon Type Move Lightning</supports>
+       <supports>Dragon_Type_Move_LIGHTNING</supports>
         <description>
             <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move allows you to jump with a powerful leap into battle with a powerful landing, both have a radius of 5 feet. Anyone caught in the radius must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a passed save, they take half damage. On a failed save, they take 3d6 lightning damage, are shocked for {{lightning jump:duration}} turns, and are heavily shocked for {{lightning jump:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
         </description>
@@ -987,7 +987,7 @@
         </rules>
     </element>
     <element name="Electromagnetic Pulse" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_ELECTROMAGNETIC_PULSE">
-       <supports>Dragon Type Move Lightning</supports>
+       <supports>Dragon_Type_Move_LIGHTNING</supports>
         <description>
             <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move fires a Arrow with a Electromagnetic Pulse using your ranged weapon's range. You do not need a target to use this ability. Anyone within a 15ft radius where the arrow lands must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 lightning damage, are is pulled into the center of the radius, and are heavily shocked for {{electromagnetic pulse:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19. (Shocked: Cannot take reactions and has Disadvantage on Ability Checks and Saving Throws using Dexterity.)</p>
         </description>
@@ -1009,7 +1009,7 @@
     </element>
     <!-- Ice Dragon -->
     <element name="Icy Cold" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_ICY_COLD">
-       <supports>Dragon Type Move Ice</supports>
+       <supports>Dragon_Type_Move_Ice</supports>
         <description>
             <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move creates a icy cold wave in a 10 foot radius around you and turns the area around you into ice for {{icy cold:duration}} turns, and gives you immuntiy to slipping on this ice. Anyone caught in the wave must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a passed save, they take half damage. On a failed save, they take 6d6 cold damage, get gain the frozen condition, and once they are no longer frozen, they gain the heavily frozen condition for {{icy cold:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19. (Frozen: Affected entity is utterly enamelled in ice and is Incapacitated. If it is dealt Bludgeoning, Thunder, or Force damage, the ice shatters, ending the condition. If hit by fire, the condition ends. Gains Vulnerability to Bludgeoning, Thunder, and Force damage. Gains Resistance to Fire damage. Gains immunity to Burning.)</p>
         </description>
@@ -1030,7 +1030,7 @@
         </rules>
     </element>
     <element name="Sheer Cold Arrow" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_SHEER_COLD_ARROW">
-       <supports>Dragon Type Move Ice</supports>
+       <supports>Dragon_Type_Move_Ice</supports>
         <description>
             <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move fires a arrow with a sheer cold effect and when the arrow lands, using your ranged weapon's range, in a radius of 10 Feet, makes a freezing zone that lasts for 2 turns. You do not need a target to use this ability. Anyone that is in the freezing zone at the start of their turn must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 cold damage, are frozen for {{sheer cold arrow:duration}} turns, and once no longer frozen, they are heavily frozen for {{sheer cold arrow:duration}} turns after. The damage amount and dragon effect time goes up by 1 at level 17 and 19. (Frozen: Affected entity is utterly enamelled in ice and is Incapacitated. If it is dealt Bludgeoning, Thunder, or Force damage, the ice shatters, ending the condition. If hit by fire, the condition ends. Gains Vulnerability to Bludgeoning, Thunder, and Force damage. Gains Resistance to Fire damage. Gains immunity to Burning.)</p>
         </description>
