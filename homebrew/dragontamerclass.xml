@@ -749,7 +749,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Fire" level="1"/>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Fire" level="15"/>
         </rules>
     </element>
 
@@ -759,7 +759,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Lightning" level="1"/>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Lightning" level="15"/>
         </rules>
     </element>
 
@@ -769,7 +769,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Ice" level="1"/>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Ice" level="15"/>
         </rules>
     </element>
 
@@ -966,7 +966,7 @@
 
     <!-- Lightning Dragon -->
     <element name="Lightning Jump" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_LIGHTNING_JUMP">
-       <supports>Dragon_Type_Move_LIGHTNING</supports>
+       <supports>Dragon_Type_Move_Lightning</supports>
         <description>
             <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move allows you to jump with a powerful leap into battle with a powerful landing, both have a radius of 5 feet. Anyone caught in the radius must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a passed save, they take half damage. On a failed save, they take 3d6 lightning damage, are shocked for {{lightning jump:duration}} turns, and are heavily shocked for {{lightning jump:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
         </description>
@@ -987,7 +987,7 @@
         </rules>
     </element>
     <element name="Electromagnetic Pulse" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_ELECTROMAGNETIC_PULSE">
-       <supports>Dragon_Type_Move_LIGHTNING</supports>
+       <supports>Dragon_Type_Move_Lightning</supports>
         <description>
             <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move fires a Arrow with a Electromagnetic Pulse using your ranged weapon's range. You do not need a target to use this ability. Anyone within a 15ft radius where the arrow lands must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 lightning damage, are is pulled into the center of the radius, and are heavily shocked for {{electromagnetic pulse:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19. (Shocked: Cannot take reactions and has Disadvantage on Ability Checks and Saving Throws using Dexterity.)</p>
         </description>
