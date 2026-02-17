@@ -199,7 +199,7 @@
                     <td>
                         Attack
                     </td>
-                    <td class="left">Superiority Dice Upgrade, Indomitable Upgrade, Elemental Charge Upgrade, Icy ice, Flame Explosion, or Lightning Jump Upgrade</td>
+                    <td class="left">Superiority Dice Upgrade, Indomitable Upgrade, Elemental Charge Upgrade, Dragon Type Attack Upgrade</td>
                 </tr>
                 <tr>
                     <td>18th</td>
@@ -214,7 +214,7 @@
                     <td>
                         Attack
                     </td>
-                    <td class="left">Ability Score Improvement</td>
+                    <td class="left">Ability Score Improvement, Dragon Type Attack Upgrade</td>
                 </tr>
                 <tr>
                     <td>20th</td>
@@ -904,19 +904,91 @@
 
     <!-- Fire Dragon -->
     <element name="Flame Explosion" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_FLAME_EXPLOSION">
+       <supports>Dragon Type Move Fire</supports>
         <description>
-            <p>At 15th level, You try and come up with a new move using your dragon and your bond.</p>
+            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move is a firey explosion 5 feet around you. Anyone caught in the blast must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, get knocked out of the radius and knocked prone, and are heavily burned for 2 turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
         </description>
         <sheet usage="Once/Per Battle">
-            <description></description>
+            <description>Using a bonus action and 10 stacks of dragon power, this move is a fiery explosion 5 feet around you. Anyone caught in the blast must make a Dexterity saving throw {{flame explosion:dc}}. On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, get knocked out of the radius and knocked prone, and are heavily burned for {{flame explosion:duration}} turns.</description>
         </sheet>
         <rules>
-            <stat name="flame explosion:amount" value="1"/>
-            <stat name="indomable uses:amount" value="1" level="17"/>
+            <stat name="flame explosion:amount" value="6"/>
+            <stat name="flame explosion:amount" value="1" level="17"/>
+            <stat name="flame explosion:amount" value="1" level="19"/>
+            <stat name="flame explosion:duration" value="2"/>
+            <stat name="flame explosion:duration" value="1" level="17"/>
+            <stat name="flame explosion:duration" value="1" level="19"/>
+            <stat name="flame explosion:dc" value="8"/>
+            <stat name="flame explosion:dc" value="proficiency"/>
+            <stat name="flame explosion:dc:ability" value="strength:modifier" bonus="ability"/>
+            <stat name="flame explosion:dc" value="flame explosion:dc:ability"/>
         </rules>
     </element>
-    <!-- Lightning Dragon -->
+    <element name="Flaming Beam Shot" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_FLAMING_BEAM_SHOT">
+       <supports>Dragon Type Move Fire</supports>
+        <description>
+            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move fires a flaming beam in a line of 30ft. This bolt passes through anything. Anyone that is hit by that bolt must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, are blinded for {{flaming beam shot:duration}} turns, and are heavily burned for {{flaming beam shot:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
+        </description>
+        <sheet usage="Once/Per Battle">
+            <description>Using a bonus action and 10 stacks of dragon power, this move fires a flaming beam in a line of 30ft that passes through anything. Anyone that is hit by that bolt must make a Constitution saving throw {{flaming beam shot:dc}}. On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, are blinded for {{flaming beam shot:duration}} turns, and are heavily burned for {{flaming beam shot:duration}} turns.</description>
+        </sheet>
+        <rules>
+            <stat name="flaming beam shot:amount" value="6"/>
+            <stat name="flaming beam shot:amount" value="1" level="17"/>
+            <stat name="flaming beam shot:amount" value="1" level="19"/>
+            <stat name="flaming beam shot:duration" value="2"/>
+            <stat name="flaming beam shot:duration" value="1" level="17"/>
+            <stat name="flaming beam shot:duration" value="1" level="19"/>
+            <stat name="flaming beam shot:dc" value="8"/>
+            <stat name="flaming beam shot:dc" value="proficiency"/>
+            <stat name="flaming beam shot:dc:ability" value="dexterity:modifier" bonus="ability"/>
+            <stat name="flaming beam shot:dc" value="flaming beam shot:dc:ability"/>
+        </rules>
+    </element>
 
+    <!-- Lightning Dragon -->
+    <element name="Lightning Jump" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_LIGHTNING_JUMP">
+       <supports>Dragon Type Move Lightning</supports>
+        <description>
+            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move allows you to jump with a powerful leap into battle with a powerful landing, both have a radius of 5 feet. Anyone caught in the radius must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a passed save, they take half damage. On a failed save, they take 3d6 lightning damage, are shocked for {{lightning jump:duration}} turns, and are heavily shocked for {{lightning jump:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
+        </description>
+        <sheet usage="Once/Per Battle">
+            <description>Using a bonus action and 10 stacks of dragon power, this move allows you to jump with a powerful leap into battle with a powerful landing, both have a radius of 5 feet. Anyone caught in the radius must make a Dexterity saving throw {{lightning jump:dc}}. On a passed save, they take half damage. On a failed save, they take 3d6 lightning damage, are shocked for {{lightning jump:duration}} turns, and are heavily shocked for {{lightning jump:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</description>
+        </sheet>
+        <rules>
+            <stat name="lightning jump:amount" value="6"/>
+            <stat name="lightning jump:amount" value="1" level="17"/>
+            <stat name="lightning jump:amount" value="1" level="19"/>
+            <stat name="lightning jump:duration" value="2"/>
+            <stat name="lightning jump:duration" value="1" level="17"/>
+            <stat name="lightning jump:duration" value="1" level="19"/>
+            <stat name="lightning jump:dc" value="8"/>
+            <stat name="lightning jump:dc" value="proficiency"/>
+            <stat name="lightning jump:dc:ability" value="strength:modifier" bonus="ability"/>
+            <stat name="lightning jump:dc" value="lightning jump:dc:ability"/>
+        </rules>
+    </element>
+    <element name="Electromagnetic Pulse" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_ELECTROMAGNETIC_PULSE">
+       <supports>Dragon Type Move Lightning</supports>
+        <description>
+            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move fires a Arrow with a Electromagnetic Pulse using your ranged weapon's range. You do not need a target to use this ability. Anyone within a 15ft radius where the arrow lands must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 lightning damage, are is pulled into the center of the radius, and are heavily shocked for {{electromagnetic pulse:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
+        </description>
+        <sheet usage="Once/Per Battle">
+            <description>Using a bonus action and 10 stacks of dragon power, this move fires a Arrow with a Electromagnetic Pulse using your ranged weapon's range. You do not need a target to use this ability. Anyone within a 15ft radius where the arrow lands must make a Dexterity saving throw {{electromagnetic pulse:dc}}. On a passed save, they take half damage. On a failed save, they take 6d6 lightning damage, are is pulled into the center of the radius, and are heavily shocked for {{electromagnetic pulse:duration}} turns.</description>
+        </sheet>
+        <rules>
+            <stat name="electromagnetic pulse:amount" value="6"/>
+            <stat name="electromagnetic pulse:amount" value="1" level="17"/>
+            <stat name="electromagnetic pulse:amount" value="1" level="19"/>
+            <stat name="electromagnetic pulse:duration" value="2"/>
+            <stat name="electromagnetic pulse:duration" value="1" level="17"/>
+            <stat name="electromagnetic pulse:duration" value="1" level="19"/>
+            <stat name="electromagnetic pulse:dc" value="8"/>
+            <stat name="electromagnetic pulse:dc" value="proficiency"/>
+            <stat name="electromagnetic pulse:dc:ability" value="dexterity:modifier" bonus="ability"/>
+            <stat name="electromagnetic pulse:dc" value="electromagnetic pulse:dc:ability"/>
+        </rules>
+    </element>
     <!-- Ice Dragon -->
 
 </elements>
