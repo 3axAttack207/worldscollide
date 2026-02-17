@@ -728,7 +728,7 @@
 
     <!-- Level 14 -->
 
-    <element name="Indomable" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMABLE">
+    <element name="Indomitable" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMITABLE">
         <description>
             <p>At 14th level, you can use your indomitable will to reroll a saving throw that you fail. You can use this feature twice per long rest starting at 17th level.</p>
         </description>
