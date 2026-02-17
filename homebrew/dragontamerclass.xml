@@ -743,7 +743,7 @@
 
     <!-- Level 15 -->
 
-    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_FIRE">
+    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_FIRE">
         <description>
             <p>At 15th level, you try a new move with you dragon and your bond. This move is dependent on the type of dragon you have and what Elemental Fighting Style you use. Select the appropriate move for your Elemental Fighting Style.</p>
         </description>
@@ -753,7 +753,7 @@
         </rules>
     </element>
 
-    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_LIGHTNING">
+    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_LIGHTNING">
         <description>
             <p>At 15th level, you try a new move with you dragon and your bond. This move is dependent on the type of dragon you have and what Elemental Fighting Style you use. Select the appropriate move for your Elemental Fighting Style.</p>
         </description>
@@ -763,7 +763,7 @@
         </rules>
     </element>
 
-    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_ICE">
+    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_DRAGON_TYPE_MOVE_ICE">
         <description>
             <p>At 15th level, you try a new move with you dragon and your bond. This move is dependent on the type of dragon you have and what Elemental Fighting Style you use. Select the appropriate move for your Elemental Fighting Style.</p>
         </description>
