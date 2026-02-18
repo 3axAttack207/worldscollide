@@ -750,7 +750,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Dragon" name="Dragon Type Move" supports="Dragon_Type_Move_Fire" number="1" level="15"/>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Fire" number="1" level="15"/>
         </rules>
     </element>
 
@@ -760,7 +760,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Dragon" name="Dragon Type Move" supports="Dragon_Type_Move_Lightning" number="1" level="15"/>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Lightning" number="1" level="15"/>
         </rules>
     </element>
 
@@ -770,7 +770,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Dragon" name="Dragon Type Move" supports="Dragon_Type_Move_Ice" number="1" level="15"/>
+            <select type="Archetype" name="Dragon Type Move" supports="Dragon_Type_Move_Ice" number="1" level="15"/>
         </rules>
     </element>
 
