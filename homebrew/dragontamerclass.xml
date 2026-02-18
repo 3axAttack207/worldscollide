@@ -293,7 +293,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Dragon" name="Dragon Type" supports="Dragon Type" level="1"/>
+            <select type="Archetype" name="Dragon Type" supports="Dragon Type" level="1"/>
         </rules>
     </element>
    <element name="Summon Dragon" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUMMON_DRAGON">
