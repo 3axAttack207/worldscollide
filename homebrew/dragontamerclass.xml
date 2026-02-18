@@ -549,10 +549,10 @@
         </description>
         <sheet>
             <description>
-                <p>You have a max stack of {{dragon power max:amount}} stacks of dragon power.</p>
-                <p>When you land a hit with your melee weapon, you gain {{dragon power gain:amount}} stacks of dragon power.</p>
-                <p>For every stack you have, when ever you deal damage, you deal one extra element damage depending on your dragon's element.</p>
-                <p>At the start of your turn, lose one stack and take one element damage (goes through immunity).</p>
+                <p>You have a max stack of {{dragon power max:amount}} stacks of dragon power. </p>
+                <p>When you land a hit with your melee weapon, you gain {{dragon power gain:amount}} stacks of dragon power. </p>
+                <p>For every stack you have, when ever you deal damage, you deal one extra element damage depending on your dragon's element. </p>
+                <p>At the start of your turn, lose one stack and take one element damage (goes through immunity). </p>
             </description>
         </sheet>
         <rules>
@@ -595,10 +595,10 @@
         </description>
         <sheet>
             <description>
-                <p>You have a max stack of {{dragon power max:amount}} stacks of dragon power.</p>
-                <p>When you land a hit with your ranged weapon, you gain {{dragon power gain:amount}} stacks of dragon power.</p>
-                <p>For every stack you have, when ever you deal damage, you deal one extra element damage depending on your dragon's element.</p>
-                <p>At the start of your turn, lose one stack and take one element damage (goes through immunity).</p>
+                <p>You have a max stack of {{dragon power max:amount}} stacks of dragon power. </p>
+                <p>When you land a hit with your ranged weapon, you gain {{dragon power gain:amount}} stacks of dragon power. </p>
+                <p>For every stack you have, when ever you deal damage, you deal one extra element damage depending on your dragon's element. </p>
+                <p>At the start of your turn, lose one stack and take one element damage (goes through immunity). </p>
             </description>
         </sheet>
         <rules>
@@ -646,12 +646,12 @@
             <description>Using your action, bonus action, and {{dragon aura cost:amount}} stacks of Dragon Power, you can create a powerful aura 5 feet in a radius around you. On use, causes you to gain the dash effect. This aura lasts for {{dragon aura turns:amount}} turns. Anyone you consider an enemy inside this radius at any point (you move near them or they move near you) must make a Strength Saving Throw DC:{{dragon aura:dc}}, on pass, they take half damage, on fail, they take {{dragon aura damage:amount}}d6 dragon element damage for every turn your aura is up. If a enemy is affected by your aura, at the start of your next turn while your aura is still up, they will take antoher {{dragon aura damage:amount}}d6 dragon element damage. When your aura goes down, you become lethargic for a turn.</description>
         </sheet>
         <rules>
-            <stat name="dragon aura:cost" value="6"/>
-            <stat name="dragon aura:cost" value="8" level="10"/>
-            <stat name="dragon aura:damage" value="4"/>
-            <stat name="dragon aura:damage" value="2" level="12"/>
-            <stat name="dragon aura:turns" value="2"/>
-            <stat name="dragon aura:turns" value="1" level="12"/>
+            <stat name="dragon aura cost:amount" value="6"/>
+            <stat name="dragon aura cost:amount" value="8" level="10"/>
+            <stat name="dragon aura damage:amount" value="4"/>
+            <stat name="dragon aura damage:amount" value="2" level="12"/>
+            <stat name="dragon aura turns:amount" value="2"/>
+            <stat name="dragon aura turns:amount" value="1" level="12"/>
             <stat name="dragon aura:dc" value="8"/>
             <stat name="dragon aura:dc" value="proficiency"/>
             <stat name="dragon aura:dc:ability" value="strength:modifier" bonus="ability"/>
