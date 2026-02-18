@@ -1051,4 +1051,21 @@
             <stat name="sheer cold arrow:dc" value="sheer cold arrow:dc:ability"/>
         </rules>
     </element>
+
+    <!-- Dragons as Items -->
+
+    <!-- Level 1 Dragon -->
+
+    <element name="Level 1 Dragon" type="Dragon" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_ONE_DRAGON">
+        <description>
+            <p>
+                This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up.
+                When ever there is "(Element)", that refers to your dragon's element that you choose.
+            </p>
+        </description>
+        <setters>
+            <set name="category">Dragons</set>
+            <set name="type">Level 1 Dragon</set>
+        </setters>
+    </element>
 </elements>
