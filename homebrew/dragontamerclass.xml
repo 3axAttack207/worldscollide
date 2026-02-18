@@ -744,33 +744,33 @@
 
     <!-- Level 15 -->
 
-    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_MOVE_TYPE_FIRE">
+    <element name="Choose Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_MOVE_TYPE_FIRE">
         <description>
             <p>At 15th level, you try a new move with you dragon and your bond. This move is dependent on the type of dragon you have and what Elemental Fighting Style you use. Select the appropriate move for your Elemental Fighting Style.</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Move Type" supports="Fire Move" level="15"/>
+            <select type="Archetype Feature" name="Move Type" supports="Fire Move" level="15"/>
         </rules>
     </element>
 
-    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_MOVE_TYPE_LIGHTNING">
+    <element name="Choose Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_MOVE_TYPE_LIGHTNING">
         <description>
             <p>At 15th level, you try a new move with you dragon and your bond. This move is dependent on the type of dragon you have and what Elemental Fighting Style you use. Select the appropriate move for your Elemental Fighting Style.</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Move Type" supports="Lightning Move" level="15"/>
+            <select type="Archetype Feature" name="Move Type" supports="Lightning Move" level="15"/>
         </rules>
     </element>
 
-    <element name="Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_MOVE_TYPE_ICE">
+    <element name="Choose Dragon Type Move" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_MOVE_TYPE_ICE">
         <description>
             <p>At 15th level, you try a new move with you dragon and your bond. This move is dependent on the type of dragon you have and what Elemental Fighting Style you use. Select the appropriate move for your Elemental Fighting Style.</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype" name="Move Type" supports="Ice Move" level="15"/>
+            <select type="Archetype Feature" name="Move Type" supports="Ice Move" level="15"/>
         </rules>
     </element>
 
