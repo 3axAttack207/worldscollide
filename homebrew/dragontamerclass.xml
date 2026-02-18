@@ -1056,7 +1056,7 @@
 
     <!-- Level 1 Dragon -->
 
-    <element name="Level 1 Dragon" type="Dragon" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_ONE_DRAGON">
+    <element name="Level 1 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_ONE_DRAGON">
         <description>
             <p>
                 This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up.
