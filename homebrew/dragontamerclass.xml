@@ -1060,6 +1060,10 @@
         <description>
             <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose.</p>
             <p> </p>
+            <h5>Dragon Elemental Effects</h5>
+            <p>Fire: Heavily Burned - Disadvantage on Attack Rolls and take 1 fire damage every turn.</p>
+            <p>Lightning: Heavily Shocked - Disadvantage on Dexterity Saving Throws and take 1 lightning damage every turn.</p>
+            <p>Ice: Heavily Frozen - Lose 10ft of movement and take 1 cold damage every turn.</p>
             <h5>Dragon Stats</h5>
             <p> </p>
             <p>Size: Small</p>
@@ -1083,7 +1087,9 @@
             <p> </p>
             <h5>Actions</h5>
             <p>Bite: Type - Melee(5ft), Hit additions - +2, Damage - 2d4 Piercing</p>
-            <p>Dash: When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers.
+            <p>Dash: When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
+            <p>Disengage: If you take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.</p>
+            <p>Hide: When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If you succeed, you gain certain benefits.</p>
         </description>
         <setters>
             <set name="category">Dragons</set>
