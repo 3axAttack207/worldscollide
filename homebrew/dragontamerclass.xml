@@ -1335,10 +1335,10 @@
             <p>Languages: Same as Character</p>
             <p>Resistances: Fall Damage</p>
             <p>Immunities: (Element) Damage, Frightened</p>
-            <p>Darkvision Range: 50ft</p>
-            <p>Movement Speed: 30ft Walk Speed, 60ft Fly Speed</p>
+            <p>Darkvision Range: 70ft</p>
+            <p>Movement Speed: 40ft Walk Speed, 80ft Fly Speed</p>
             <p>Proficiency Bonus: +3</p>
-            <p>Health (hit point): 75</p>
+            <p>Health (hit point): 90</p>
             <p>Armor Class: 14 (11+Dexterity Modifier)</p>
             <p>Initiative Bonus: +2</p>
             <p> </p>
@@ -1352,9 +1352,10 @@
             <p> </p>
             <h5>Actions</h5>
             <p>Bite: Type - Melee(5ft), Hit additions - +5, Damage - 2d4 Piercing</p>
-            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +6, Damage - 1d6 (Element) Damage</p>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +6, Damage - 1d8 (Element) Damage</p>
             <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 12 (8 + Proficiency Bonus + Charisma Modifier), Damage - 3d6 (Element) Damage and Half on Save</p>
-            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +5 for Claws, +5 for Bite, and +6 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4 Slashing, One Bite Attack for 2d4 Piercing, and One Tiny (Element) Ball Attack for 1d6 (Element) Damage</p>
+            <p>(Element) Ball: Short Rest, Type - Ranged(50ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 12 (8 + Proficiency Bonus + Charisma Modifier), Damage - 3d6 (Element) Damage</p>
+            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +5 for Claws, +5 for Bite, and +6 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4 Slashing, One Bite Attack for 2d4 Piercing, and One Tiny (Element) Ball Attack for 1d8 (Element) Damage</p>
             <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d6 (Element) Damage for 2 Turns.</p>
             <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
             <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
