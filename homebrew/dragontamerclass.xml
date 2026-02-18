@@ -1058,10 +1058,32 @@
 
     <element name="Level 1 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_ONE_DRAGON">
         <description>
-            <p>
-                This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up.
-                When ever there is "(Element)", that refers to your dragon's element that you choose.
-            </p>
+            <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose.</p>
+            <p> </p>
+            <h5>Dragon Stats</h5>
+            <p> </p>
+            <p>Size: Small</p>
+            <p>Weight: 14 lbs.</p>
+            <p>Languages: Same as Character</p>
+            <p>Immunities: (Element) Damage, Frightened</p>
+            <p>Movement Speed: 30ft</p>
+            <p>Darkvision Range: 50ft</p>
+            <p> Proficiency Bonus: +2</p>
+            <p>Health (hit point): 15 per level</p>
+            <p>Armor Class: (11+Dexterity Modifier)</p>
+            <p>Initiative Bonus: +2</p>
+            <p> </p>
+            <h5>The Six Stats</h5>
+            <p>Strength: 10</p>
+            <p>Dexterity: 14</p>
+            <p>Constitution: 12</p>
+            <p>Intelligence: 16</p>
+            <p>Wisdom: 10</p>
+            <p>Charisma: 11</p>
+            <p> </p>
+            <h5>Actions</h5>
+            <p>Bite: Type - Melee(5ft), Hit additions - +2, Damage - 2d4 Piercing</p>
+            <p>Dash: When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers.
         </description>
         <setters>
             <set name="category">Dragons</set>
