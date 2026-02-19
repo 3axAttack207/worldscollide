@@ -1188,7 +1188,7 @@
             <h5>Actions</h5>
             <p>Bite: Type - Melee(5ft), Hit additions - +3, Damage - 2d4+1 Piercing</p>
             <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +4, Damage - 1d6 (Element) Damage</p>
-            <p>(Element) Breath: Short Rest, Type - Cone(15ft), Saving Throw (Dexterity) - DC 12 (8 + Proficiency Bonus + Charisma Modifier), Damage - 2d6 (Element) Damage and Half on Save</p>
+            <p>(Element) Breath: Short Rest, Type - Cone(15ft), Saving Throw (Dexterity) - DC 12 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 2d6 (Element) Damage</p>
             <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +3 for Claws, +3 for Bite, and +4 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 1d4+1 Slashing, One Bite Attack for 1d4+1 Piercing, and One Tiny (Element) Ball Attack for 1d6 (Element) Damage</p>
             <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d6 (Element) Damage for 2 Turns.</p>
             <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
@@ -1242,7 +1242,7 @@
             <h5>Actions</h5>
             <p>Bite: Type - Melee(5ft), Hit additions - +3, Damage - 2d4+1 Piercing</p>
             <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +4, Damage - 1d6 (Element) Damage</p>
-            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 12 (8 + Proficiency Bonus + Charisma Modifier), Damage - 3d6 (Element) Damage and Half on Save</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 12 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 3d6 (Element) Damage</p>
             <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +3 for Claws, +3 for Bite, and +4 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 1d4+1 Slashing, One Bite Attack for 1d4+1 Piercing, and One Tiny (Element) Ball Attack for 1d6 (Element) Damage</p>
             <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d6 (Element) Damage for 2 Turns.</p>
             <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
@@ -1283,7 +1283,7 @@
             <p>Movement Speed: 30ft Walk Speed, 60ft Fly Speed</p>
             <p>Proficiency Bonus: +3</p>
             <p>Health (hit point): 75</p>
-            <p>Armor Class: 14 (11+Dexterity Modifier)</p>
+            <p>Armor Class: 15 (11+Dexterity Modifier)</p>
             <p>(a) Initiative Bonus: +4 or (b) With Characters Turn</p>
             <p> </p>
             <h5>The Six Stats</h5>
@@ -1297,7 +1297,7 @@
             <h5>Actions</h5>
             <p>Bite: Type - Melee(5ft), Hit additions - +5, Damage - 2d4+2 Piercing</p>
             <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +6, Damage - 1d6 (Element) Damage</p>
-            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 14 (8 + Proficiency Bonus + Charisma Modifier), Damage - 3d6 (Element) Damage and Half on Save</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 14 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 3d6 (Element) Damage</p>
             <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +5 for Claws, +5 for Bite, and +6 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+2 Slashing, One Bite Attack for 2d4+2 Piercing, and One Tiny (Element) Ball Attack for 1d6 (Element) Damage</p>
             <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d6 (Element) Damage for 2 Turns.</p>
             <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
@@ -1339,7 +1339,7 @@
             <p>Movement Speed: 40ft Walk Speed, 80ft Fly Speed</p>
             <p>Proficiency Bonus: +3</p>
             <p>Health (hit point): 90</p>
-            <p>Armor Class: 14 (11+Dexterity Modifier)</p>
+            <p>Armor Class: 15 (11+Dexterity Modifier)</p>
             <p>(a) Initiative Bonus: +4 or (b) With Characters Turn</p>
             <p> </p>
             <h5>The Six Stats</h5>
@@ -1353,8 +1353,8 @@
             <h5>Actions</h5>
             <p>Bite: Type - Melee(5ft), Hit additions - +5, Damage - 2d4+2 Piercing</p>
             <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +6, Damage - 1d8 (Element) Damage</p>
-            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 14 (8 + Proficiency Bonus + Charisma Modifier), Damage - 3d6 (Element) Damage and Half on Save</p>
-            <p>(Element) Ball: Short Rest, Type - Ranged(50ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 14 (8 + Proficiency Bonus + Charisma Modifier), Damage - 3d6 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 14 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 3d6 (Element) Damage</p>
+            <p>(Element) Ball: Short Rest, Type - Ranged(50ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 14 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 3d6 (Element) Damage</p>
             <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +5 for Claws, +5 for Bite, and +6 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+2 Slashing, One Bite Attack for 2d4+2 Piercing, and One Tiny (Element) Ball Attack for 1d8 (Element) Damage</p>
             <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 2 Turns.</p>
             <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
@@ -1395,8 +1395,8 @@
             <p>Darkvision Range: 70ft</p>
             <p>Movement Speed: 40ft Walk Speed, 80ft Fly Speed</p>
             <p>Proficiency Bonus: +3</p>
-            <p>Health (hit point): 90</p>
-            <p>Armor Class: 14 (11+Dexterity Modifier)</p>
+            <p>Health (hit point): 105</p>
+            <p>Armor Class: 16 (11+Dexterity Modifier)</p>
             <p>(a) Initiative Bonus: +5 or (b) With Characters Turn</p>
             <p> </p>
             <h5>The Six Stats</h5>
@@ -1410,8 +1410,8 @@
             <h5>Actions</h5>
             <p>Bite: Type - Melee(5ft), Hit additions - +6, Damage - 2d4+3 Piercing</p>
             <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +7, Damage - 1d8 (Element) Damage</p>
-            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 15 (8 + Proficiency Bonus + Charisma Modifier), Damage - 3d6 (Element) Damage and Half on Save</p>
-            <p>(Element) Ball: Per Turn, Type - Ranged(50ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 15 (8 + Proficiency Bonus + Charisma Modifier), Damage - 3d6 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 15 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 3d6 (Element) Damage</p>
+            <p>(Element) Ball: Per Turn, Type - Ranged(50ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 15 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 3d6 (Element) Damage</p>
             <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +6 for Claws, +6 for Bite, and +7 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+3 Slashing, One Bite Attack for 2d4+3 Piercing, and One Tiny (Element) Ball Attack for 1d8 (Element) Damage</p>
             <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 2 Turns.</p>
             <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
@@ -1429,6 +1429,493 @@
         <setters>
             <set name="category">Dragons</set>
             <set name="type">Level 7 Dragon</set>
+        </setters>
+    </element>
+
+    <!-- Level 8 Dragon -->
+
+    <element name="Level 8 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_EIGHT_DRAGON">
+        <description>
+            <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose. The word character refers to the main player's character.</p>
+            <p> </p>
+            <h5>Dragon Elemental Effects</h5>
+            <p>Fire: Heavily Burned - Disadvantage on Attack Rolls and take 1 fire damage every turn.</p>
+            <p>Lightning: Heavily Shocked - Disadvantage on Dexterity Saving Throws and take 1 lightning damage every turn.</p>
+            <p>Ice: Heavily Frozen - Lose 10ft of movement and take 1 cold damage every turn.</p>
+            <h5>Dragon Stats</h5>
+            <p> </p>
+            <p>Size: Small</p>
+            <p>Weight: 120 lbs.</p>
+            <p>Languages: Same as Character</p>
+            <p>Resistances: Fall Damage</p>
+            <p>Immunities: (Element) Damage, Frightened</p>
+            <p>Darkvision Range: 70ft</p>
+            <p>Movement Speed: 40ft Walk Speed, 80ft Fly Speed</p>
+            <p>Proficiency Bonus: +3</p>
+            <p>Health (hit point): 120</p>
+            <p>Armor Class: 16 (11+Dexterity Modifier)</p>
+            <p>(a) Initiative Bonus: +5 or (b) With Characters Turn</p>
+            <p> </p>
+            <h5>The Six Stats</h5>
+            <p>Strength: 16(+3) (used with melee attacks)</p>
+            <p>Dexterity: 20(+5)</p>
+            <p>Constitution: 18(+4)</p>
+            <p>Intelligence: 12(+1)</p>
+            <p>Wisdom: 10(+0)</p>
+            <p>Charisma: 18(+4) (used with breath attacks)</p>
+            <p> </p>
+            <h5>Actions</h5>
+            <p>Bite: Type - Melee(5ft), Hit additions - +6, Damage - 2d4+3 Piercing</p>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +7, Damage - 1d8 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 15 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 4d6 (Element) Damage and gain (element) effect for 1 turn</p>
+            <p>(Element) Ball: Per Turn, Type - Ranged(50ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 15 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 3d6 (Element) Damage</p>
+            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +6 for Claws, +6 for Bite, and +7 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+3 Slashing, One Bite Attack for 2d4+3 Piercing, and One Tiny (Element) Ball Attack for 3d8 (Element) Damage</p>
+            <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 3 Turns.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
+            <p>Disengage: If your dragon take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.</p>
+            <p>Hide: When your dragon takes the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If your dragon succeeds, it gains certain benefits.</p>
+            <p> </p>
+            <h5>Bonus Actions</h5>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +7, Damage - 1d8 (Element) Damage</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p> </p>
+            <h5>Reactions</h5>
+            <p>Opportunity Attack: You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature’s movement, occurring right before the creature leaves your reach.</p>
+            <p>Tiny Elemental Ball: This DOES NOT use reaction. When character Attacks with their subclass weapon, dragon can use their reaction to make a Tiny (Element) Ball attack against the same target.</p>
+        </description>
+        <setters>
+            <set name="category">Dragons</set>
+            <set name="type">Level 8 Dragon</set>
+        </setters>
+    </element>
+
+    <!-- Level 9 Dragon -->
+
+    <element name="Level 9 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_NINE_DRAGON">
+        <description>
+            <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose. The word character refers to the main player's character.</p>
+            <p> </p>
+            <h5>Dragon Elemental Effects</h5>
+            <p>Fire: Heavily Burned - Disadvantage on Attack Rolls and take 1 fire damage every turn.</p>
+            <p>Lightning: Heavily Shocked - Disadvantage on Dexterity Saving Throws and take 1 lightning damage every turn.</p>
+            <p>Ice: Heavily Frozen - Lose 10ft of movement and take 1 cold damage every turn.</p>
+            <h5>Dragon Stats</h5>
+            <p> </p>
+            <p>Size: Medium (too heavy to throw)</p>
+            <p>Weight: 240 lbs.</p>
+            <p>Languages: Same as Character</p>
+            <p>Resistances: Fall Damage</p>
+            <p>Immunities: (Element) Damage, Frightened</p>
+            <p>Darkvision Range: 100ft</p>
+            <p>Movement Speed: 50ft Walk Speed, 100ft Fly Speed</p>
+            <p>Proficiency Bonus: +4</p>
+            <p>Health (hit point): 135</p>
+            <p>Armor Class: 18 (13+Dexterity Modifier)</p>
+            <p>(a) Initiative Bonus: +5 or (b) With Characters Turn</p>
+            <p> </p>
+            <h5>The Six Stats</h5>
+            <p>Strength: 16(+3) (used with melee attacks)</p>
+            <p>Dexterity: 20(+5)</p>
+            <p>Constitution: 18(+4)</p>
+            <p>Intelligence: 12(+1)</p>
+            <p>Wisdom: 10(+0)</p>
+            <p>Charisma: 18(+4) (used with breath attacks)</p>
+            <p> </p>
+            <h5>Actions</h5>
+            <p>Bite: Type - Melee(5ft), Hit additions - +7, Damage - 2d4+3 Piercing</p>
+            <p>Slam: Type - Melee(5ft), Hit additions - +7, Damage - 2d8+3 Bludgeoning and be knocked prone for a turn</p>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +8, Damage - 1d8 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(15ft), Saving Throw (Dexterity) - DC 16 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 4d6 (Element) Damage and gain (element) effect for 1 turn</p>
+            <p>(Element) Ball: Per Turn, Type - Ranged(50ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 16 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 3d6 (Element) Damage and gain (element) effect for 1 turn</p>
+            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +7 for Claws, +7 for Bite, and +8 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+3 Slashing, One Bite Attack for 2d4+3 Piercing, and One Tiny (Element) Ball Attack for 3d8 (Element) Damage</p>
+            <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 3 Turns.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
+            <p>Disengage: If your dragon take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.</p>
+            <p>Hide: When your dragon takes the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If your dragon succeeds, it gains certain benefits.</p>
+            <p> </p>
+            <h5>Bonus Actions</h5>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +8, Damage - 1d8 (Element) Damage</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p> </p>
+            <h5>Reactions</h5>
+            <p>Opportunity Attack: You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature’s movement, occurring right before the creature leaves your reach.</p>
+            <p>Tiny Elemental Ball: This DOES NOT use reaction. When character Attacks with their subclass weapon, dragon can use their reaction to make a Tiny (Element) Ball attack against the same target.</p>
+        </description>
+        <setters>
+            <set name="category">Dragons</set>
+            <set name="type">Level 9 Dragon</set>
+        </setters>
+    </element>
+
+    <!-- Level 10 Dragon -->
+
+    <element name="Level 10 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_TEN_DRAGON">
+        <description>
+            <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose. The word character refers to the main player's character.</p>
+            <p> </p>
+            <h5>Dragon Elemental Effects</h5>
+            <p>Fire: Heavily Burned - Disadvantage on Attack Rolls and take 1 fire damage every turn.</p>
+            <p>Lightning: Heavily Shocked - Disadvantage on Dexterity Saving Throws and take 1 lightning damage every turn.</p>
+            <p>Ice: Heavily Frozen - Lose 10ft of movement and take 1 cold damage every turn.</p>
+            <h5>Dragon Stats</h5>
+            <p> </p>
+            <p>Size: Medium (too heavy to throw)</p>
+            <p>Weight: 300 lbs.</p>
+            <p>Languages: Same as Character</p>
+            <p>Resistances: Fall Damage, Slashing</p>
+            <p>Immunities: (Element) Damage, Frightened</p>
+            <p>Darkvision Range: 100ft</p>
+            <p>Movement Speed: 50ft Walk Speed, 100ft Fly Speed</p>
+            <p>Proficiency Bonus: +4</p>
+            <p>Health (hit point): 150</p>
+            <p>Armor Class: 19 (13+Dexterity Modifier)</p>
+            <p>(a) Initiative Bonus: +6 or (b) With Characters Turn</p>
+            <p> </p>
+            <h5>The Six Stats</h5>
+            <p>Strength: 18(+4) (used with melee attacks)</p>
+            <p>Dexterity: 22(+6)</p>
+            <p>Constitution: 20(+5)</p>
+            <p>Intelligence: 14(+2)</p>
+            <p>Wisdom: 10(+0)</p>
+            <p>Charisma: 20(+5) (used with breath attacks)</p>
+            <p> </p>
+            <h5>Actions (2/Turn)</h5>
+            <p>Bite: Type - Melee(5ft), Hit additions - +8, Damage - 2d4+4 Piercing</p>
+            <p>Slam: Type - Melee(5ft), Hit additions - +8, Damage - 2d8+4 Bludgeoning and be knocked prone for a turn</p>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +9, Damage - 1d10 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(25ft), Saving Throw (Dexterity) - DC 17 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 5d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>(Element) Ball: Per Turn, Type - Ranged(60ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 17 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 4d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +8 for Claws, +8 for Bite, and +9 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+4 Slashing, One Bite Attack for 2d4+4 Piercing, and One Tiny (Element) Ball Attack for 4d10 (Element) Damage</p>
+            <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 3 Turns.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
+            <p>Disengage: If your dragon take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.</p>
+            <p>Hide: When your dragon takes the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If your dragon succeeds, it gains certain benefits.</p>
+            <p> </p>
+            <h5>Bonus Actions</h5>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +9, Damage - 1d10 (Element) Damage</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p> </p>
+            <h5>Reactions</h5>
+            <p>Opportunity Attack: You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature’s movement, occurring right before the creature leaves your reach.</p>
+            <p>Tiny Elemental Ball: This DOES NOT use reaction. When character Attacks with their subclass weapon, dragon can use their reaction to make a Tiny (Element) Ball attack against the same target.</p>
+        </description>
+        <setters>
+            <set name="category">Dragons</set>
+            <set name="type">Level 10 Dragon</set>
+        </setters>
+    </element>
+
+    <!-- Level 11 Dragon -->
+
+    <element name="Level 11 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_ELEVEN_DRAGON">
+        <description>
+            <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose. The word character refers to the main player's character.</p>
+            <p> </p>
+            <h5>Dragon Elemental Effects</h5>
+            <p>Fire: Heavily Burned - Disadvantage on Attack Rolls and take 1 fire damage every turn.</p>
+            <p>Lightning: Heavily Shocked - Disadvantage on Dexterity Saving Throws and take 1 lightning damage every turn.</p>
+            <p>Ice: Heavily Frozen - Lose 10ft of movement and take 1 cold damage every turn.</p>
+            <h5>Dragon Stats</h5>
+            <p> </p>
+            <p>Size: Medium (too heavy to throw)</p>
+            <p>Weight: 360 lbs.</p>
+            <p>Languages: Same as Character</p>
+            <p>Resistances: Fall Damage, Slashing</p>
+            <p>Immunities: (Element) Damage, Frightened</p>
+            <p>Darkvision Range: 100ft</p>
+            <p>Movement Speed: 50ft Walk Speed, 100ft Fly Speed</p>
+            <p>Proficiency Bonus: +4</p>
+            <p>Health (hit point): 165</p>
+            <p>Armor Class: 19 (13+Dexterity Modifier)</p>
+            <p>(a) Initiative Bonus: +6 or (b) With Characters Turn</p>
+            <p> </p>
+            <h5>The Six Stats</h5>
+            <p>Strength: 18(+4) (used with melee attacks)</p>
+            <p>Dexterity: 22(+6)</p>
+            <p>Constitution: 20(+5)</p>
+            <p>Intelligence: 14(+2)</p>
+            <p>Wisdom: 10(+0)</p>
+            <p>Charisma: 20(+5) (used with breath attacks)</p>
+            <p> </p>
+            <h5>Actions (2/Turn)</h5>
+            <p>Bite: Type - Melee(5ft), Hit additions - +8, Damage - 2d4+4 Piercing</p>
+            <p>Slam: Type - Melee(5ft), Hit additions - +8, Damage - 3d8+4 Bludgeoning and be knocked prone for a turn</p>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +9, Damage - 1d10 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(25ft), Saving Throw (Dexterity) - DC 17 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 5d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>(Element) Ball: Per Turn, Type - Ranged(60ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 17 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 4d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +8 for Claws, +8 for Bite, and +9 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+4 Slashing, One Bite Attack for 2d4+4 Piercing, and One Tiny (Element) Ball Attack for 4d10 (Element) Damage</p>
+            <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 3 Turns.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
+            <p>Disengage: If your dragon take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.</p>
+            <p>Hide: When your dragon takes the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If your dragon succeeds, it gains certain benefits.</p>
+            <p> </p>
+            <h5>Bonus Actions</h5>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +9, Damage - 1d10 (Element) Damage</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p> </p>
+            <h5>Reactions</h5>
+            <p>Opportunity Attack: You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature’s movement, occurring right before the creature leaves your reach.</p>
+            <p>Tiny Elemental Ball: This DOES NOT use reaction. When character Attacks with their subclass weapon, dragon can use their reaction to make a Tiny (Element) Ball attack against the same target.</p>
+        </description>
+        <setters>
+            <set name="category">Dragons</set>
+            <set name="type">Level 11 Dragon</set>
+        </setters>
+    </element>
+
+    <!-- Level 12 Dragon -->
+
+    <element name="Level 12 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_TWELVE_DRAGON">
+        <description>
+            <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose. The word character refers to the main player's character.</p>
+            <p> </p>
+            <h5>Dragon Elemental Effects</h5>
+            <p>Fire: Heavily Burned - Disadvantage on Attack Rolls and take 1 fire damage every turn.</p>
+            <p>Lightning: Heavily Shocked - Disadvantage on Dexterity Saving Throws and take 1 lightning damage every turn.</p>
+            <p>Ice: Heavily Frozen - Lose 10ft of movement and take 1 cold damage every turn.</p>
+            <h5>Dragon Stats</h5>
+            <p> </p>
+            <p>Size: Medium (too heavy to throw)</p>
+            <p>Weight: 420 lbs.</p>
+            <p>Languages: Same as Character</p>
+            <p>Resistances: Fall Damage, Slashing</p>
+            <p>Immunities: (Element) Damage, Frightened</p>
+            <p>Darkvision Range: 100ft</p>
+            <p>Movement Speed: 50ft Walk Speed, 100ft Fly Speed</p>
+            <p>Proficiency Bonus: +4</p>
+            <p>Health (hit point): 180</p>
+            <p>Armor Class: 20 (14+Dexterity Modifier)</p>
+            <p>(a) Initiative Bonus: +6 or (b) With Characters Turn</p>
+            <p> </p>
+            <h5>The Six Stats</h5>
+            <p>Strength: 20(+5) (used with melee attacks)</p>
+            <p>Dexterity: 22(+6)</p>
+            <p>Constitution: 22(+6)</p>
+            <p>Intelligence: 14(+2)</p>
+            <p>Wisdom: 10(+0)</p>
+            <p>Charisma: 22(+6) (used with breath attacks)</p>
+            <p> </p>
+            <h5>Actions (2/Turn)</h5>
+            <p>Bite: Type - Melee(5ft), Hit additions - +9, Damage - 2d4+5 Piercing</p>
+            <p>Slam: Type - Melee(5ft), Hit additions - +9, Damage - 4d8+5 Bludgeoning and be knocked prone for a turn</p>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +10, Damage - 1d10 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(25ft), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 7d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>(Element) Ball: Per Turn, Type - Ranged(60ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 6d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +9 for Claws, +9 for Bite, and +10 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+5 Slashing, One Bite Attack for 2d4+5 Piercing, and One Tiny (Element) Ball Attack for 5d10 (Element) Damage</p>
+            <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 3 Turns.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
+            <p>Disengage: If your dragon take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.</p>
+            <p>Hide: When your dragon takes the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If your dragon succeeds, it gains certain benefits.</p>
+            <p> </p>
+            <h5>Bonus Actions</h5>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +10, Damage - 1d10 (Element) Damage</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p> </p>
+            <h5>Actions+Bonus Actions</h5>
+            <p>Dragon Rage: Type - Ranged (70ft) and Explosive (10ft radius), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 13d6 (Element) Damage and gain (element) effect for 3 turns. Dragon becomes Lethargic for 1 turn after.</p>
+            <p> </p>
+            <h5>Reactions</h5>
+            <p>Opportunity Attack: You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature’s movement, occurring right before the creature leaves your reach.</p>
+            <p>Tiny Elemental Ball: This DOES NOT use reaction. When character Attacks with their subclass weapon, dragon can use their reaction to make a Tiny (Element) Ball attack against the same target.</p>
+        </description>
+        <setters>
+            <set name="category">Dragons</set>
+            <set name="type">Level 12 Dragon</set>
+        </setters>
+    </element>
+
+    <!-- Level 13 Dragon -->
+
+    <element name="Level 13 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_THIRTEEN_DRAGON">
+        <description>
+            <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose. The word character refers to the main player's character.</p>
+            <p> </p>
+            <h5>Dragon Elemental Effects</h5>
+            <p>Fire: Heavily Burned - Disadvantage on Attack Rolls and take 1 fire damage every turn.</p>
+            <p>Lightning: Heavily Shocked - Disadvantage on Dexterity Saving Throws and take 1 lightning damage every turn.</p>
+            <p>Ice: Heavily Frozen - Lose 10ft of movement and take 1 cold damage every turn.</p>
+            <h5>Dragon Stats</h5>
+            <p> </p>
+            <p>Size: Large (too heavy to throw)</p>
+            <p>Weight: 420 lbs.</p>
+            <p>Languages: Same as Character</p>
+            <p>Resistances: Fall Damage, Slashing</p>
+            <p>Immunities: (Element) Damage, Frightened</p>
+            <p>Darkvision Range: 100ft</p>
+            <p>Movement Speed: 60ft Walk Speed, 120ft Fly Speed</p>
+            <p>Proficiency Bonus: +5</p>
+            <p>Health (hit point): 195</p>
+            <p>Armor Class: 21 (16+Dexterity Modifier)</p>
+            <p>(a) Initiative Bonus: +5 or (b) With Characters Turn</p>
+            <p> </p>
+            <h5>The Six Stats</h5>
+            <p>Strength: 20(+5) (used with melee attacks)</p>
+            <p>Dexterity: 20(+5)</p>
+            <p>Constitution: 22(+6)</p>
+            <p>Intelligence: 14(+2)</p>
+            <p>Wisdom: 10(+0)</p>
+            <p>Charisma: 22(+6) (used with breath attacks)</p>
+            <p> </p>
+            <h5>Actions (2/Turn)</h5>
+            <p>Bite: Type - Melee(5ft), Hit additions - +10, Damage - 2d4+5 Piercing</p>
+            <p>Slam: Type - Melee(5ft), Hit additions - +10, Damage - 4d8+5 Bludgeoning and be knocked prone for a turn</p>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +11, Damage - 1d10 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(25ft), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 7d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>(Element) Ball: Per Turn, Type - Ranged(60ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 6d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +10 for Claws, +10 for Bite, and +11 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+5 Slashing, One Bite Attack for 2d4+5 Piercing, and One Tiny (Element) Ball Attack for 5d10 (Element) Damage</p>
+            <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 3 Turns.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
+            <p>Disengage: If your dragon take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.</p>
+            <p>Hide: When your dragon takes the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If your dragon succeeds, it gains certain benefits.</p>
+            <p> </p>
+            <h5>Bonus Actions</h5>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +11, Damage - 1d10 (Element) Damage</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p> </p>
+            <h5>Actions+Bonus Actions</h5>
+            <p>Dragon Rage: Type - Ranged (70ft) and Explosive (10ft radius), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 13d6 (Element) Damage and gain (element) effect for 3 turns. Dragon becomes Lethargic for 1 turn after.</p>
+            <p> </p>
+            <h5>Reactions</h5>
+            <p>Opportunity Attack: You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature’s movement, occurring right before the creature leaves your reach.</p>
+            <p>Tiny Elemental Ball: This DOES NOT use reaction. When character Attacks with their subclass weapon, dragon can use their reaction to make a Tiny (Element) Ball attack against the same target.</p>
+        </description>
+        <setters>
+            <set name="category">Dragons</set>
+            <set name="type">Level 13 Dragon</set>
+        </setters>
+    </element>
+
+    <!-- Level 14 Dragon -->
+
+    <element name="Level 14 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_FOURTEEN_DRAGON">
+        <description>
+            <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose. The word character refers to the main player's character.</p>
+            <p> </p>
+            <h5>Dragon Elemental Effects</h5>
+            <p>Fire: Heavily Burned - Disadvantage on Attack Rolls and take 1 fire damage every turn.</p>
+            <p>Lightning: Heavily Shocked - Disadvantage on Dexterity Saving Throws and take 1 lightning damage every turn.</p>
+            <p>Ice: Heavily Frozen - Lose 10ft of movement and take 1 cold damage every turn.</p>
+            <h5>Dragon Stats</h5>
+            <p> </p>
+            <p>Size: Large (too heavy to throw)</p>
+            <p>Weight: 420 lbs.</p>
+            <p>Languages: Same as Character</p>
+            <p>Resistances: Fall Damage, Slashing</p>
+            <p>Immunities: (Element) Damage, Frightened</p>
+            <p>Darkvision Range: 100ft</p>
+            <p>Movement Speed: 60ft Walk Speed, 120ft Fly Speed</p>
+            <p>Proficiency Bonus: +5</p>
+            <p>Health (hit point): 210</p>
+            <p>Armor Class: 21 (16+Dexterity Modifier)</p>
+            <p>(a) Initiative Bonus: +5 or (b) With Characters Turn</p>
+            <p> </p>
+            <h5>The Six Stats</h5>
+            <p>Strength: 20(+5) (used with melee attacks)</p>
+            <p>Dexterity: 20(+5)</p>
+            <p>Constitution: 22(+6)</p>
+            <p>Intelligence: 14(+2)</p>
+            <p>Wisdom: 10(+0)</p>
+            <p>Charisma: 22(+6) (used with breath attacks)</p>
+            <p> </p>
+            <h5>Actions (2/Turn)</h5>
+            <p>Bite: Type - Melee(5ft), Hit additions - +10, Damage - 2d4+5 Piercing</p>
+            <p>Slam: Type - Melee(5ft), Hit additions - +10, Damage - 4d8+5 Bludgeoning and be knocked prone for a turn</p>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +11, Damage - 1d10 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(25ft), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 8d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>(Element) Ball: Per Turn, Type - Ranged(60ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 7d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +10 for Claws, +10 for Bite, and +11 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+5 Slashing, One Bite Attack for 2d4+5 Piercing, and One Tiny (Element) Ball Attack for 6d10 (Element) Damage</p>
+            <p>A Gust Of Wind: Type - Cone(20ft), Saving Throw (Strength) - DC 18 (8 + Proficiency Bonus + Strength Modifier), On fail, target is pushed 5ft back and forces them off balance for a turn. This action all clears all clouds in the cone. (Off Balance: The affected entity has disadvantage on Strength and Dexterity Ability Checks, and  Attack Rolls against the entity have Advantage. If an off balance entity is hit with another Off Balance, they are sent prone for a turn. This effect can also be removed by taking damage or when being helped.)</p>
+            <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 3 Turns.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
+            <p>Disengage: If your dragon take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.</p>
+            <p>Hide: When your dragon takes the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If your dragon succeeds, it gains certain benefits.</p>
+            <p> </p>
+            <h5>Bonus Actions</h5>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +11, Damage - 1d10 (Element) Damage</p>
+            <p>Ride Together: If your character is within 5ft of the dragon, character can use their bonus action to get ontop of the dragon. The dragon can use its bonus action to pick up character. Movement will use the dragon's movement speed.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p> </p>
+            <h5>Actions+Bonus Actions</h5>
+            <p>Dragon Rage: Type - Ranged (70ft) and Explosive (10ft radius), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 13d6 (Element) Damage and gain (element) effect for 3 turns. Dragon becomes Lethargic for 1 turn after.</p>
+            <p> </p>
+            <h5>Reactions</h5>
+            <p>Opportunity Attack: You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature’s movement, occurring right before the creature leaves your reach.</p>
+            <p>Tiny Elemental Ball: This DOES NOT use reaction. When character Attacks with their subclass weapon, dragon can use their reaction to make a Tiny (Element) Ball attack against the same target.</p>
+        </description>
+        <setters>
+            <set name="category">Dragons</set>
+            <set name="type">Level 14 Dragon</set>
+        </setters>
+    </element>
+
+    <!-- Level 15 Dragon -->
+
+    <element name="Level 15 Dragon" type="Magic Item" source="Worlds Collide" id="ID_WC_DRAGON_LEVEL_FIFTEEN_DRAGON">
+        <description>
+            <p>This is your dragon you bound to. The element of dragon you choose at level 1 is now your dragon. This dragon grows with you as you level up. When ever there is "(Element)", that refers to your dragon's element that you choose. The word character refers to the main player's character.</p>
+            <p> </p>
+            <h5>Dragon Elemental Effects</h5>
+            <p>Fire: Heavily Burned - Disadvantage on Attack Rolls and take 1 fire damage every turn.</p>
+            <p>Lightning: Heavily Shocked - Disadvantage on Dexterity Saving Throws and take 1 lightning damage every turn.</p>
+            <p>Ice: Heavily Frozen - Lose 10ft of movement and take 1 cold damage every turn.</p>
+            <h5>Dragon Stats</h5>
+            <p> </p>
+            <p>Size: Large (too heavy to throw)</p>
+            <p>Weight: 500 lbs.</p>
+            <p>Languages: Same as Character</p>
+            <p>Resistances: Fall Damage, Slashing</p>
+            <p>Immunities: (Element) Damage, Frightened</p>
+            <p>Darkvision Range: 100ft</p>
+            <p>Movement Speed: 60ft Walk Speed, 120ft Fly Speed</p>
+            <p>Proficiency Bonus: +5</p>
+            <p>Health (hit point): 125</p>
+            <p>Armor Class: 21 (16+Dexterity Modifier)</p>
+            <p>(a) Initiative Bonus: +5 or (b) With Characters Turn</p>
+            <p> </p>
+            <h5>The Six Stats</h5>
+            <p>Strength: 20(+5) (used with melee attacks)</p>
+            <p>Dexterity: 20(+5)</p>
+            <p>Constitution: 22(+6)</p>
+            <p>Intelligence: 14(+2)</p>
+            <p>Wisdom: 10(+0)</p>
+            <p>Charisma: 22(+6) (used with breath attacks)</p>
+            <p> </p>
+            <h5>Actions (2/Turn)</h5>
+            <p>Bite: Type - Melee(5ft), Hit additions - +10, Damage - 2d4+5 Piercing</p>
+            <p>Slam: Type - Melee(5ft), Hit additions - +10, Damage - 4d8+5 Bludgeoning and be knocked prone for a turn</p>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +11, Damage - 1d12 (Element) Damage</p>
+            <p>(Element) Breath: Per Turn, Type - Cone(25ft), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 8d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>(Element) Ball: Per Turn, Type - Ranged(60ft) and Explosive(5ft radius), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 7d6 (Element) Damage and gain (element) effect for 2 turns</p>
+            <p>MultiAttack: Short Rest, Type - Melee(5ft), Hit additions - +10 for Claws, +10 for Bite, and +11 for Tiny (Element) Ball, Damage - Attacks - One Claw Attack for 2d4+5 Slashing, One Bite Attack for 2d4+5 Piercing, and One Tiny (Element) Ball Attack for 6d12 (Element) Damage</p>
+            <p>A Gust Of Wind: Type - Cone(20ft), Saving Throw (Strength) - DC 18 (8 + Proficiency Bonus + Strength Modifier), On fail, target is pushed 5ft back and forces them off balance for a turn. This action all clears all clouds in the cone. (Off Balance: The affected entity has disadvantage on Strength and Dexterity Ability Checks, and  Attack Rolls against the entity have Advantage. If an off balance entity is hit with another Off Balance, they are sent prone for a turn. This effect can also be removed by taking damage or when being helped.)</p>
+            <p>Elemental Boost: The dragon can use its Tiny (Element) Ball on character and enhance their damage by 1d8 (Element) Damage for 3 Turns.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p>Dash: When your dragon take the Dash action, it gains extra movement for the current turn. The increase equals your speed, after applying any modifiers.</p>
+            <p>Disengage: If your dragon take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.</p>
+            <p>Hide: When your dragon takes the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If your dragon succeeds, it gains certain benefits.</p>
+            <p> </p>
+            <h5>Bonus Actions</h5>
+            <p>Tiny (Element) Ball: Type - Ranged(50ft), Hit additions - +11, Damage - 1d12 (Element) Damage</p>
+            <p>Ride Together: If your character is within 5ft of the dragon, character can use their bonus action to get ontop of the dragon. The dragon can use its bonus action to pick up character. Movement will use the dragon's movement speed.</p>
+            <p>Help: When your dragon takes the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+            <p> </p>
+            <h5>Actions+Bonus Actions</h5>
+            <p>Dragon Rage: Type - Ranged (70ft) and Explosive (10ft radius), Saving Throw (Dexterity) - DC 18 (8 + Proficiency Bonus + Charisma Modifier), Half damage on save, on fail take 14d6 (Element) Damage and gain (element) effect for 3 turns. Dragon becomes Lethargic for 1 turn after.</p>
+            <p> </p>
+            <h5>Reactions</h5>
+            <p>Opportunity Attack: You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature’s movement, occurring right before the creature leaves your reach.</p>
+            <p>Tiny Elemental Ball: This DOES NOT use reaction. When character Attacks with their subclass weapon, dragon can use their reaction to make a Tiny (Element) Ball attack against the same target.</p>
+        </description>
+        <setters>
+            <set name="category">Dragons</set>
+            <set name="type">Level 15 Dragon</set>
         </setters>
     </element>
 
