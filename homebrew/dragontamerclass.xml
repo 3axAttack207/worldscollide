@@ -331,6 +331,26 @@
             <select type="Archetype" name="Elemental Fighting Style" supports="Elemental Fighting Style" level="3"/>
         </rules>
     </element>
+    <element name="Profiency Gain (Melee)" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_PROFICIENCY_GAIN_MELEE">
+        <description>
+            <p>When you choose the Elemental Fighting Style of melee, you gain proficiency with any melee weapons, medium armor and heavy armor.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
+        </rules>
+    </element>
+    <element name="Profiency Gain (Ranged)" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_PROFICIENCY_GAIN_RANGE">
+        <description>
+            <p>When you choose the Elemental Fighting Style of ranged, you gain proficiency with any ranged weapon.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS"/>
+        </rules>
+    </element>
 
     <!-- Level 4 -->
 
@@ -846,6 +866,7 @@
         <supports>Elemental Fighting Style</supports>
         <description>
             <p>You and your dragon work together, charging right into the battle.</p>
+            <div element="ID_WC_ARCHETYPE_FEATURE_PROFICIENCY_GAIN_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_MELEE"/>
@@ -853,6 +874,7 @@
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA"/>
         </description>
         <rules>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_PROFICIENCY_GAIN_MELEE" level="3"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE" level="4"/>  
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_MELEE" level="5"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_MELEE" level="6"/>
@@ -865,6 +887,7 @@
         <supports>Elemental Fighting Style</supports>
         <description>
             <p>You and your dragon work together, using ranged attacks to keep enemies at bay.</p>
+            <div element="ID_WC_ARCHETYPE_FEATURE_PROFICIENCY_GAIN_RANGE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_RANGE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_RANGE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_RANGE"/>
@@ -872,6 +895,7 @@
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_ARROW"/>
         </description>
         <rules>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_PROFICIENCY_GAIN_RANGE" level="3"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_RANGE" level="4"/>  
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_RANGE" level="5"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_RANGE" level="6"/>
