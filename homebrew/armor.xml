@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>armor</name>
+		<update version="0.0.11">
+			<file name="armor.xml" url="https://raw.githubusercontent.com/3axAttack207/worldscollide/master/homebrew/armor.xml" />
+		</update>
+	</info>
+
+    <element name="Jugernaught Armor w/ Altyn" type="Armor" source="Player’s Handbook" id="ID_WC_ARMOR_HEAVY_JUGERNAUTALTYN">
+        <supports>ID_WC_ARMOR_HEAVY_JUGERNAUTALTYN</supports>
+            <description>
+                <p>A full body armor set made of interlocking metal plates, including gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath. Buckles and straps distribute the weight over the body. Able to stop bullets and arrows with ease. And a altyon to protect the head and face.</p>
+                <p>While wearing this armor, the user is unable to be hit with critial strikes. They also gain resistence to slashing damage.</p>
+            </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">Good Luck Finding One</set>
+            <set name="weight" lb="110">110 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Heavy</set>
+            <set name="strength">15</set>
+            <set name="stealth">Disadvantage</set>
+            <set name="armorClass">25</set>
+        <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_JUGERNAUTALTYN</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_RESISTANCE_SLASHING"/>
+            <stat name="ac:armored:armor" value="25"/>
+            <stat name="speed" value="-20" bonus="armor" requirements="![str:20]"/>
+        </rules>
+    </element>
+
+</elements>

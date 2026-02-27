@@ -137,7 +137,17 @@
 			<p>Proficiency with the Grenade Launcher. Grants ability to use the weapon without penalties and enables related actions and rules.</p>
 		</description>
 	</element>
-	
+
+	<!-- Specific Armor Proficiency -->
+
+	<element name="Armor Proficiency (Jugernaught Altyn)" type="Proficiency" source="Worlds Collide" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_JUGERNAUTALTYN">
+		<supports>ID_WC_ARMOR_HEAVY_JUGERNAUTALTYN</supports>
+		<requirements>ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT</requirements>
+		<description>
+			<p>Proficiency with the Jugernaught Armor w/ Altyn. Grants ability to use the armor without penalties and enables related actions and rules.</p>
+		</description>
+	</element>
+
 	<!-- This Enchantment is used for a certin character in Worlds Collide -->
 
 	<element name="Man's Best Friend" type="Magic Item" source="Worlds Collide" id="ID_WC_MAGIC_ITEM_MANS_BEST_FRIEND">
