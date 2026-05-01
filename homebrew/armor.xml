@@ -19,7 +19,7 @@
             <set name="weight" lb="110">110 lb.</set>
             <set name="slot">body</set>
             <set name="armor">Heavy</set>
-            <set name="strength"><20/set>
+            <set name="strength">20</set>
             <set name="stealth">Disadvantage</set>
             <set name="armorClass">25</set>
         <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_JUGERNAUTALTYN</set>
