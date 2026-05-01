@@ -22,7 +22,16 @@
 	<!-- grant this in the class, for use in requirements for rules -->
 
 	<element name="Worlds Collide Requirement" type="Grants" source="Worlds Collide" id="ID_WC_GRANTS_WORLDSCOLLIDE_REQUIREMENT"/>
+
+	<!-- Languages -->
 	
+	<element name="Voiden" type="Language" source="Worlds COllide" id="ID_WC_LANGUAGE_VOIDIEN">
+		<supports>Standard</supports>
+		<description>
+			<p>Originated in the Void, mainly used by the voidiens.</p>
+		</description>
+	</element>
+
 	<!-- weapon properties -->
 
 	<element name="Timely Reload" type="Weapon Property" source="Worlds Collide" id="ID_WC_WEAPON_PROPERTY_TIMELYRELOAD">
