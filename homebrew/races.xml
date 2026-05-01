@@ -82,11 +82,15 @@
     <element name="Relentless Endurance" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_VOIDIEN_VOID_TRANSFER">
         <requirements>!ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOID_BUBBLE</requirements>
         <description>
-            <p>When you take a long rest, a bubble of void surrounds you. Nothing can pass through the bubble including sound except for light. This bubble has a AC of 25 and a health pool of 150.</p>        </description>
+            <p>When you take a long rest, a bubble of void surrounds you. Nothing can pass through the bubble including sound except for light. This bubble has a AC of 25 and a health pool of 150.</p>
+        </description>
         <sheet>
-            <p>When you take a long rest, a bubble of void surrounds you. Nothing can pass through the bubble including sound except for light. This bubble has a AC of 25 and a health pool of 150.</p>        </description>
+        <description>
+            <p>When you take a long rest, a bubble of void surrounds you. Nothing can pass through the bubble including sound except for light. This bubble has a AC of 25 and a health pool of 150.</p>        
+        </description>
         </sheet>
     </element>
+    
     <!-- Racial Trait Replacement Grants -->
     <element name="Voidien Form Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOIDIEN_FORM"/>
     <element name="Void Transfer Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOID_TRANSFER"/>
