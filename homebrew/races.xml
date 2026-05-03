@@ -8,46 +8,43 @@
 	</info>
     <element name="Half Voidien" type="Race" source="Worlds Collide" id="ID_WC_RACE_HALF_HALF_VOIDIEN">
         <description>
-            <p>Voidiens, pure black creatures of the void, and humans, their genes mixing creates a half-voidien. They are creatures of the void, a greyish Earth terrain world, Home for Voidiens, days last seven times long than Earth days, oxygen there has more elements in it and will create a poisonous gas when mixed with pure oxygen. Voidens genes make them immune to the gas. For the past 300 years, voidiens have been rare outside the void with few still hiding in other planes. Before this, they tried to go to other realms to live, peaceful and helpful to everyone around them, but <strong>racism</strong> had them hunted off the planes because of their immense power they have against other races. The only reason they left their world was due to problems in their world. First there was a resourse shortage that created four factions have had slight battles over resources. Then what caused the problem was a virus outbreak that broke out accross the infinite void. Then when they got back, a total war broke out across all factions.</p>
+            <p class="flavor">Voidiens, pure black creatures of the void, and humans, their genes mixing creates a half-voidien. They are creatures of the void, a greyish Earth terrain world, Home for Voidiens, days last seven times long than Earth days, oxygen there has more elements in it and will create a poisonous gas when mixed with pure oxygen. Voidens genes make them immune to the gas. For the past 300 years, voidiens have been rare outside the void with few still hiding in other planes. Before this, they tried to go to other realms to live, peaceful and helpful to everyone around them, but <strong>racism</strong> had them hunted off the planes because of their immense power they have against other races. The only reason they left their world was due to problems in their world. First there was a resourse shortage that created four factions have had slight battles over resources. Then what caused the problem was a virus outbreak that broke out accross the infinite void. Then when they got back, a total war broke out across all factions.</p>
             <p class="indent">Half Voidiens have two forms, a human form and their Voidien form. When in human form, they have a humanoid look except for the pale skin and one of their eyes being black. When they transfer to their voidien form, a black liquid like substance consumes them. They can only hold this form temporaliy outside the void. While in their voidien form, they have a black skin color, black eyes and black hair. They all speak the common language voiden.</p>
-            <h5>Half Voidien TRAITS</h5>
-            <ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
-                <li>
-                    <strong>Creature Type:</strong>
-                    Humanoid
-                </li>
-                <li>
-                    <strong>Size:</strong>
-                    Medium (about 5–7 feet tall)
-                </li>
-                <li>
-                <strong>Speed:</strong>
-                    30 feet
-                </li>
-            </ul>
-            <p>As a Half Voidien, you have these special traits.</p>
-            <p class="indent">
-                <strong>
-                    <em>Voidien Form.</em>
-                </strong>
-                As a action, you can transform into your Voidien form. This form lasts a minute (10 turns). While in this form, you gain 10ft of movement speed, you can add half of your proficiency bonus to your AC and melee damage(rounded down), and add your proficiency bonus to your attack rolls. You can use this ability equal to your proficiency bonus.
-            </p>
-            <p class="indent">
-                <strong>
-                    <em>Void Transfer.</em>
-                </strong>
-                Using your bonus action, you can any willing creature you can touch and take everyone to the void. Any creature that can’t breath in the void must hold their breath. While in the void, creatures outside of it can not find you and only voidiens can see into and out of the void. While out of combat, you can use this ability as much as you want and you have infinite time in the void. During combat uses are equal to two times your proficiency bonus and you can only stay in the void for two turns.
-            </p>
-            <p class="indent">
-                <strong>
-                    <em>Void Bubble.</em>
-                </strong>
-                When you take a long rest, a bubble of void surrounds you. Nothing can pass through the bubble including sound except for light. This bubble has a AC of 25 and a health pool of 150.
+            <h4>HALF VOIDIEN TRAITS</h4>
+            <p>Your human genes control your normal look while your voidien genes control your abilities.</p>
+            <p>
+            <span class="feature">Ability Score Increase.</span>
+            Your Intelligence or Wisdom score increases by 2, and any other score increases by 1.
+            <br/>
+            <span class="feature">Age.</span>
+            Even though your human genes control your looks, you age seven times slower then humans. Half Voidiens become adults at 126 years old and live to about 700 years. The time is in Earth Years but their body is tied to Void time.
+            <br/>
+            <span class="feature">Alignment.</span>
+            Half Voidiens tend toward no particular alignment and try to be peaceful towards other non aggressive people.
+            <br/>
+            <span class="feature">Size.</span>
+            Half Voidiens are the same size as humans, standing between 5 to 7 feet tall and averaging almost 150 pounds. Your size is Medium.
+            <br/>
+            <span class="feature">Speed.</span>
+            Your base walking speed is 30 feet.
+            <br/>
+            <span class="feature">Voidien Form.</span>
+            As an action, you can transform into your Voidien form. This form lasts a minute (10 turns). While in this form, you gain 10ft of movement speed, you can add half of your proficiency bonus to your AC and melee damage(rounded down), and add your proficiency bonus to your attack rolls. You can use this ability equal to your proficiency bonus. Regain all uses on long rest.
+            <br/>
+            <span class="feature">Void Transfer.</span>
+            Using your bonus action, you can any willing creature you can touch and take everyone to the void. Any creature that can’t breath in the void must hold their breath. While in the void, creatures outside of it can not find you and only voidiens can see into and out of the void. While out of combat, you can use this ability as much as you want and you have infinite time in the void. During combat uses are equal to two times your proficiency bonus and you can only stay in the void for two turns. Regain all uses on short or long rest.
+            <br/>
+            <span class="feature">Void Bubble.</span>
+            When you take a long rest, a bubble of void surrounds you. Nothing can pass through the bubble including sound except for light. This bubble has a AC of 25 and a health pool of 150.
+            <br/>
+            <span class="feature">Languages.</span>
+            You can speak, read, and write Common, Voiden, and a language of your choice. Even though the void is one of the oldest places in the entirety of exsitence. Only after a bunch of different languages were created(Now known as Ancient Voiden), they decided on a language which sounds like a bunch of the different languages combinded, but to the speakes of those languages, it is complete giberish.
+            <br/>
             </p>
         </description>
         <sheet display="false"/>
             <rules>
-                <grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HALF_VOIDIEN"/>
+                <grant type="Grants" id="ID_WC_GRANT_RACE_HALF_VOIDIEN"/>
                 <select type="Ability Score Improvement" name="Ability Score Improvement Option (Half Voidien)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI"/>
                 <stat name="innate speed" value="30" bonus="base"/>
                 <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
@@ -69,7 +66,7 @@
             <description>As an action, you can transform into your Voidien form. This form lasts a minute (10 turns). While in this form, you gain 10ft of movement speed, you can add half of your proficiency bonus to your AC and melee damage(rounded down), and add your proficiency bonus to your attack rolls.</description>
         </sheet>
     </element>
-    <element name="Relentless Endurance" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_VOIDIEN_VOID_TRANSFER">
+    <element name="Void Transfer" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_VOIDIEN_VOID_TRANSFER">
         <requirements>!ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOID_TRANSFER</requirements>
         <description>
             <p>Using your bonus action, you can any willing creature you can touch and take everyone to the void. Any creature that can’t breath in the void must hold their breath. While in the void, creatures outside of it can not find you and only voidiens can see into and out of the void. While out of combat, you can use this ability as much as you want and you have infinite time in the void. During combat you can only stay in the void for two turns.</p>
@@ -79,7 +76,7 @@
             <description>Using your bonus action, you can any willing creature you can touch and take everyone to the void. Any creature that can’t breath in the void must hold their breath. While in the void, creatures outside of it can not find you and only voidiens can see into and out of the void. While out of combat, you can use this ability as much as you want and you have infinite time in the void. During combat you can only stay in the void for two turns.</description>
         </sheet>
     </element>
-    <element name="Relentless Endurance" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_VOIDIEN_VOID_TRANSFER">
+    <element name="Void Bubble" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_VOIDIEN_VOID_TRANSFER">
         <requirements>!ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOID_BUBBLE</requirements>
         <description>
             <p>When you take a long rest, a bubble of void surrounds you. Nothing can pass through the bubble including sound except for light. This bubble has a AC of 25 and a health pool of 150.</p>
@@ -90,7 +87,7 @@
         </description>
         </sheet>
     </element>
-    
+
     <!-- Racial Trait Replacement Grants -->
     <element name="Voidien Form Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOIDIEN_FORM"/>
     <element name="Void Transfer Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOID_TRANSFER"/>
