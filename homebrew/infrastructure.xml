@@ -25,10 +25,10 @@
 
 	<!-- Languages -->
 	
-	<element name="Voiden" type="Language" source="Worlds COllide" id="ID_WC_LANGUAGE_VOIDIEN">
+	<element name="Voiden" type="Language" source="Worlds Collide" id="ID_WC_LANGUAGE_VOIDEN">
 		<supports>Standard</supports>
 		<description>
-			<p>Originated in the Void, mainly used by the voidiens.</p>
+			<p>Originated in the Void, mainly used by the Voidiens.</p>
 		</description>
 	</element>
 

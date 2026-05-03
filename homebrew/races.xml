@@ -6,7 +6,7 @@
 			<file name="races.xml" url="https://raw.githubusercontent.com/3axAttack207/worldscollide/master/homebrew/races.xml" />
 		</update>
 	</info>
-    <element name="Half Voidien" type="Race" source="Worlds Collide" id="ID_WC_RACE_HALF_HALF_VOIDIEN">
+    <element name="Half Voidien" type="Race" source="Worlds Collide" id="ID_WC_RACE_HALF_VOIDIEN">
         <description>
             <p class="flavor">Voidiens, pure black creatures of the void, and humans, their genes mixing creates a half-voidien. They are creatures of the void, a greyish Earth terrain world, Home for Voidiens, days last seven times long than Earth days, oxygen there has more elements in it and will create a poisonous gas when mixed with pure oxygen. Voidens genes make them immune to the gas. For the past 300 years, voidiens have been rare outside the void with few still hiding in other planes. Before this, they tried to go to other realms to live, peaceful and helpful to everyone around them, but <strong>racism</strong> had them hunted off the planes because of their immense power they have against other races. The only reason they left their world was due to problems in their world. First there was a resourse shortage that created four factions have had slight battles over resources. Then what caused the problem was a virus outbreak that broke out accross the infinite void. Then when they got back, a total war broke out across all factions.</p>
             <p class="indent">Half Voidiens have two forms, a human form and their Voidien form. When in human form, they have a humanoid look except for the pale skin and one of their eyes being black. When they transfer to their voidien form, a black liquid like substance consumes them. They can only hold this form temporaliy outside the void. While in their voidien form, they have a black skin color, black eyes and black hair. They all speak the common language voiden.</p>
@@ -53,11 +53,11 @@
                 <select type="Language" name="Customized Language (Half Voidien)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" number="3"/>
                 <grant type="Racial Trait" id="ID_WC_RACIAL_TRAIT_HALF_VOIDIEN_VOIDIEN_FORM"/>
                 <grant type="Racial Trait" id="ID_WC_RACIAL_TRAIT_HALF_VOIDIEN_VOID_TRANSFER"/>
-                <grant type="Racial Trait" id="ID_WC_RACIAL_TRAIT_HALF_VOIDIEN_VERSATILE_VOID_BUBBLE"/>
+                <grant type="Racial Trait" id="ID_WC_RACIAL_TRAIT_HALF_VOIDIEN_VOID_BUBBLE"/>
             </rules>
     </element>
-    <element name="Voidien Form" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_VOIDIEN_VOIDIEN_FORM">
-        <requirements>!ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOIDIEN_FORM</requirements>
+    <element name="Voidien Form" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_HALF_VOIDIEN_VOIDIEN_FORM">
+        <requirements>!ID_WC_RACIAL_TRAIT_REPLACEMENT_HALF_VOIDIEN_VOIDIEN_FORM</requirements>
         <description>
             <p>As an action, you can transform into your Voidien form. This form lasts a minute (10 turns). While in this form, you gain 10ft of movement speed, you can add half of your proficiency bonus to your AC and melee damage(rounded down), and add your proficiency bonus to your attack rolls. You can use this ability equal to your proficiency bonus.</p>
             <p class="indent">You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
@@ -66,8 +66,8 @@
             <description>As an action, you can transform into your Voidien form. This form lasts a minute (10 turns). While in this form, you gain 10ft of movement speed, you can add half of your proficiency bonus to your AC and melee damage(rounded down), and add your proficiency bonus to your attack rolls.</description>
         </sheet>
     </element>
-    <element name="Void Transfer" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_VOIDIEN_VOID_TRANSFER">
-        <requirements>!ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOID_TRANSFER</requirements>
+    <element name="Void Transfer" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_HALF_VOIDIEN_VOID_TRANSFER">
+        <requirements>!ID_WC_RACIAL_TRAIT_REPLACEMENT_HALF_VOIDIEN_VOID_TRANSFER</requirements>
         <description>
             <p>Using your bonus action, you can any willing creature you can touch and take everyone to the void. Any creature that can’t breath in the void must hold their breath. While in the void, creatures outside of it can not find you and only voidiens can see into and out of the void. While out of combat, you can use this ability as much as you want and you have infinite time in the void. During combat you can only stay in the void for two turns.</p>
             <p class="indent">You can use this trait a number of times equal to two times your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
@@ -76,8 +76,8 @@
             <description>Using your bonus action, you can any willing creature you can touch and take everyone to the void. Any creature that can’t breath in the void must hold their breath. While in the void, creatures outside of it can not find you and only voidiens can see into and out of the void. While out of combat, you can use this ability as much as you want and you have infinite time in the void. During combat you can only stay in the void for two turns.</description>
         </sheet>
     </element>
-    <element name="Void Bubble" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_VOIDIEN_VOID_TRANSFER">
-        <requirements>!ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOID_BUBBLE</requirements>
+    <element name="Void Bubble" type="Racial Trait" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_HALF_VOIDIEN_VOID_BUBBLE">
+        <requirements>!ID_WC_RACIAL_TRAIT_REPLACEMENT_HALF_VOIDIEN_VOID_BUBBLE</requirements>
         <description>
             <p>When you take a long rest, a bubble of void surrounds you. Nothing can pass through the bubble including sound except for light. This bubble has a AC of 25 and a health pool of 150.</p>
         </description>
@@ -89,7 +89,7 @@
     </element>
 
     <!-- Racial Trait Replacement Grants -->
-    <element name="Voidien Form Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOIDIEN_FORM"/>
-    <element name="Void Transfer Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOID_TRANSFER"/>
-    <element name="Void Bubble Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_VOIDIEN_VOID_BUBBLE"/>
+    <element name="Voidien Form Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_HALF_VOIDIEN_VOIDIEN_FORM"/>
+    <element name="Void Transfer Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_HALF_VOIDIEN_VOID_TRANSFER"/>
+    <element name="Void Bubble Trait Replacement" type="Grants" source="Worlds Collide" id="ID_WC_RACIAL_TRAIT_REPLACEMENT_HALF_VOIDIEN_VOID_BUBBLE"/>
 </elements>
