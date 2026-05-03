@@ -71,7 +71,7 @@
             <p>Using your bonus action, you can any willing creature you can touch and take everyone to the void. Any creature that can’t breath in the void must hold their breath. While in the void, creatures outside of it can not find you and only voidiens can see into and out of the void. While out of combat, you can use this ability as much as you want and you have infinite time in the void. During combat you can only stay in the void for two turns.</p>
             <p class="indent">You can use this trait a number of times equal to two times your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
         </description>
-        <sheet usage="{{proficiency+proficiency}}/Short Rest">
+        <sheet usage="{{proficiency}}+{{proficiency}}/Short Rest">
             <description>Using your bonus action, you can any willing creature you can touch and take everyone to the void. Any creature that can’t breath in the void must hold their breath. While in the void, creatures outside of it can not find you and only voidiens can see into and out of the void. While out of combat, you can use this ability as much as you want and you have infinite time in the void. During combat you can only stay in the void for two turns.</description>
         </sheet>
     </element>
