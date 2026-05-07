@@ -80,7 +80,7 @@
                 <tr>
                     <td> 2nd</td>
                     <td>Actions</td>
-                    <td class="left">Dragon Anger</td>
+                    <td class="left">Cutting Words</td>
                 </tr>
                 <tr>
                     <td> 3rd</td>
@@ -228,7 +228,7 @@
             </table>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUMMON_DRAGON"/>
-            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_ANGER"/>
+            <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CUTTING_WORDS"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_ELEMENTAL_FIGHTING_STYLE"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ABILITY_SCORE_IMPROVEMENT"/>
             <div element="ID_WC_CLASS_FEATURE_DRAGON_TAMER_EXTRA_ATTACK"/>
@@ -254,9 +254,9 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
             <select type="Proficiency" name="Skill Proficiency (Dragon Tamer)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE" number="3" requirements="!ID_WC_MULTICLASS_DRAGON_TAMER"/>
-            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE" level="1"/>
+            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_ELEMENT" level="1"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_SUMMON_DRAGON" level="1"/>
-            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_ANGER" level="2"/>
+            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CUTTING_WORDS" level="2"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_ELEMENTAL_FIGHTING_STYLE" level="3"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ABILITY_SCORE_IMPROVEMENT" level="4"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_EXTRA_ATTACK" level="5"/>
@@ -264,8 +264,7 @@
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_ELEMENTAL_CHARGE" level="6"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_REMOVE_ELEMENTAL_CHARGES" level="6"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_LIFE_EXCHANGE" level="11"/>
-            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMITABLE" level="14"/>
-            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_IMPROVED_CRITICAL_HIT" level="20"/>
+            <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMITABLE" level="17"/>
             <grant type="Class Feature" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_UNCHAIN_THE_BOND" level="20"/>
         </rules>
         <multiclass id="ID_WC_MULTICLASS_DRAGON_TAMER">
@@ -287,7 +286,7 @@
 
     <!-- Level 1 -->
 
-    <element name="Choose Dragon Type" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE">
+    <element name="Choose Dragon Type" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_ELEMENT">
         <description>
             <p>At 1st level, you choose your dragon's type between a Fire dragon, with the color of Red, Golden, Black, White, or Liquid White Gold. A lightning dragon with the color of White, Silver, or Copper. Or a Ice dragon with the color of Blue, Bronze, or Green. This dragon will then grow with you as you gain levels.</p>
         </description>
@@ -302,20 +301,20 @@
         </description>
         <sheet usage="1/Short Rest or -5HP">
             <description>
-                <p>As a bonus action, you can summon your dragon companion up to 15ft from you. This is free once per short rest for full HP (any time) or -5 of your HP and brings dragon at Your Level*5 for health (out of combat only).</p>
+                <p>As a bonus action, you can summon your dragon companion up to 15ft from you. This is free once per short rest for full HP (any time) or -5 of your HP and brings dragon at Your Level*5 for health (out of combat only) and during combat, -2HP for every dragon tamer level and dragon heals for level*5.</p>
             </description>
         </sheet>
     </element>
 
     <!-- Level 2 -->
 
-    <element name="Dragon Anger" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_DRAGON_ANGER">
+    <element name="Dragon Anger" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CUTTING_WORDS">
         <description>
-            <p>At 2nd level, you and your dragon share a fierce bond. When the character or dragon drops to 0 hit points, the one still up will have advantage on attacks against the creature that brought the character down to zero, and any attack against the alive character is at disadvantage. If the character or dragon attacks a creature that did not do the blow, the attack will be at disadvantage. If the character dies, the dragon will do x2 damage on all attacks and x4 on the one that dropped character to 0 HP, or the one the caused the characters death. </p>
+            <p>Curse those who hurt your baby. At 2nd Level, when an enemy attacks your dragon, you can use your reaction to cause the enemy to receive a d12 penelty to targets attack roll, damage roll, or their next ability check. This only works once per target.</p>
         </description>
         <sheet>
             <description>
-                <p>When the character or dragon drops to 0 hit points, the one still up will have advantage on attacks against the creature that brought the character down to zero, and any attack against the alive character is at disadvantage. If the character or dragon attacks a creature that did not do the blow, the attack will be at disadvantage. If the character dies, the dragon will do x2 damage on all attacks and x4 on the one that dropped character to 0 HP, or the one the caused the characters death.</p>
+                <p>Reaction, Works only once per Enemy, When something attacks dragon, cause the target to receive a d12 penalty on their attack roll, ability check, or damage dealt.</p>
             </description>
         </sheet>
     </element>
@@ -365,55 +364,6 @@
             <select type="Class Feature" name="Improvement Option (Dragon Tamer 12)" supports="Improvement Option,Dragon Tamer,12" level="12"/>
             <select type="Class Feature" name="Improvement Option (Dragon Tamer 16)" supports="Improvement Option,Dragon Tamer,16" level="16"/>
             <select type="Class Feature" name="Improvement Option (Dragon Tamer 19)" supports="Improvement Option,Dragon Tamer,19" level="19"/>
-        </rules>
-    </element>
-
-    <!-- Elemental Swordsman -->
-    <element name="Superiority Dice" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE">
-        <description>
-            <p>At level 4 you learn maneuvers that are fueled by special dice called superiority dice.</p>
-            <p class="indent">
-                <strong>
-                    <em>Maneuvers.</em>
-                </strong>
-                You learn one maneuvers of your choice, which are detailed under “Maneuvers” below. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn an additional maneuver of your choice at 9th, 13th, and 17th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.
-            </p>
-            <p class="indent">
-                <strong>
-                    <em>Superiority Dice.</em>
-                </strong>
-                You have four superiority dice, which are d20s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 9th level, 13th level, and 17th level.
-            </p>
-            <p class="indent">
-                <strong>
-                    <em>Saving Throws.</em>
-                </strong>
-                Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows:
-            </p>
-            <center>
-                <p>
-                    <strong>Maneuver save DC</strong>
-                    = 8 + your proficiency bonus + your Strength.
-                </p>
-            </center>
-        </description>
-        <sheet>
-            <description>You learn maneuvers that are fueled by special dice called superiority dice. You have {{superiority dice:amount}} superiority dice which are d20s. DC {{superiority dice:dc}}</description>
-        </sheet>
-        <rules>
-            <stat name="superiority dice:amount" value="2"/>
-            <stat name="superiority dice:amount" value="1" level="9"/>
-            <stat name="superiority dice:amount" value="1" level="13"/>
-            <stat name="superiority dice:amount" value="1" level="17"/>
-            <stat name="superiority dice:dc" value="8"/>
-            <stat name="superiority dice:dc" value="proficiency"/>
-            <!--  create selection option  -->
-            <stat name="superiority dice:dc:ability" value="strength:modifier" bonus="ability"/>
-            <stat name="superiority dice:dc" value="superiority dice:dc:ability"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 3)" supports="Dragon Tamer Maneuvers" number="1"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 9)" supports="Dragon Tamer Maneuvers" number="1" level="9"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 13)" supports="Dragon Tamer Maneuvers" number="1" level="13"/>
-            <select type="Archetype Feature" name="Combat Superiority (Level 17)" supports="Dragon Tamer Maneuvers" number="1" level="17"/>
         </rules>
     </element>
 
@@ -596,18 +546,15 @@
             <stat name="dragon power max:amount" value="3" level="20"/>
         </rules>
     </element>
-    <element name="DragonStyle MultiStrike Combo" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE">
+    <element name="DragonStyle DoubleStrike" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_DOUBLESTRIKE_MELEE">
         <description>
-            <p>At 6th level, you can use your style on your enemies with a triple strike. Once per battle, using your Action and a Bonus action and a cost of 3 stacks of dragon power, you attack three times with your melee weapon. On your 1st and 2nd attack, if you hit, your damage will be halfed. If you land a attack, your next strike in the combo will be at advantage. At level 10, if you land all three attacks, your third attack will be a critical hit. At level 13, you can use this attack twice per battle. At level 18, your 1st and 2nd attacks will no longer be halved.</p>
+            <p>At 6th level, you can style on your enemies with a double strike. Once per Turn, using your Action and a cost of 3 stacks of dragon power, you attack twice with your melee weapon. Your first strike is at half damage. You can use your reaction to add another half damage attack.</p>
         </description>
-        <sheet usage="{{combo uses:amount}} Per Battle and 3 Stacks of Dragon Power">
-            <description>Using your action, bonus action, and 3 stacks of Dragon Power, you can attack three times with your melee weapon. Your 1st and 2nd attacks are halved in damage, and during the combo, if you land a hit, your next strike will be at advantage. At level 10, if you land all three attacks, your third attack will be a critical hit. At level 18, your 1st and 2nd attacks will no longer be halved.</description>
+        <sheet usage="Per Battle and 3 Stacks of Dragon Power">
+            <description>Using your Action and a cost of 3 stacks of dragon power, you attack twice with your melee weapon. Your first strike is at half damage. You can use your reaction to add another half damage attack.</description>
         </sheet>
-        <rules>
-            <stat name="combo uses:amount" value="1"/>
-            <stat name="combo uses:amount" value="1" level="13"/>
-        </rules> 
     </element>
+
     <!-- Elemental Archer -->
     <element name="Elemental Bond" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_RANGE">
         <description>
@@ -657,27 +604,6 @@
 
     <!-- Level 7 -->
 
-    <!-- Elemental Swordsman -->
-    <element name="Dragon Aura" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA">
-        <description>
-            <p>At 7th level, you can use your action, bonus action, and six stacks of dragon power, and create a powerful aura 5 feet in a radius around you. On use, causes you to gain the dash effect. This aura lasts for 2 turns. Anyone you consider an enemy inside this radius at any point (you move near them or they move near you) must make a Strength Saving Throw (8 + Strength + Proficiency), on pass, they take half damage, on fail, they take 4d6 dragon element damage for every turn your aura is up. If a enemy is affected by your aura, at the start of your next turn while your aura is still up, they will take antoher 4d6 dragon element damage. This ability upgrades in damage, cost, turns, and usage as you level up. When your aura goes down, you become lethargic for a turn.</p>
-        </description>
-        <sheet usage="Once per Battle and costs {{dragon aura cost:amount}} Stacks of Dragon Power">
-            <description>Using your action, bonus action, and {{dragon aura cost:amount}} stacks of Dragon Power, you can create a powerful aura 5 feet in a radius around you. On use, causes you to gain the dash effect. This aura lasts for {{dragon aura turns:amount}} turns. Anyone you consider an enemy inside this radius at any point (you move near them or they move near you) must make a Strength Saving Throw DC:{{dragon aura:dc}}, on pass, they take half damage, on fail, they take {{dragon aura damage:amount}}d6 dragon element damage for every turn your aura is up. If a enemy is affected by your aura, at the start of your next turn while your aura is still up, they will take antoher {{dragon aura damage:amount}}d6 dragon element damage. When your aura goes down, you become lethargic for a turn.</description>
-        </sheet>
-        <rules>
-            <stat name="dragon aura cost:amount" value="6"/>
-            <stat name="dragon aura cost:amount" value="8" level="10"/>
-            <stat name="dragon aura damage:amount" value="4"/>
-            <stat name="dragon aura damage:amount" value="2" level="12"/>
-            <stat name="dragon aura turns:amount" value="2"/>
-            <stat name="dragon aura turns:amount" value="1" level="12"/>
-            <stat name="dragon aura:dc" value="8"/>
-            <stat name="dragon aura:dc" value="proficiency"/>
-            <stat name="dragon aura:dc:ability" value="strength:modifier" bonus="ability"/>
-            <stat name="dragon aura:dc" value="dragon aura:dc:ability"/>
-        </rules>
-    </element>
     <!-- Elemental Archer -->
     <element name="Dragon Arrow" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_ARROW">
         <description>
@@ -745,22 +671,18 @@
         </sheet>
     </element>
 
-    <!-- Levels 12 and 13 are upgrades -->
+    <!-- Levels 12 -->
 
-    <!-- Level 14 -->
-
-    <element name="Indomitable" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMITABLE">
+    <element name="DragonStyle MultiStrike Combo" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE">
         <description>
-            <p>At 14th level, you can use your indomitable will to reroll a saving throw that you fail. You can use this feature twice per long rest starting at 17th level.</p>
+            <p>At 12th level, you can use your style on your enemies with a triple strike. Once per battle, using your Action and a cost of 3 stacks of dragon power, you attack three times with your melee weapon. On your 1st and 2nd attack, if you hit, your damage will be halfed. If you land a attack, your next strike in the combo will be at advantage.</p>
         </description>
-        <sheet usage="{{indomable uses:amount}}/Per Long Rest">
-            <description>On a failed saving throw, you can use your reaction to reroll it. If you pass with the new roll, it uses a point of Indomable.</description>
+        <sheet usage="Per Battle and 3 Stacks of Dragon Power">
+            <description>Using your action and 3 stacks of Dragon Power, you can attack three times with your melee weapon. Your 1st and 2nd attacks are halved in damage, and during the combo, if you land a hit, your next strike will be at advantage.</description>
         </sheet>
-        <rules>
-            <stat name="indomable uses:amount" value="1"/>
-            <stat name="indomable uses:amount" value="1" level="17"/>
-        </rules>
     </element>
+
+    <!-- Levels 13 to 14 are upgrades -->
 
     <!-- Level 15 -->
 
@@ -794,18 +716,39 @@
         </rules>
     </element>
 
-    <!-- Level 16 to level 19 are upgrades -->
+    <!-- Level 16 is an upgrade -->
+
+    <!-- Level 17 -->
+     
+     <element name="Indomitable" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_INDOMITABLE">
+        <description>
+            <p>At 17th level, you can use your indomitable will to reroll a saving throw that you fail.</p>
+        </description>
+        <sheet usage="Once Per Long Rest">
+            <description>On a failed saving throw, you can use your reaction to reroll it. If you pass with the new roll, it uses Indomable.</description>
+        </sheet>
+    </element>
+
+    <!-- Elemental Swordsman -->
+    <element name="Dragon Aura" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA">
+        <description>
+            <p>At 17th level, you can use your action, bonus action, and ten stacks of dragon power, and create a powerful aura 10 feet in a radius around you. On use, causes you to gain the dash effect. This aura lasts for 3 turns. Anyone you consider an enemy inside this radius at any point (you move near them or they move near you) must make a Strength Saving Throw (8 + Strength + Proficiency), on pass, they take half damage, on fail, they take 6d6 dragon element damage for every turn your aura is up. If a enemy is affected by your aura, at the start of your next turn while your aura is still up, they will take another 6d6 dragon element damage. When your aura goes down, you become lethargic for a turn.</p>
+        </description>
+        <sheet usage="Once per Battle and costs 10 Stacks of Dragon Power">
+            <description>Using your action, bonus action, and 10 stacks of Dragon Power, you can create a powerful aura 10 feet in a radius around you. On use, causes you to gain the dash effect. This aura lasts for 3 turns. Anyone you consider an enemy inside this radius at any point (you move near them or they move near you) must make a Strength Saving Throw DC:{{dragon aura:dc}}, on pass, they take half damage, on fail, they take 6d6 dragon element damage for every turn your aura is up. If a enemy is affected by your aura, at the start of your next turn while your aura is still up, they will take another 6d6 dragon element damage. When your aura goes down, you become lethargic for a turn.</description>
+        </sheet>
+        <rules>
+            <stat name="dragon aura:dc" value="8"/>
+            <stat name="dragon aura:dc" value="proficiency"/>
+            <stat name="dragon aura:dc:ability" value="strength:modifier" bonus="ability"/>
+            <stat name="dragon aura:dc" value="dragon aura:dc:ability"/>
+        </rules>
+    </element>
+
+    <!-- Level 18 and 19 are upgrades -->
 
     <!-- Level 20 -->
 
-    <element name="Improved Critical Hit" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_IMPROVED_CRITICAL_HIT">
-        <description>
-            <p>At 20th level, your weapon attacks score a critical hit on a roll of 19 or 20.</p>
-        </description>
-        <sheet>
-            <description>Your weapon attacks score a critical hit on a roll of 19 or 20.</description>
-        </sheet>
-    </element>
     <element name="Unchain The Bond" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_UNCHAIN_THE_BOND">
         <description>At Level 20, you unchain the bond with your dragon allowing it to channel yours and its power. This move is only usable once per long rest. You must be within 5ft of your dragon. This costs your main action, a bonus action, and 14 stacks of dragon power. Using this action allows your dragon to use Unity Cataclysm. When you use this action, you gain 2 turns of lethargy.</description>
         <sheet usage="1/Per Long Rest, Costs 14 Stacks of Dragon Power">
@@ -867,19 +810,19 @@
         <description>
             <p>You and your dragon work together, charging right into the battle.</p>
             <div element="ID_WC_ARCHETYPE_FEATURE_PROFICIENCY_GAIN_MELEE"/>
-            <div element="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_MELEE"/>
+            <div element="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_DOUBLESTRIKE_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE"/>
             <div element="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA"/>
         </description>
         <rules>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_PROFICIENCY_GAIN_MELEE" level="3"/>
-            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_SUPERIORITY_DICE_MELEE" level="4"/>  
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_THROW_DRAGON_MELEE" level="5"/>
             <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_ELEMENTAL_BOND_MELEE" level="6"/>
-            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE" level="6"/>
-            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA" level="7"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_DOUBLESTRIKE_MELEE" level="6"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGONSTYLE_MULTISTRIKE_COMBO_MELEE" level="12"/>
+            <grant type="Archetype Feature" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_AURA" level="17"/>
         </rules>
     </element>
 
@@ -941,139 +884,6 @@
         <sheet>
             <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</description>
         </sheet>
-    </element>
-
-    <!-- Level 15 Elemental Fighting Style and Dragon Dependent moves -->
-
-    <!-- Fire Dragon -->
-    <element name="Flame Explosion (Swordsman)" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_FLAME_EXPLOSION">
-       <supports>Fire Move</supports>
-        <description>
-            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move is a firey explosion 5 feet around you. Anyone caught in the blast must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, get knocked out of the radius and knocked prone, and are heavily burned for 2 turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
-        </description>
-        <sheet usage="Once/Per Battle and costs 10 Stacks of Dragon Power">
-            <description>Using a bonus action and 10 stacks of dragon power, this move is a fiery explosion 5 feet around you. Anyone caught in the blast must make a Dexterity saving throw {{flame explosion:dc}}. On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, get knocked out of the radius and knocked prone, and are heavily burned for {{flame explosion:duration}} turns.</description>
-        </sheet>
-        <rules>
-            <stat name="flame explosion:amount" value="6"/>
-            <stat name="flame explosion:amount" value="1" level="17"/>
-            <stat name="flame explosion:amount" value="1" level="19"/>
-            <stat name="flame explosion:duration" value="2"/>
-            <stat name="flame explosion:duration" value="1" level="17"/>
-            <stat name="flame explosion:duration" value="1" level="19"/>
-            <stat name="flame explosion:dc" value="8"/>
-            <stat name="flame explosion:dc" value="proficiency"/>
-            <stat name="flame explosion:dc:ability" value="strength:modifier" bonus="ability"/>
-            <stat name="flame explosion:dc" value="flame explosion:dc:ability"/>
-        </rules>
-    </element>
-    <element name="Flaming Beam Shot (Ranger)" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_FLAMING_BEAM_SHOT">
-       <supports>Fire Move</supports>
-        <description>
-            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move fires a flaming beam in a line of 30ft. This bolt passes through anything. Anyone that is hit by that bolt must make a Constitution saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, are blinded for {{flaming beam shot:duration}} turns, and are heavily burned for {{flaming beam shot:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
-        </description>
-        <sheet usage="Once/Per Battle and costs 10 Stacks of Dragon Power">
-            <description>Using a bonus action and 10 stacks of dragon power, this move fires a flaming beam in a line of 30ft that passes through anything. Anyone that is hit by that bolt must make a Constitution saving throw {{flaming beam shot:dc}}. On a passed save, they take half damage. On a failed save, they take 6d6 fire damage, are blinded for {{flaming beam shot:duration}} turns, and are heavily burned for {{flaming beam shot:duration}} turns.</description>
-        </sheet>
-        <rules>
-            <stat name="flaming beam shot:amount" value="6"/>
-            <stat name="flaming beam shot:amount" value="1" level="17"/>
-            <stat name="flaming beam shot:amount" value="1" level="19"/>
-            <stat name="flaming beam shot:duration" value="2"/>
-            <stat name="flaming beam shot:duration" value="1" level="17"/>
-            <stat name="flaming beam shot:duration" value="1" level="19"/>
-            <stat name="flaming beam shot:dc" value="8"/>
-            <stat name="flaming beam shot:dc" value="proficiency"/>
-            <stat name="flaming beam shot:dc:ability" value="dexterity:modifier" bonus="ability"/>
-            <stat name="flaming beam shot:dc" value="flaming beam shot:dc:ability"/>
-        </rules>
-    </element>
-
-    <!-- Lightning Dragon -->
-    <element name="Lightning Jump (Swordsman)" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_LIGHTNING_JUMP">
-       <supports>Lightning Move</supports>
-        <description>
-            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move allows you to jump with a powerful leap into battle with a powerful landing, both have a radius of 5 feet. Anyone caught in the radius must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a passed save, they take half damage. On a failed save, they take 3d6 lightning damage, are shocked for {{lightning jump:duration}} turns, and are heavily shocked for {{lightning jump:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19.</p>
-        </description>
-        <sheet usage="Once/Per Battle and costs 10 Stacks of Dragon Power">
-            <description>Using a bonus action and 10 stacks of dragon power, this move allows you to jump with a powerful leap into battle with a powerful landing, both have a radius of 5 feet. Anyone caught in the radius must make a Dexterity saving throw {{lightning jump:dc}}. On a passed save, they take half damage. On a failed save, they take 3d6 lightning damage, are shocked for {{lightning jump:duration}} turns, and are heavily shocked for {{lightning jump:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19. (Shocked: Cannot take reactions and has Disadvantage on Ability Checks and Saving Throws using Dexterity.)</description>
-        </sheet>
-        <rules>
-            <stat name="lightning jump:amount" value="6"/>
-            <stat name="lightning jump:amount" value="1" level="17"/>
-            <stat name="lightning jump:amount" value="1" level="19"/>
-            <stat name="lightning jump:duration" value="2"/>
-            <stat name="lightning jump:duration" value="1" level="17"/>
-            <stat name="lightning jump:duration" value="1" level="19"/>
-            <stat name="lightning jump:dc" value="8"/>
-            <stat name="lightning jump:dc" value="proficiency"/>
-            <stat name="lightning jump:dc:ability" value="strength:modifier" bonus="ability"/>
-            <stat name="lightning jump:dc" value="lightning jump:dc:ability"/>
-        </rules>
-    </element>
-    <element name="Electromagnetic Pulse (Ranger)" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_ELECTROMAGNETIC_PULSE">
-       <supports>Lightning Move</supports>
-        <description>
-            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move fires a Arrow with a Electromagnetic Pulse using your ranged weapon's range. You do not need a target to use this ability. Anyone within a 15ft radius where the arrow lands must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 lightning damage, are is pulled into the center of the radius, and are heavily shocked for {{electromagnetic pulse:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19. (Shocked: Cannot take reactions and has Disadvantage on Ability Checks and Saving Throws using Dexterity.)</p>
-        </description>
-        <sheet usage="Once/Per Battle and costs 10 Stacks of Dragon Power">
-            <description>Using a bonus action and 10 stacks of dragon power, this move fires a Arrow with a Electromagnetic Pulse using your ranged weapon's range. You do not need a target to use this ability. Anyone within a 15ft radius where the arrow lands must make a Dexterity saving throw {{electromagnetic pulse:dc}}. On a passed save, they take half damage. On a failed save, they take 6d6 lightning damage, are is pulled into the center of the radius, and are heavily shocked for {{electromagnetic pulse:duration}} turns. (Shocked: Cannot take reactions and has Disadvantage on Ability Checks and Saving Throws using Dexterity.)</description>
-        </sheet>
-        <rules>
-            <stat name="electromagnetic pulse:amount" value="6"/>
-            <stat name="electromagnetic pulse:amount" value="1" level="17"/>
-            <stat name="electromagnetic pulse:amount" value="1" level="19"/>
-            <stat name="electromagnetic pulse:duration" value="2"/>
-            <stat name="electromagnetic pulse:duration" value="1" level="17"/>
-            <stat name="electromagnetic pulse:duration" value="1" level="19"/>
-            <stat name="electromagnetic pulse:dc" value="8"/>
-            <stat name="electromagnetic pulse:dc" value="proficiency"/>
-            <stat name="electromagnetic pulse:dc:ability" value="dexterity:modifier" bonus="ability"/>
-            <stat name="electromagnetic pulse:dc" value="electromagnetic pulse:dc:ability"/>
-        </rules>
-    </element>
-    <!-- Ice Dragon -->
-    <element name="Icy Cold (Swordsman)" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_ICY_COLD">
-       <supports>Ice Move</supports>
-        <description>
-            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move creates a icy cold wave in a 10 foot radius around you and turns the area around you into ice for {{icy cold:duration}} turns, and gives you immuntiy to slipping on this ice. Anyone caught in the wave must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a passed save, they take half damage. On a failed save, they take 6d6 cold damage, get gain the frozen condition, and once they are no longer frozen, they gain the heavily frozen condition for {{icy cold:duration}} turns. The damage amount and dragon effect time goes up by 1 at level 17 and 19. (Frozen: Affected entity is utterly enamelled in ice and is Incapacitated. If it is dealt Bludgeoning, Thunder, or Force damage, the ice shatters, ending the condition. If hit by fire, the condition ends. Gains Vulnerability to Bludgeoning, Thunder, and Force damage. Gains Resistance to Fire damage. Gains immunity to Burning.)</p>
-        </description>
-        <sheet usage="Once/Per Battle and costs 10 Stacks of Dragon Power">
-            <description>Using a bonus action and 10 stacks of dragon power, this move creates a icy cold wave in a 10 foot radius around you and turns the area around you into ice for {{icy cold:duration}} turns, also giving you immunity to slipping on this ice. Anyone caught in the wave must make a Dexterity saving throw {{icy cold:dc}}. On a passed save, they take half damage. On a failed save, they take 6d6 cold damage, gain the frozen condition, and once they are no longer frozen, they gain the heavily frozen condition for {{icy cold:duration}} turns. (Frozen: Affected entity is utterly enamelled in ice and is Incapacitated. If it is dealt Bludgeoning, Thunder, or Force damage, the ice shatters, ending the condition. If hit by fire, the condition ends. Gains Vulnerability to Bludgeoning, Thunder, and Force damage. Gains Resistance to Fire damage. Gains immunity to Burning.)</description>
-        </sheet>
-        <rules>
-            <stat name="icy cold:amount" value="6"/>
-            <stat name="icy cold:amount" value="1" level="17"/>
-            <stat name="icy cold:amount" value="1" level="19"/>
-            <stat name="icy cold:duration" value="2"/>
-            <stat name="icy cold:duration" value="1" level="17"/>
-            <stat name="icy cold:duration" value="1" level="19"/>
-            <stat name="icy cold:dc" value="8"/>
-            <stat name="icy cold:dc" value="proficiency"/>
-            <stat name="icy cold:dc:ability" value="strength:modifier" bonus="ability"/>
-            <stat name="icy cold:dc" value="icy cold:dc:ability"/>
-        </rules>
-    </element>
-    <element name="Sheer Cold Arrow (Ranger)" type="Archetype Feature" source="Worlds Collide" id="ID_WC_ARCHETYPE_FEATURE_DRAGON_TAMER_SHEER_COLD_ARROW">
-       <supports>Ice Move</supports>
-        <description>
-            <p>At 15th level, You try and come up with a new move using your dragon and your bond. Using a bonus action and 10 stacks of dragon power, this move fires a arrow with a sheer cold effect and when the arrow lands, using your ranged weapon's range, in a radius of 10 Feet, makes a freezing zone that lasts for 2 turns. You do not need a target to use this ability. Anyone that is in the freezing zone at the start of their turn must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 cold damage, are frozen for {{sheer cold arrow:duration}} turns, and once no longer frozen, they are heavily frozen for {{sheer cold arrow:duration}} turns after. The damage amount and dragon effect time goes up by 1 at level 17 and 19. (Frozen: Affected entity is utterly enamelled in ice and is Incapacitated. If it is dealt Bludgeoning, Thunder, or Force damage, the ice shatters, ending the condition. If hit by fire, the condition ends. Gains Vulnerability to Bludgeoning, Thunder, and Force damage. Gains Resistance to Fire damage. Gains immunity to Burning.)</p>
-        </description>
-        <sheet usage="Once/Per Battle and costs 10 Stacks of Dragon Power">
-            <description>Using a bonus action and 10 stacks of dragon power, this move fires a arrow with a sheer cold effect, and when this arrow lands, using your ranged weapon's range, in a radius of 10 Feet, makes a freezing zone that lasts for {{sheer cold arrow:duration}} turns. You do not need a target to use this ability. Anyone that is in the freezing zone at the start of their turn must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier). On a passed save, they take half damage. On a failed save, they take 6d6 cold damage, are frozen for {{sheer cold arrow:duration}} turns, and once they are no longer frozen, they are heavily frozen for {{sheer cold arrow:duration}} turns after. (Frozen: Affected entity is utterly enamelled in ice and is Incapacitated. If it is dealt Bludgeoning, Thunder, or Force damage, the ice shatters, ending the condition. If hit by fire, the condition ends. Gains Vulnerability to Bludgeoning, Thunder, and Force damage. Gains Resistance to Fire damage. Gains immunity to Burning.)</description>
-        </sheet>
-        <rules>
-            <stat name="sheer cold arrow:amount" value="6"/>
-            <stat name="sheer cold arrow:amount" value="1" level="17"/>
-            <stat name="sheer cold arrow:amount" value="1" level="19"/>
-            <stat name="sheer cold arrow:duration" value="2"/>
-            <stat name="sheer cold arrow:duration" value="1" level="17"/>
-            <stat name="sheer cold arrow:duration" value="1" level="19"/>
-            <stat name="sheer cold arrow:dc" value="8"/>
-            <stat name="sheer cold arrow:dc" value="proficiency"/>
-            <stat name="sheer cold arrow:dc:ability" value="dexterity:modifier" bonus="ability"/>
-            <stat name="sheer cold arrow:dc" value="sheer cold arrow:dc:ability"/>
-        </rules>
     </element>
 
     <!-- Dragons as Items -->
