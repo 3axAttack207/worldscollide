@@ -289,7 +289,7 @@
 
     <element name="Choose Dragon Type" type="Class Feature" source="Worlds Collide" id="ID_WC_CLASS_FEATURE_DRAGON_TAMER_CHOOSE_DRAGON_TYPE">
         <description>
-            <p>At 1st level, you choose your dragon's type between a red dragon(fire), a blue dragon(lightning),or a white dragon(ice). This dragon will then grow with you as you gain levels.</p>
+            <p>At 1st level, you choose your dragon's type between a Fire dragon, with the color of Red, Golden, Black, White, or Liquid White Gold. A lightning dragon with the color of White, Silver, or Copper. Or a Ice dragon with the color of Blue, Bronze, or Green. This dragon will then grow with you as you gain levels.</p>
         </description>
         <sheet display="false"/>
         <rules>
